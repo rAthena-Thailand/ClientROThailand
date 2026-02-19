@@ -1,0 +1,70 @@
+/**************************************************************************\
+*                                                                          *
+*   Copyright (C) 2013-2023 Ai4rei/AN                                      *
+*   Copyright (C) 2013-2023 Neo-Mind                                       *
+*                                                                          *
+*   This file is a part of WARP project (specific to RO clients)           *
+*                                                                          *
+*   WARP is free software: you can redistribute it and/or modify           *
+*   it under the terms of the GNU General Public License as published by   *
+*   the Free Software Foundation, either version 3 of the License, or      *
+*   (at your option) any later version.                                    *
+*                                                                          *
+*   This program is distributed in the hope that it will be useful,        *
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of         *
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the          *
+*   GNU General Public License for more details.                           *
+*                                                                          *
+*   You should have received a copy of the GNU General Public License      *
+*   along with this program.  If not, see <http://www.gnu.org/licenses/>.  *
+*                                                                          *
+*                                                                          *
+|**************************************************************************|
+*                                                                          *
+*   Author(s)     : Ai4rei/AN, Neo-Mind                                    *
+*   Created Date  : 2021-02-24                                             *
+*   Last Modified : 2024-08-21                                             *
+*                                                                          *
+\**************************************************************************/
+
+////
+/// \brief Increases hairstyle limit by patching CMP/Push and fixes mid-headgear fallback.
+///
+const IH_VA_PUSH = 0x00D4EE74; // should be: 68 xx xx xx xx     (push imm32)
+const IH_VA_CMP  = 0x00D4EEF7; // should be: 81 FF xx xx xx xx  (cmp edi, imm32)
+
+IncrHairs = function(patchName) {
+    if (Exe.BuildDate < 20250000)
+        throw Error("Only 2025+ clients supported by this trimmed patch.");
+
+    let maxHairs;
+    if (patchName === "Allow65kHairs") {
+        maxHairs = 65535;
+    } else if (patchName === "IncrHairStyles") {
+        maxHairs = Exe.GetUserInput('$maxHairs', D_Uint16,
+            "Limit input", "Enter the maximum no of hairstyles",
+            100, { saveDefault: true });
+        if (maxHairs === false) Cancel("Limit reverted to default");
+        maxHairs = Math.max(0, Math.min(65535, maxHairs|0));
+    } else {
+        maxHairs = CACHE.get('IH_Max') ?? 65535;
+    }
+    CACHE.put('IH_Max', maxHairs);
+
+    const PH_PUSH = Exe.Vir2Phy(IH_VA_PUSH);
+    const PH_CMP  = Exe.Vir2Phy(IH_VA_CMP);
+
+    if (Exe.GetUint8(PH_PUSH) !== 0x68)
+        throw Error("Unexpected opcode at 0x00D4EE74: expected 0x68 (push imm32).");
+
+    if (!(Exe.GetUint8(PH_CMP) === 0x81 && Exe.GetUint8(PH_CMP + 1) === 0xFF))
+        throw Error("Unexpected opcode at 0x00D4EEF7: expected 0x81 0xFF (cmp edi, imm32).");
+
+    Exe.SetInt32(PH_PUSH + 1, maxHairs & 0xFFFF); // 68 <imm32>
+    Exe.SetInt32(PH_CMP  + 2, maxHairs & 0xFFFF); // 81 FF <imm32>
+
+    return true;
+};
+
+Allow65kHairs  = IncrHairs;
+IncrHairStyles = IncrHairs;
