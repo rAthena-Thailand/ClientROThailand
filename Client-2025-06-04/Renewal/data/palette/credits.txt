@@ -1,0 +1,9 @@
+Hair Dyes:
+9-20: Amber Dragon's base dye pack (http://runefox.net/ragnarok)
+21-263: Skotlex
+
+Cloth Dyes:
+9-77: Classic dye pack (Author Unknown?)
+78-303:  Amber Dragon's base dye pack (http://runefox.net/ragnarok)
+304-425: Sir Looney's dye pack
+426-553: Kowai's custom dye pack (http://www.eathena.ws/board/index.php?showtopic=21234)
