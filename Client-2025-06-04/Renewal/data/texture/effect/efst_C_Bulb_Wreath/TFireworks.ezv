@@ -1,0 +1,1200 @@
+EVFF0.95
+
+fps=60
+
+maxkey=145
+
+layernum=16
+
+layer:Back
+{
+    display=1
+    group=0
+    type=1
+    texcnt=0
+
+    anikeynum=0
+
+}
+
+layer:bback_2
+{
+    display=0
+    group=0
+    type=0
+    texcnt=1
+    texname=bback_2.bmp
+
+    anikeynum=3
+
+    {
+        frame=0
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=320.0000,240.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=800.0000,600.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,7
+        mtpreset=0
+        points=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        rpoints=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=80
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=320.0000,240.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=800.0000,600.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,7
+        mtpreset=0
+        points=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        rpoints=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=145
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=320.0000,240.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=800.0000,600.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,7
+        mtpreset=0
+        points=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        rpoints=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:Fireworks1-2
+{
+    display=1
+    group=0
+    type=0
+    texcnt=5
+    texname=Fireworks1-1.BMP
+    texname=Fireworks1-2.BMP
+    texname=Fireworks1-3.BMP
+    texname=Fireworks1-4.BMP
+    texname=Fireworks1-5.BMP
+
+    anikeynum=2
+
+    {
+        frame=0
+        aniframe=0
+        anitype=2
+        delay=6.0000
+        pos=294.0000,155.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=66.0000,79.2000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 2,6
+        mtpreset=0
+        points=-33.0000,-39.6000  33.0000,-39.6000  33.0000,39.6000  -33.0000,39.6000
+        rpoints=-33.0000,-39.6000  33.0000,-39.6000  33.0000,39.6000  -33.0000,39.6000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=30
+        aniframe=4
+        anitype=2
+        delay=0.0000
+        pos=294.0000,155.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=66.0000,79.2000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,0.0, 2,6
+        mtpreset=0
+        points=-33.0000,-39.6000  33.0000,-39.6000  33.0000,39.6000  -33.0000,39.6000
+        rpoints=-33.0000,-39.6000  33.0000,-39.6000  33.0000,39.6000  -33.0000,39.6000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:snow3
+{
+    display=1
+    group=0
+    type=0
+    texcnt=1
+    texname=snow3.bmp
+
+    anikeynum=2
+
+    {
+        frame=0
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=293.0000,153.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=80.0000,90.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,55.0, 5,7
+        mtpreset=0
+        points=-40.0000,-45.0000  40.0000,-45.0000  40.0000,45.0000  -40.0000,45.0000
+        rpoints=-40.0000,-45.0000  40.0000,-45.0000  40.0000,45.0000  -40.0000,45.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=30
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=293.0000,153.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=0.0000,270.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,55.0, 5,7
+        mtpreset=0
+        points=0.0000,-135.0000  0.0000,-135.0000  0.0000,135.0000  0.0000,135.0000
+        rpoints=0.0000,-135.0000  0.0000,-135.0000  0.0000,135.0000  0.0000,135.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:snow3
+{
+    display=1
+    group=0
+    type=0
+    texcnt=1
+    texname=snow3.bmp
+
+    anikeynum=6
+
+    {
+        frame=5
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=293.0000,153.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=80.0000,90.0000
+        angle=0.0000,0.0000,256.0000
+        color=255.0,255.0,255.0,55.0, 5,7
+        mtpreset=0
+        points=-40.0000,-45.0000  40.0000,-45.0000  40.0000,45.0000  -40.0000,45.0000
+        rpoints=45.0000,-40.0000  45.0000,40.0000  -45.0000,40.0000  -45.0000,-40.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=35
+        aniframe=0
+        anitype=1
+        delay=0.0000
+        pos=293.0000,153.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=0.0000,270.0000
+        angle=0.0000,0.0000,256.0000
+        color=255.0,255.0,255.0,55.0, 5,7
+        mtpreset=0
+        points=0.0000,-135.0000  0.0000,-135.0000  0.0000,135.0000  0.0000,135.0000
+        rpoints=135.0000,0.0000  135.0000,0.0000  -135.0000,-0.0000  -135.0000,-0.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=36
+        aniframe=0
+        anitype=1
+        delay=0.0000
+        pos=293.0000,153.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=1.0000,267.7500
+        angle=0.0000,0.0000,256.0000
+        color=255.0,255.0,255.0,0.0, 5,7
+        mtpreset=0
+        points=-0.5000,-133.8750  0.5000,-133.8750  0.5000,133.8750  -0.5000,133.8750
+        rpoints=133.8750,-0.5000  133.8750,0.5000  -133.8750,0.5000  -133.8750,-0.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=114
+        aniframe=0
+        anitype=1
+        delay=0.0000
+        pos=356.6938,192.1375
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=79.0000,92.2500
+        angle=0.0000,0.0000,256.0000
+        color=255.0,255.0,255.0,0.0, 5,7
+        mtpreset=0
+        points=-39.5000,-46.1250  39.5000,-46.1250  39.5000,46.1250  -39.5000,46.1250
+        rpoints=46.1250,-39.5000  46.1250,39.5000  -46.1250,39.5000  -46.1250,-39.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=115
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=357.5000,182.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=80.0000,90.0000
+        angle=0.0000,0.0000,256.0000
+        color=255.0,255.0,255.0,55.0, 5,7
+        mtpreset=0
+        points=-40.0000,-45.0000  40.0000,-45.0000  40.0000,45.0000  -40.0000,45.0000
+        rpoints=45.0000,-40.0000  45.0000,40.0000  -45.0000,40.0000  -45.0000,-40.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=145
+        aniframe=0
+        anitype=1
+        delay=0.0000
+        pos=357.5000,182.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=0.0000,270.0000
+        angle=0.0000,0.0000,256.0000
+        color=255.0,255.0,255.0,55.0, 5,7
+        mtpreset=0
+        points=0.0000,-135.0000  0.0000,-135.0000  0.0000,135.0000  0.0000,135.0000
+        rpoints=135.0000,0.0000  135.0000,0.0000  -135.0000,-0.0000  -135.0000,-0.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:Fireworks1-2
+{
+    display=1
+    group=0
+    type=0
+    texcnt=5
+    texname=Fireworks1-1.BMP
+    texname=Fireworks1-2.BMP
+    texname=Fireworks1-3.BMP
+    texname=Fireworks1-4.BMP
+    texname=Fireworks1-5.BMP
+
+    anikeynum=2
+
+    {
+        frame=115
+        aniframe=0
+        anitype=2
+        delay=6.0000
+        pos=357.0000,183.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=66.0000,79.2000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 2,6
+        mtpreset=0
+        points=-33.0000,-39.6000  33.0000,-39.6000  33.0000,39.6000  -33.0000,39.6000
+        rpoints=-33.0000,-39.6000  33.0000,-39.6000  33.0000,39.6000  -33.0000,39.6000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=145
+        aniframe=4
+        anitype=2
+        delay=0.0000
+        pos=357.0000,183.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=66.0000,79.2000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,0.0, 2,6
+        mtpreset=0
+        points=-33.0000,-39.6000  33.0000,-39.6000  33.0000,39.6000  -33.0000,39.6000
+        rpoints=-33.0000,-39.6000  33.0000,-39.6000  33.0000,39.6000  -33.0000,39.6000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:Fireworks1-2
+{
+    display=0
+    group=0
+    type=0
+    texcnt=5
+    texname=Fireworks1-1.BMP
+    texname=Fireworks1-2.BMP
+    texname=Fireworks1-3.BMP
+    texname=Fireworks1-4.BMP
+    texname=Fireworks1-5.BMP
+
+    anikeynum=2
+
+    {
+        frame=5
+        aniframe=0
+        anitype=2
+        delay=6.0000
+        pos=294.0000,165.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=110.0000,132.0000
+        angle=0.0000,0.0000,96.7111
+        color=255.0,255.0,255.0,255.0, 2,6
+        mtpreset=0
+        points=-55.0000,-66.0000  55.0000,-66.0000  55.0000,66.0000  -55.0000,66.0000
+        rpoints=-8.6903,-85.4721  82.5038,-23.9609  8.6903,85.4721  -82.5038,23.9609
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=30
+        aniframe=4
+        anitype=2
+        delay=0.0000
+        pos=294.0000,165.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=110.0000,132.0000
+        angle=0.0000,0.0000,96.7111
+        color=255.0,255.0,255.0,0.0, 2,6
+        mtpreset=0
+        points=-55.0000,-66.0000  55.0000,-66.0000  55.0000,66.0000  -55.0000,66.0000
+        rpoints=-8.6903,-85.4721  82.5038,-23.9609  8.6903,85.4721  -82.5038,23.9609
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:ring_b
+{
+    display=1
+    group=0
+    type=0
+    texcnt=1
+    texname=ring_b.bmp
+
+    anikeynum=2
+
+    {
+        frame=10
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=294.0000,155.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=38.4000,38.4000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,128.0,64.0,100.0, 5,7
+        mtpreset=0
+        points=-19.2000,-19.2000  19.2000,-19.2000  -19.2000,19.2000  19.2000,19.2000
+        rpoints=-19.2000,-19.2000  19.2000,-19.2000  -19.2000,19.2000  19.2000,19.2000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=40
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=294.0000,155.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=128.0000,128.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,0.0, 5,7
+        mtpreset=0
+        points=-64.0000,-64.0000  64.0000,-64.0000  64.0000,64.0000  -64.0000,64.0000
+        rpoints=-64.0000,-64.0000  64.0000,-64.0000  64.0000,64.0000  -64.0000,64.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:ring_b
+{
+    display=1
+    group=0
+    type=0
+    texcnt=1
+    texname=ring_b.bmp
+
+    anikeynum=2
+
+    {
+        frame=25
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=356.0000,156.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=38.4000,38.4000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,128.0,64.0,100.0, 5,7
+        mtpreset=0
+        points=-19.2000,-19.2000  19.2000,-19.2000  -19.2000,19.2000  19.2000,19.2000
+        rpoints=-19.2000,-19.2000  19.2000,-19.2000  -19.2000,19.2000  19.2000,19.2000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=55
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=356.0000,156.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=76.8000,76.8000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,0.0, 5,7
+        mtpreset=0
+        points=-38.4000,-38.4000  38.4000,-38.4000  38.4000,38.4000  -38.4000,38.4000
+        rpoints=-38.4000,-38.4000  38.4000,-38.4000  38.4000,38.4000  -38.4000,38.4000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:pokjuk_b
+{
+    display=0
+    group=0
+    type=0
+    texcnt=1
+    texname=pokjuk_b.bmp
+
+    anikeynum=2
+
+    {
+        frame=20
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=295.5000,165.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=0.0000,0.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,155.0, 5,7
+        mtpreset=0
+        points=0.0000,0.0000  0.0000,0.0000  0.0000,0.0000  0.0000,0.0000
+        rpoints=0.0000,0.0000  0.0000,0.0000  0.0000,0.0000  0.0000,0.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=45
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=295.5000,165.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=128.0000,128.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,0.0, 5,7
+        mtpreset=0
+        points=-64.0000,-64.0000  64.0000,-64.0000  64.0000,64.0000  -64.0000,64.0000
+        rpoints=-64.0000,-64.0000  64.0000,-64.0000  64.0000,64.0000  -64.0000,64.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:Fireworks2-8
+{
+    display=1
+    group=0
+    type=0
+    texcnt=13
+    texname=Fireworks2-1.BMP
+    texname=Fireworks2-2.BMP
+    texname=Fireworks2-3.BMP
+    texname=Fireworks2-4.BMP
+    texname=Fireworks2-5.BMP
+    texname=Fireworks2-6.BMP
+    texname=Fireworks2-7.BMP
+    texname=Fireworks2-8.BMP
+    texname=Fireworks2-9.BMP
+    texname=Fireworks2-10.BMP
+    texname=Fireworks2-11.BMP
+    texname=Fireworks2-12.BMP
+    texname=Fireworks2-13.BMP
+
+    anikeynum=2
+
+    {
+        frame=15
+        aniframe=0
+        anitype=2
+        delay=5.0000
+        pos=356.0000,163.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=52.0000,73.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 2,2
+        mtpreset=0
+        points=-26.0000,-36.5000  26.0000,-36.5000  26.0000,36.5000  -26.0000,36.5000
+        rpoints=-26.0000,-36.5000  26.0000,-36.5000  26.0000,36.5000  -26.0000,36.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=85
+        aniframe=12
+        anitype=0
+        delay=0.0000
+        pos=356.0000,163.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=52.0000,73.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 2,2
+        mtpreset=0
+        points=-26.0000,-36.5000  26.0000,-36.5000  26.0000,36.5000  -26.0000,36.5000
+        rpoints=-26.0000,-36.5000  26.0000,-36.5000  26.0000,36.5000  -26.0000,36.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:128-6
+{
+    display=1
+    group=0
+    type=0
+    texcnt=1
+    texname=128-6.bmp
+
+    anikeynum=2
+
+    {
+        frame=15
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=358.5000,155.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=0.0000,0.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,7
+        mtpreset=0
+        points=0.0000,0.0000  0.0000,0.0000  0.0000,0.0000  0.0000,0.0000
+        rpoints=0.0000,0.0000  0.0000,0.0000  0.0000,0.0000  0.0000,0.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=50
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=358.5000,155.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=128.0000,128.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,0.0, 5,7
+        mtpreset=0
+        points=-64.0000,-64.0000  64.0000,-64.0000  64.0000,64.0000  -64.0000,64.0000
+        rpoints=-64.0000,-64.0000  64.0000,-64.0000  64.0000,64.0000  -64.0000,64.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:Fireworks3-1
+{
+    display=1
+    group=0
+    type=0
+    texcnt=8
+    texname=Fireworks3-5.BMP
+    texname=Fireworks3-6.BMP
+    texname=Fireworks3-7.BMP
+    texname=Fireworks3-8.BMP
+    texname=Fireworks3-9.BMP
+    texname=Fireworks3-10.BMP
+    texname=Fireworks3-11.BMP
+    texname=Fireworks3-12.BMP
+
+    anikeynum=2
+
+    {
+        frame=70
+        aniframe=0
+        anitype=2
+        delay=5.0000
+        pos=319.5000,132.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=88.5000,130.5000
+        angle=0.0000,0.0000,128.0000
+        color=255.0,255.0,255.0,255.0, 2,2
+        mtpreset=0
+        points=-44.2500,-65.2500  44.2500,-65.2500  44.2500,65.2500  -44.2500,65.2500
+        rpoints=14.8492,-77.4282  77.4282,-14.8492  -14.8492,77.4282  -77.4282,14.8492
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=105
+        aniframe=7
+        anitype=2
+        delay=5.0000
+        pos=319.5000,132.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=88.5000,130.5000
+        angle=0.0000,0.0000,128.0000
+        color=255.0,255.0,255.0,255.0, 2,2
+        mtpreset=0
+        points=-44.2500,-65.2500  44.2500,-65.2500  44.2500,65.2500  -44.2500,65.2500
+        rpoints=14.8492,-77.4282  77.4282,-14.8492  -14.8492,77.4282  -77.4282,14.8492
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:Fireworks3-1
+{
+    display=1
+    group=0
+    type=0
+    texcnt=12
+    texname=Fireworks3-1.BMP
+    texname=Fireworks3-2.BMP
+    texname=Fireworks3-3.BMP
+    texname=Fireworks3-4.BMP
+    texname=Fireworks3-5.BMP
+    texname=Fireworks3-6.BMP
+    texname=Fireworks3-7.BMP
+    texname=Fireworks3-8.BMP
+    texname=Fireworks3-9.BMP
+    texname=Fireworks3-10.BMP
+    texname=Fireworks3-11.BMP
+    texname=Fireworks3-12.BMP
+
+    anikeynum=2
+
+    {
+        frame=40
+        aniframe=0
+        anitype=2
+        delay=5.0000
+        pos=327.5000,143.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=59.0000,87.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 2,2
+        mtpreset=0
+        points=-29.5000,-43.5000  29.5000,-43.5000  29.5000,43.5000  -29.5000,43.5000
+        rpoints=-29.5000,-43.5000  29.5000,-43.5000  29.5000,43.5000  -29.5000,43.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=105
+        aniframe=11
+        anitype=2
+        delay=5.0000
+        pos=327.5000,143.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=59.0000,87.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 2,2
+        mtpreset=0
+        points=-29.5000,-43.5000  29.5000,-43.5000  29.5000,43.5000  -29.5000,43.5000
+        rpoints=-29.5000,-43.5000  29.5000,-43.5000  29.5000,43.5000  -29.5000,43.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:Fireworks4-13
+{
+    display=1
+    group=0
+    type=0
+    texcnt=13
+    texname=Fireworks4-13.BMP
+    texname=Fireworks4-1.BMP
+    texname=Fireworks4-2.BMP
+    texname=Fireworks4-3.BMP
+    texname=Fireworks4-4.BMP
+    texname=Fireworks4-5.BMP
+    texname=Fireworks4-6.BMP
+    texname=Fireworks4-7.BMP
+    texname=Fireworks4-8.BMP
+    texname=Fireworks4-9.BMP
+    texname=Fireworks4-10.BMP
+    texname=Fireworks4-11.BMP
+    texname=Fireworks4-12.BMP
+
+    anikeynum=3
+
+    {
+        frame=80
+        aniframe=0
+        anitype=2
+        delay=5.0000
+        pos=286.0000,178.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=51.0000,62.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 2,2
+        mtpreset=0
+        points=-25.5000,-31.0000  25.5000,-31.0000  25.5000,31.0000  -25.5000,31.0000
+        rpoints=-25.5000,-31.0000  25.5000,-31.0000  25.5000,31.0000  -25.5000,31.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=140
+        aniframe=12
+        anitype=2
+        delay=0.0000
+        pos=286.0000,178.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=51.0000,62.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 2,2
+        mtpreset=0
+        points=-25.5000,-31.0000  25.5000,-31.0000  25.5000,31.0000  -25.5000,31.0000
+        rpoints=-25.5000,-31.0000  25.5000,-31.0000  25.5000,31.0000  -25.5000,31.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=145
+        aniframe=12
+        anitype=2
+        delay=5.0000
+        pos=286.0000,178.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=51.0000,62.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,0.0, 2,2
+        mtpreset=0
+        points=-25.5000,-31.0000  25.5000,-31.0000  25.5000,31.0000  -25.5000,31.0000
+        rpoints=-25.5000,-31.0000  25.5000,-31.0000  25.5000,31.0000  -25.5000,31.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:Fireworks5-6
+{
+    display=1
+    group=0
+    type=0
+    texcnt=12
+    texname=Fireworks5-1.BMP
+    texname=Fireworks5-2.BMP
+    texname=Fireworks5-3.BMP
+    texname=Fireworks5-4.BMP
+    texname=Fireworks5-5.BMP
+    texname=Fireworks5-6.BMP
+    texname=Fireworks5-7.BMP
+    texname=Fireworks5-8.BMP
+    texname=Fireworks5-9.BMP
+    texname=Fireworks5-10.BMP
+    texname=Fireworks5-11.BMP
+    texname=Fireworks5-12.BMP
+
+    anikeynum=2
+
+    {
+        frame=70
+        aniframe=0
+        anitype=2
+        delay=5.0000
+        pos=285.5000,131.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=55.0000,55.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 2,2
+        mtpreset=0
+        points=-27.5000,-27.5000  27.5000,-27.5000  27.5000,27.5000  -27.5000,27.5000
+        rpoints=-27.5000,-27.5000  27.5000,-27.5000  27.5000,27.5000  -27.5000,27.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=130
+        aniframe=11
+        anitype=0
+        delay=0.0000
+        pos=285.5000,131.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=55.0000,55.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 2,3
+        mtpreset=0
+        points=-27.5000,-27.5000  27.5000,-27.5000  27.5000,27.5000  -27.5000,27.5000
+        rpoints=-27.5000,-27.5000  27.5000,-27.5000  27.5000,27.5000  -27.5000,27.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+

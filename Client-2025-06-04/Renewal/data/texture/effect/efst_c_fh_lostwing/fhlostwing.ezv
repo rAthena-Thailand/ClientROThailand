@@ -1,0 +1,1965 @@
+EVFF0.95
+
+fps=60
+
+maxkey=125
+
+layernum=25
+
+layer:Back
+{
+    display=1
+    group=0
+    type=1
+    texcnt=0
+
+    anikeynum=0
+
+}
+
+layer:bback_2
+{
+    display=0
+    group=0
+    type=0
+    texcnt=1
+    texname=bback_2.bmp
+
+    anikeynum=2
+
+    {
+        frame=0
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=320.0000,240.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=800.0000,600.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,7
+        mtpreset=0
+        points=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        rpoints=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=125
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=320.0000,240.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=800.0000,600.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,7
+        mtpreset=0
+        points=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        rpoints=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostwingaaa
+{
+    display=0
+    group=0
+    type=0
+    texcnt=1
+    texname=lostwingaaa.BMP
+
+    anikeynum=2
+
+    {
+        frame=0
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=320.0000,208.8235
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=100.0000,134.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-50.0000,-67.0000  50.0000,-67.0000  50.0000,67.0000  -50.0000,67.0000
+        rpoints=-50.0000,-67.0000  50.0000,-67.0000  50.0000,67.0000  -50.0000,67.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=125
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=320.0000,208.8235
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=100.0000,134.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-50.0000,-67.0000  50.0000,-67.0000  50.0000,67.0000  -50.0000,67.0000
+        rpoints=-50.0000,-67.0000  50.0000,-67.0000  50.0000,67.0000  -50.0000,67.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:freeze_a
+{
+    display=0
+    group=0
+    type=0
+    texcnt=1
+    texname=freeze_a.bmp
+
+    anikeynum=3
+
+    {
+        frame=5
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=320.0000,222.9412
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=102.4000,102.4000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,0.0, 5,7
+        mtpreset=0
+        points=-51.2000,-51.2000  51.2000,-51.2000  51.2000,51.2000  -51.2000,51.2000
+        rpoints=-51.2000,-51.2000  51.2000,-51.2000  51.2000,51.2000  -51.2000,51.2000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=50
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=318.1315,214.5329
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=102.4000,102.4000
+        angle=0.0000,0.0000,0.0000
+        color=0.0,128.0,192.0,120.0, 5,7
+        mtpreset=0
+        points=-78.3059,-78.3059  78.3059,-78.3059  78.3059,78.3059  -78.3059,78.3059
+        rpoints=-78.3059,-78.3059  78.3059,-78.3059  78.3059,78.3059  -78.3059,78.3059
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=90
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=316.4706,207.0589
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=204.8000,204.8000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,0.0, 5,7
+        mtpreset=0
+        points=-102.4000,-102.4000  102.4000,-102.4000  102.4000,102.4000  -102.4000,102.4000
+        rpoints=-102.4000,-102.4000  102.4000,-102.4000  102.4000,102.4000  -102.4000,102.4000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostwi08
+{
+    display=1
+    group=0
+    type=0
+    texcnt=8
+    texname=lostwi01.TGA
+    texname=lostwi02.TGA
+    texname=lostwi03.TGA
+    texname=lostwi04.TGA
+    texname=lostwi05.TGA
+    texname=lostwi06.TGA
+    texname=lostwi07.TGA
+    texname=lostwi08.TGA
+
+    anikeynum=2
+
+    {
+        frame=25
+        aniframe=0
+        anitype=2
+        delay=6.0000
+        pos=325.8824,225.8824
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=144.0000,86.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,200.0, 5,6
+        mtpreset=0
+        points=-72.0000,-43.0000  72.0000,-43.0000  72.0000,43.0000  -72.0000,43.0000
+        rpoints=-72.0000,-43.0000  72.0000,-43.0000  72.0000,43.0000  -72.0000,43.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=74
+        aniframe=7
+        anitype=2
+        delay=0.0000
+        pos=325.8824,225.8824
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=144.0000,86.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,100.0, 5,6
+        mtpreset=0
+        points=-72.0000,-43.0000  72.0000,-43.0000  72.0000,43.0000  -72.0000,43.0000
+        rpoints=-72.0000,-43.0000  72.0000,-43.0000  72.0000,43.0000  -72.0000,43.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostwi08
+{
+    display=1
+    group=0
+    type=0
+    texcnt=8
+    texname=lostwi01.TGA
+    texname=lostwi02.TGA
+    texname=lostwi03.TGA
+    texname=lostwi04.TGA
+    texname=lostwi05.TGA
+    texname=lostwi06.TGA
+    texname=lostwi07.TGA
+    texname=lostwi08.TGA
+
+    anikeynum=2
+
+    {
+        frame=65
+        aniframe=0
+        anitype=2
+        delay=6.0000
+        pos=319.4117,182.3530
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=108.0000,64.5000
+        angle=0.0000,0.0000,0.0000
+        color=0.0,255.0,0.0,200.0, 5,6
+        mtpreset=0
+        points=54.0000,-32.2500  -54.0000,-32.2500  -54.0000,32.2500  54.0000,32.2500
+        rpoints=54.0000,-32.2500  -54.0000,-32.2500  -54.0000,32.2500  54.0000,32.2500
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=114
+        aniframe=7
+        anitype=2
+        delay=0.0000
+        pos=319.4117,182.3530
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=108.0000,64.5000
+        angle=0.0000,0.0000,0.0000
+        color=0.0,128.0,255.0,100.0, 5,6
+        mtpreset=0
+        points=54.0000,-32.2500  -54.0000,-32.2500  -54.0000,32.2500  54.0000,32.2500
+        rpoints=54.0000,-32.2500  -54.0000,-32.2500  -54.0000,32.2500  54.0000,32.2500
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:2lostwin01
+{
+    display=1
+    group=0
+    type=0
+    texcnt=9
+    texname=2lostwin01.TGA
+    texname=2lostwin02.TGA
+    texname=2lostwin03.TGA
+    texname=2lostwin04.TGA
+    texname=2lostwin05.TGA
+    texname=2lostwin06.TGA
+    texname=2lostwin07.TGA
+    texname=2lostwin08.TGA
+    texname=2lostwin09.TGA
+
+    anikeynum=4
+
+    {
+        frame=5
+        aniframe=0
+        anitype=2
+        delay=6.0000
+        pos=298.2353,205.2941
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=42.8000,87.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-21.4000,-43.5000  21.4000,-43.5000  21.4000,43.5000  -21.4000,43.5000
+        rpoints=-21.4000,-43.5000  21.4000,-43.5000  21.4000,43.5000  -21.4000,43.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=60
+        aniframe=8
+        anitype=0
+        delay=6.0000
+        pos=298.2353,205.2941
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=42.8000,87.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-21.4000,-43.5000  21.4000,-43.5000  21.4000,43.5000  -21.4000,43.5000
+        rpoints=-21.4000,-43.5000  21.4000,-43.5000  21.4000,43.5000  -21.4000,43.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=70
+        aniframe=0
+        anitype=2
+        delay=6.0000
+        pos=298.2353,205.2941
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=42.8000,87.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-21.4000,-43.5000  21.4000,-43.5000  21.4000,43.5000  -21.4000,43.5000
+        rpoints=-21.4000,-43.5000  21.4000,-43.5000  21.4000,43.5000  -21.4000,43.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=125
+        aniframe=8
+        anitype=0
+        delay=6.0000
+        pos=298.2353,205.2941
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=42.8000,87.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,100.0, 5,6
+        mtpreset=0
+        points=-21.4000,-43.5000  21.4000,-43.5000  21.4000,43.5000  -21.4000,43.5000
+        rpoints=-21.4000,-43.5000  21.4000,-43.5000  21.4000,43.5000  -21.4000,43.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:2lostwin01
+{
+    display=1
+    group=0
+    type=0
+    texcnt=9
+    texname=2lostwin01.TGA
+    texname=2lostwin02.TGA
+    texname=2lostwin03.TGA
+    texname=2lostwin04.TGA
+    texname=2lostwin05.TGA
+    texname=2lostwin06.TGA
+    texname=2lostwin07.TGA
+    texname=2lostwin08.TGA
+    texname=2lostwin09.TGA
+
+    anikeynum=2
+
+    {
+        frame=5
+        aniframe=0
+        anitype=2
+        delay=6.0000
+        pos=356.4706,190.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=42.8000,87.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=21.4000,-43.5000  -21.4000,-43.5000  -21.4000,43.5000  21.4000,43.5000
+        rpoints=21.4000,-43.5000  -21.4000,-43.5000  -21.4000,43.5000  21.4000,43.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=60
+        aniframe=8
+        anitype=0
+        delay=6.0000
+        pos=356.4706,190.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=42.8000,87.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,100.0, 5,6
+        mtpreset=0
+        points=21.4000,-43.5000  -21.4000,-43.5000  -21.4000,43.5000  21.4000,43.5000
+        rpoints=21.4000,-43.5000  -21.4000,-43.5000  -21.4000,43.5000  21.4000,43.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:2lostwin01
+{
+    display=1
+    group=0
+    type=0
+    texcnt=9
+    texname=2lostwin01.TGA
+    texname=2lostwin02.TGA
+    texname=2lostwin03.TGA
+    texname=2lostwin04.TGA
+    texname=2lostwin05.TGA
+    texname=2lostwin06.TGA
+    texname=2lostwin07.TGA
+    texname=2lostwin08.TGA
+    texname=2lostwin09.TGA
+
+    anikeynum=2
+
+    {
+        frame=25
+        aniframe=0
+        anitype=2
+        delay=5.0000
+        pos=351.7647,202.3529
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=38.5200,78.3000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=19.2600,-39.1500  -19.2600,-39.1500  -19.2600,39.1500  19.2600,39.1500
+        rpoints=19.2600,-39.1500  -19.2600,-39.1500  -19.2600,39.1500  19.2600,39.1500
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=75
+        aniframe=8
+        anitype=0
+        delay=6.0000
+        pos=351.7647,202.3529
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=38.5200,78.3000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,100.0, 5,6
+        mtpreset=0
+        points=19.2600,-39.1500  -19.2600,-39.1500  -19.2600,39.1500  19.2600,39.1500
+        rpoints=19.2600,-39.1500  -19.2600,-39.1500  -19.2600,39.1500  19.2600,39.1500
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostsp01
+{
+    display=1
+    group=0
+    type=0
+    texcnt=9
+    texname=lostsp01.TGA
+    texname=lostsp02.TGA
+    texname=lostsp03.TGA
+    texname=lostsp04.TGA
+    texname=lostsp05.TGA
+    texname=lostsp06.TGA
+    texname=lostsp07.TGA
+    texname=lostsp08.TGA
+    texname=lostsp09.TGA
+
+    anikeynum=3
+
+    {
+        frame=25
+        aniframe=0
+        anitype=2
+        delay=6.0000
+        pos=334.7059,221.1765
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=58.8000,65.4000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,100.0, 5,6
+        mtpreset=0
+        points=-29.4000,-32.7000  29.4000,-32.7000  29.4000,32.7000  -29.4000,32.7000
+        rpoints=-29.4000,-32.7000  29.4000,-32.7000  29.4000,32.7000  -29.4000,32.7000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=50
+        aniframe=4
+        anitype=2
+        delay=6.0000
+        pos=334.4118,219.1177
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=41.1600,45.7800
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,200.0, 5,6
+        mtpreset=0
+        points=-24.9900,-27.7950  24.9900,-27.7950  24.9900,27.7950  -24.9900,27.7950
+        rpoints=-24.9900,-27.7950  24.9900,-27.7950  24.9900,27.7950  -24.9900,27.7950
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=75
+        aniframe=8
+        anitype=0
+        delay=0.0000
+        pos=334.4118,219.1177
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=41.1600,45.7800
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,100.0, 5,6
+        mtpreset=0
+        points=-20.5800,-22.8900  20.5800,-22.8900  20.5800,22.8900  -20.5800,22.8900
+        rpoints=-20.5800,-22.8900  20.5800,-22.8900  20.5800,22.8900  -20.5800,22.8900
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostw01
+{
+    display=1
+    group=0
+    type=0
+    texcnt=10
+    texname=lostw01.TGA
+    texname=lostw02.TGA
+    texname=lostw03.TGA
+    texname=lostw04.TGA
+    texname=lostw05.TGA
+    texname=lostw06.TGA
+    texname=lostw07.TGA
+    texname=lostw08.TGA
+    texname=lostw09.TGA
+    texname=lostw10.TGA
+
+    anikeynum=2
+
+    {
+        frame=40
+        aniframe=0
+        anitype=2
+        delay=6.0000
+        pos=305.8824,198.8235
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=43.2000,87.1500
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-21.6000,-43.5750  21.6000,-43.5750  21.6000,43.5750  -21.6000,43.5750
+        rpoints=-21.6000,-43.5750  21.6000,-43.5750  21.6000,43.5750  -21.6000,43.5750
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=97
+        aniframe=9
+        anitype=0
+        delay=0.0000
+        pos=305.8824,198.8235
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=43.2000,87.1500
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,100.0, 5,6
+        mtpreset=0
+        points=-21.6000,-43.5750  21.6000,-43.5750  21.6000,43.5750  -21.6000,43.5750
+        rpoints=-21.6000,-43.5750  21.6000,-43.5750  21.6000,43.5750  -21.6000,43.5750
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostw01
+{
+    display=1
+    group=0
+    type=0
+    texcnt=10
+    texname=lostw01.TGA
+    texname=lostw02.TGA
+    texname=lostw03.TGA
+    texname=lostw04.TGA
+    texname=lostw05.TGA
+    texname=lostw06.TGA
+    texname=lostw07.TGA
+    texname=lostw08.TGA
+    texname=lostw09.TGA
+    texname=lostw10.TGA
+
+    anikeynum=2
+
+    {
+        frame=65
+        aniframe=0
+        anitype=2
+        delay=6.0000
+        pos=322.9412,212.9412
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=46.0800,92.9600
+        angle=0.0000,0.0000,256.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=23.0400,46.4800  -23.0400,46.4800  -23.0400,-46.4800  23.0400,-46.4800
+        rpoints=-46.4800,23.0400  -46.4800,-23.0400  46.4800,-23.0400  46.4800,23.0400
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=117
+        aniframe=9
+        anitype=0
+        delay=0.0000
+        pos=322.9412,212.9412
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=46.0800,92.9600
+        angle=0.0000,0.0000,256.0000
+        color=255.0,255.0,255.0,100.0, 5,6
+        mtpreset=0
+        points=23.0400,46.4800  -23.0400,46.4800  -23.0400,-46.4800  23.0400,-46.4800
+        rpoints=-46.4800,23.0400  -46.4800,-23.0400  46.4800,-23.0400  46.4800,23.0400
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostwin01
+{
+    display=1
+    group=0
+    type=0
+    texcnt=8
+    texname=lostwin01.TGA
+    texname=lostwin02.TGA
+    texname=lostwin03.TGA
+    texname=lostwin04.TGA
+    texname=lostwin05.TGA
+    texname=lostwin06.TGA
+    texname=lostwin07.TGA
+    texname=lostwin08.TGA
+
+    anikeynum=2
+
+    {
+        frame=5
+        aniframe=0
+        anitype=2
+        delay=6.0000
+        pos=303.5294,184.7059
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=40.0000,58.2000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-20.0000,-29.1000  20.0000,-29.1000  20.0000,29.1000  -20.0000,29.1000
+        rpoints=-20.0000,-29.1000  20.0000,-29.1000  20.0000,29.1000  -20.0000,29.1000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=55
+        aniframe=7
+        anitype=0
+        delay=0.0000
+        pos=303.5294,184.7059
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=40.0000,58.2000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,100.0, 5,6
+        mtpreset=0
+        points=-20.0000,-29.1000  20.0000,-29.1000  20.0000,29.1000  -20.0000,29.1000
+        rpoints=-20.0000,-29.1000  20.0000,-29.1000  20.0000,29.1000  -20.0000,29.1000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostwin01
+{
+    display=1
+    group=0
+    type=0
+    texcnt=8
+    texname=lostwin01.TGA
+    texname=lostwin02.TGA
+    texname=lostwin03.TGA
+    texname=lostwin04.TGA
+    texname=lostwin05.TGA
+    texname=lostwin06.TGA
+    texname=lostwin07.TGA
+    texname=lostwin08.TGA
+
+    anikeynum=2
+
+    {
+        frame=55
+        aniframe=0
+        anitype=2
+        delay=6.0000
+        pos=346.4706,219.4118
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=40.0000,58.2000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-20.0000,-29.1000  20.0000,-29.1000  20.0000,29.1000  -20.0000,29.1000
+        rpoints=-20.0000,-29.1000  20.0000,-29.1000  20.0000,29.1000  -20.0000,29.1000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=105
+        aniframe=7
+        anitype=0
+        delay=0.0000
+        pos=346.4706,219.4118
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=40.0000,58.2000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,100.0, 5,6
+        mtpreset=0
+        points=-20.0000,-29.1000  20.0000,-29.1000  20.0000,29.1000  -20.0000,29.1000
+        rpoints=-20.0000,-29.1000  20.0000,-29.1000  20.0000,29.1000  -20.0000,29.1000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostwin01
+{
+    display=1
+    group=0
+    type=0
+    texcnt=8
+    texname=lostwin01.TGA
+    texname=lostwin02.TGA
+    texname=lostwin03.TGA
+    texname=lostwin04.TGA
+    texname=lostwin05.TGA
+    texname=lostwin06.TGA
+    texname=lostwin07.TGA
+    texname=lostwin08.TGA
+
+    anikeynum=2
+
+    {
+        frame=75
+        aniframe=0
+        anitype=2
+        delay=6.0000
+        pos=285.8823,208.8235
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=40.0000,58.2000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=20.0000,-29.1000  -20.0000,-29.1000  -20.0000,29.1000  20.0000,29.1000
+        rpoints=20.0000,-29.1000  -20.0000,-29.1000  -20.0000,29.1000  20.0000,29.1000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=125
+        aniframe=7
+        anitype=0
+        delay=0.0000
+        pos=285.8823,208.8235
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=40.0000,58.2000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,100.0, 5,6
+        mtpreset=0
+        points=20.0000,-29.1000  -20.0000,-29.1000  -20.0000,29.1000  20.0000,29.1000
+        rpoints=20.0000,-29.1000  -20.0000,-29.1000  -20.0000,29.1000  20.0000,29.1000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostw06
+{
+    display=1
+    group=0
+    type=0
+    texcnt=6
+    texname=lostw05.TGA
+    texname=lostw06.TGA
+    texname=lostw07.TGA
+    texname=lostw08.TGA
+    texname=lostw09.TGA
+    texname=lostw10.TGA
+
+    anikeynum=2
+
+    {
+        frame=80
+        aniframe=0
+        anitype=2
+        delay=6.0000
+        pos=296.4706,217.0588
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=40.3200,81.3400
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-20.1600,-40.6700  20.1600,-40.6700  20.1600,40.6700  -20.1600,40.6700
+        rpoints=-20.1600,-40.6700  20.1600,-40.6700  20.1600,40.6700  -20.1600,40.6700
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=115
+        aniframe=5
+        anitype=0
+        delay=0.0000
+        pos=296.4706,217.0588
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=40.3200,81.3400
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,100.0, 5,6
+        mtpreset=0
+        points=-20.1600,-40.6700  20.1600,-40.6700  20.1600,40.6700  -20.1600,40.6700
+        rpoints=-20.1600,-40.6700  20.1600,-40.6700  20.1600,40.6700  -20.1600,40.6700
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lord_blast_e_small
+{
+    display=0
+    group=0
+    type=0
+    texcnt=1
+    texname=lord_blast_e_small.bmp
+
+    anikeynum=2
+
+    {
+        frame=40
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=325.8823,244.1176
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=12.8000,12.8000
+        angle=0.0000,0.0000,0.0000
+        color=0.0,0.0,160.0,255.0, 5,7
+        mtpreset=0
+        points=1.2471,-13.4588  14.0471,-13.4588  14.0471,-0.6588  1.2471,-0.6588
+        rpoints=1.2471,-13.4588  14.0471,-13.4588  14.0471,-0.6588  1.2471,-0.6588
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=105
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=317.0588,255.8823
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=76.8000,76.8000
+        angle=0.0000,0.0000,0.0000
+        color=0.0,0.0,160.0,0.0, 5,7
+        mtpreset=0
+        points=-6.0471,-70.7529  70.7529,-70.7529  70.7529,6.0471  -6.0471,6.0471
+        rpoints=-6.0471,-70.7529  70.7529,-70.7529  70.7529,6.0471  -6.0471,6.0471
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:pokjuk_c
+{
+    display=0
+    group=0
+    type=0
+    texcnt=1
+    texname=pokjuk_c.bmp
+
+    anikeynum=2
+
+    {
+        frame=5
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=326.4706,239.4118
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=89.6000,25.6000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,155.0, 5,7
+        mtpreset=0
+        points=-44.8000,-12.8000  44.8000,-12.8000  44.8000,12.8000  -44.8000,12.8000
+        rpoints=-44.8000,-12.8000  44.8000,-12.8000  44.8000,12.8000  -44.8000,12.8000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=95
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=324.1176,192.3530
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=89.6000,128.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,0.0, 5,7
+        mtpreset=0
+        points=-44.8000,-64.0000  44.8000,-64.0000  44.8000,64.0000  -44.8000,64.0000
+        rpoints=-44.8000,-64.0000  44.8000,-64.0000  44.8000,64.0000  -44.8000,64.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostb08
+{
+    display=1
+    group=0
+    type=0
+    texcnt=10
+    texname=lostb01.TGA
+    texname=lostb02.TGA
+    texname=lostb03.TGA
+    texname=lostb04.TGA
+    texname=lostb05.TGA
+    texname=lostb06.TGA
+    texname=lostb07.TGA
+    texname=lostb08.TGA
+    texname=lostb09.TGA
+    texname=lostb10.TGA
+
+    anikeynum=4
+
+    {
+        frame=0
+        aniframe=0
+        anitype=3
+        delay=9.0000
+        pos=340.5883,225.8824
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=141.6000,88.5000
+        angle=0.0000,0.0000,-28.4444
+        color=255.0,255.0,255.0,180.0, 5,6
+        mtpreset=0
+        points=-70.8000,-44.2500  70.8000,-44.2500  70.8000,44.2500  -70.8000,44.2500
+        rpoints=-77.4083,-31.2835  62.0405,-55.8720  77.4083,31.2835  -62.0405,55.8720
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=100
+        aniframe=0
+        anitype=3
+        delay=0.0000
+        pos=340.5883,225.8824
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=177.0000,109.1500
+        angle=0.0000,0.0000,-28.4444
+        color=255.0,255.0,255.0,20.0, 5,6
+        mtpreset=0
+        points=-88.5000,-54.5750  88.5000,-54.5750  88.5000,54.5750  -88.5000,54.5750
+        rpoints=-96.6323,-38.3780  77.6786,-69.1137  96.6323,38.3780  -77.6786,69.1137
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=101
+        aniframe=0
+        anitype=3
+        delay=0.0000
+        pos=340.5883,225.8824
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=141.6000,88.5000
+        angle=0.0000,0.0000,-28.4444
+        color=255.0,255.0,255.0,0.0, 5,6
+        mtpreset=0
+        points=-70.8000,-44.2500  70.8000,-44.2500  70.8000,44.2500  -70.8000,44.2500
+        rpoints=-77.4083,-31.2835  62.0405,-55.8720  77.4083,31.2835  -62.0405,55.8720
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=125
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=340.5883,225.8824
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=155.7600,88.5000
+        angle=0.0000,0.0000,-28.4444
+        color=255.0,255.0,255.0,0.0, 5,6
+        mtpreset=0
+        points=-77.8800,-44.2500  77.8800,-44.2500  77.8800,44.2500  -77.8800,44.2500
+        rpoints=-84.3808,-30.0540  69.0129,-57.1014  84.3808,30.0540  -69.0129,57.1014
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostb08
+{
+    display=1
+    group=0
+    type=0
+    texcnt=10
+    texname=lostb01.TGA
+    texname=lostb02.TGA
+    texname=lostb03.TGA
+    texname=lostb04.TGA
+    texname=lostb05.TGA
+    texname=lostb06.TGA
+    texname=lostb07.TGA
+    texname=lostb08.TGA
+    texname=lostb09.TGA
+    texname=lostb10.TGA
+
+    anikeynum=6
+
+    {
+        frame=0
+        aniframe=7
+        anitype=3
+        delay=9.0000
+        pos=340.5883,225.8824
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=141.6000,88.5000
+        angle=0.0000,0.0000,14.2222
+        color=255.0,255.0,255.0,78.0, 5,6
+        mtpreset=0
+        points=-70.8000,-44.2500  70.8000,-44.2500  70.8000,44.2500  -70.8000,44.2500
+        rpoints=-66.6740,-50.2522  74.3872,-37.9110  66.6740,50.2522  -74.3872,37.9110
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=40
+        aniframe=0
+        anitype=3
+        delay=0.0000
+        pos=340.5883,225.8824
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=141.6000,88.5000
+        angle=0.0000,0.0000,14.2222
+        color=255.0,255.0,255.0,20.0, 5,6
+        mtpreset=0
+        points=-70.8000,-44.2500  70.8000,-44.2500  70.8000,44.2500  -70.8000,44.2500
+        rpoints=-66.6740,-50.2522  74.3872,-37.9110  66.6740,50.2522  -74.3872,37.9110
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=41
+        aniframe=0
+        anitype=3
+        delay=0.0000
+        pos=340.5883,225.8824
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=141.6000,88.5000
+        angle=0.0000,0.0000,14.2222
+        color=255.0,255.0,255.0,0.0, 5,6
+        mtpreset=0
+        points=-70.8000,-44.2500  70.8000,-44.2500  70.8000,44.2500  -70.8000,44.2500
+        rpoints=-66.6740,-50.2522  74.3872,-37.9110  66.6740,50.2522  -74.3872,37.9110
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=64
+        aniframe=0
+        anitype=3
+        delay=0.0000
+        pos=340.5883,225.8824
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=141.6000,88.5000
+        angle=0.0000,0.0000,14.2222
+        color=255.0,255.0,255.0,0.0, 5,6
+        mtpreset=0
+        points=-70.8000,-44.2500  70.8000,-44.2500  70.8000,44.2500  -70.8000,44.2500
+        rpoints=-66.6740,-50.2522  74.3872,-37.9110  66.6740,50.2522  -74.3872,37.9110
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=65
+        aniframe=0
+        anitype=3
+        delay=9.0000
+        pos=340.5883,225.8824
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=141.6000,88.5000
+        angle=0.0000,0.0000,14.2222
+        color=255.0,255.0,255.0,150.0, 5,6
+        mtpreset=0
+        points=-70.8000,-44.2500  70.8000,-44.2500  70.8000,44.2500  -70.8000,44.2500
+        rpoints=-66.6740,-50.2522  74.3872,-37.9110  66.6740,50.2522  -74.3872,37.9110
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=125
+        aniframe=7
+        anitype=3
+        delay=0.0000
+        pos=340.5883,225.8824
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=141.6000,88.5000
+        angle=0.0000,0.0000,14.2222
+        color=255.0,255.0,255.0,80.0, 5,6
+        mtpreset=0
+        points=-70.8000,-44.2500  70.8000,-44.2500  70.8000,44.2500  -70.8000,44.2500
+        rpoints=-66.6740,-50.2522  74.3872,-37.9110  66.6740,50.2522  -74.3872,37.9110
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostb08
+{
+    display=1
+    group=0
+    type=0
+    texcnt=10
+    texname=lostb01.TGA
+    texname=lostb02.TGA
+    texname=lostb03.TGA
+    texname=lostb04.TGA
+    texname=lostb05.TGA
+    texname=lostb06.TGA
+    texname=lostb07.TGA
+    texname=lostb08.TGA
+    texname=lostb09.TGA
+    texname=lostb10.TGA
+
+    anikeynum=2
+
+    {
+        frame=30
+        aniframe=6
+        anitype=3
+        delay=9.0000
+        pos=304.1177,225.2941
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=141.6000,88.5000
+        angle=0.0000,0.0000,28.4444
+        color=255.0,255.0,255.0,150.0, 5,6
+        mtpreset=0
+        points=70.8000,-44.2500  -70.8000,-44.2500  -70.8000,44.2500  70.8000,44.2500
+        rpoints=77.4083,-31.2835  -62.0405,-55.8720  -77.4083,31.2835  62.0405,55.8720
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=125
+        aniframe=6
+        anitype=3
+        delay=0.0000
+        pos=304.1177,225.2941
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=177.0000,109.1500
+        angle=0.0000,0.0000,28.4444
+        color=255.0,255.0,255.0,20.0, 5,6
+        mtpreset=0
+        points=88.5000,-54.5750  -88.5000,-54.5750  -88.5000,54.5750  88.5000,54.5750
+        rpoints=96.6323,-38.3780  -77.6786,-69.1137  -96.6323,38.3780  77.6786,69.1137
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostb08
+{
+    display=0
+    group=0
+    type=0
+    texcnt=9
+    texname=lostb02.TGA
+    texname=lostb03.TGA
+    texname=lostb04.TGA
+    texname=lostb05.TGA
+    texname=lostb06.TGA
+    texname=lostb07.TGA
+    texname=lostb08.TGA
+    texname=lostb09.TGA
+    texname=lostb10.TGA
+
+    anikeynum=2
+
+    {
+        frame=20
+        aniframe=0
+        anitype=3
+        delay=8.0000
+        pos=330.5883,226.4706
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=212.4000,88.5000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,80.0, 5,6
+        mtpreset=0
+        points=-106.2000,-44.2500  106.2000,-44.2500  106.2000,44.2500  -106.2000,44.2500
+        rpoints=-106.2000,-44.2500  106.2000,-44.2500  106.2000,44.2500  -106.2000,44.2500
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=100
+        aniframe=0
+        anitype=3
+        delay=0.0000
+        pos=330.5883,226.4706
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=212.4000,88.5000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,0.0, 5,6
+        mtpreset=0
+        points=-106.2000,-44.2500  106.2000,-44.2500  106.2000,44.2500  -106.2000,44.2500
+        rpoints=-106.2000,-44.2500  106.2000,-44.2500  106.2000,44.2500  -106.2000,44.2500
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostb08
+{
+    display=0
+    group=0
+    type=0
+    texcnt=10
+    texname=lostb01.TGA
+    texname=lostb02.TGA
+    texname=lostb03.TGA
+    texname=lostb04.TGA
+    texname=lostb05.TGA
+    texname=lostb06.TGA
+    texname=lostb07.TGA
+    texname=lostb08.TGA
+    texname=lostb09.TGA
+    texname=lostb10.TGA
+
+    anikeynum=2
+
+    {
+        frame=0
+        aniframe=0
+        anitype=3
+        delay=8.0000
+        pos=324.7059,232.9412
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=141.6000,59.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,180.0, 5,6
+        mtpreset=0
+        points=-70.8000,-29.5000  70.8000,-29.5000  70.8000,29.5000  -70.8000,29.5000
+        rpoints=-70.8000,-29.5000  70.8000,-29.5000  70.8000,29.5000  -70.8000,29.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=125
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=324.7059,232.9412
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=212.4000,88.5000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,0.0, 5,6
+        mtpreset=0
+        points=-106.2000,-44.2500  106.2000,-44.2500  106.2000,44.2500  -106.2000,44.2500
+        rpoints=-106.2000,-44.2500  106.2000,-44.2500  106.2000,44.2500  -106.2000,44.2500
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostb08
+{
+    display=0
+    group=0
+    type=0
+    texcnt=10
+    texname=lostb01.TGA
+    texname=lostb02.TGA
+    texname=lostb03.TGA
+    texname=lostb04.TGA
+    texname=lostb05.TGA
+    texname=lostb06.TGA
+    texname=lostb07.TGA
+    texname=lostb08.TGA
+    texname=lostb09.TGA
+    texname=lostb10.TGA
+
+    anikeynum=2
+
+    {
+        frame=0
+        aniframe=5
+        anitype=3
+        delay=8.0000
+        pos=327.6471,232.9412
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=141.6000,59.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,180.0, 5,6
+        mtpreset=0
+        points=70.8000,-29.5000  -70.8000,-29.5000  -70.8000,29.5000  70.8000,29.5000
+        rpoints=70.8000,-29.5000  -70.8000,-29.5000  -70.8000,29.5000  70.8000,29.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=125
+        aniframe=5
+        anitype=0
+        delay=0.0000
+        pos=327.6471,232.9412
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=141.6000,59.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,0.0, 5,6
+        mtpreset=0
+        points=70.8000,-29.5000  -70.8000,-29.5000  -70.8000,29.5000  70.8000,29.5000
+        rpoints=70.8000,-29.5000  -70.8000,-29.5000  -70.8000,29.5000  70.8000,29.5000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:lostwi01
+{
+    display=1
+    group=0
+    type=0
+    texcnt=8
+    texname=lostwi01.TGA
+    texname=lostwi02.TGA
+    texname=lostwi03.TGA
+    texname=lostwi04.TGA
+    texname=lostwi05.TGA
+    texname=lostwi06.TGA
+    texname=lostwi07.TGA
+    texname=lostwi08.TGA
+
+    anikeynum=2
+
+    {
+        frame=5
+        aniframe=0
+        anitype=3
+        delay=7.0000
+        pos=333.5294,218.2353
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=144.0000,86.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-72.0000,-43.0000  72.0000,-43.0000  72.0000,43.0000  -72.0000,43.0000
+        rpoints=-72.0000,-43.0000  72.0000,-43.0000  72.0000,43.0000  -72.0000,43.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=61
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=333.5294,218.2353
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=144.0000,86.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-72.0000,-43.0000  72.0000,-43.0000  72.0000,43.0000  -72.0000,43.0000
+        rpoints=-72.0000,-43.0000  72.0000,-43.0000  72.0000,43.0000  -72.0000,43.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
