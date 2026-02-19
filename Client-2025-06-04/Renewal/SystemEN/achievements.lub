@@ -1,0 +1,5404 @@
+-- Original translation works of zackdreaver: https://github.com/zackdreaver/ROenglishRE
+-- Continuated by llchrisll at https://github.com/llchrisll/ROenglishRE
+-- This file can be distributed, used and modified freely
+-- This file shouldn't be claimed as part of your project, unless you fork it from https://github.com/llchrisll/ROenglishRE
+-- Last updated: 20231021
+
+achievement_tbl = {
+	[110000] = {
+		UI_Type = 0,
+		group = "EAT",
+		major = 4,
+		minor = 0,
+		title = "กินเวลานี้น้ำหนักไม่ขึ้นหรอก",
+		content = {
+			summary = "ตี 1 - ได้เวลาของว่างมื้อดึก",
+			details = "นำอาหารที่ Bigfoot ต้องการไปส่งให้กับผู้ที่มีมุมมองอันทะเยอทะยาน"
+		},
+		resource = { [1] = { text = "นำอาหารที่ Bigfoot ต้องการไปส่งให้กับผู้ที่มีมุมมองอันทะเยอทะยาน" } },
+		reward = {},
+		score = 10
+	},
+	[110001] = {
+		UI_Type = 0,
+		group = "SEE",
+		major = 4,
+		minor = 0,
+		title = "นี่คือแฟนคลับขั้วโลก",
+		content = {
+			summary = "แอบส่องชีวิตของเหล่าแฟนคลับขั้วโลก",
+			details = "ไปพบกับเหล่าแฟนคลับขั้วโลกทั้งหมดที่มารวมตัวกันที่ตระกูล Wigner"
+		},
+		resource = {
+			[1] = { text = "Yanggatjip Kyusu" },
+			[2] = { text = "Fine Anak" },
+			[3] = { text = "The Atmospheric Lad" },
+			[4] = { text = "ภรรยาผู้งดงาม" },
+			[5] = { text = "ชายโสดแห่งหมู่บ้านตอนล่าง" },
+			[6] = { text = "Best Anak of Action" },
+			[7] = { text = "สุดยอดชายโสดแห่งพลังการต่อสู้" }
+		},
+		reward = {},
+		score = 10
+	},
+	[120001] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Prontera ทางเหนือ (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศเหนือ"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศเหนือ" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120002] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Prontera ทางเหนือ (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศเหนือ"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศเหนือ" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120003] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Prontera ทางเหนือ (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศเหนือ"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศเหนือ" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120004] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Prontera ทางตะวันตก (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศตะวันตก"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศตะวันตก" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120005] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Prontera ทางตะวันตก (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศตะวันตก"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศตะวันตก" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120006] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Prontera ทางตะวันออก",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศตะวันออก"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศตะวันออก" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120007] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Prontera ทางใต้ (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120008] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Prontera ทางใต้ (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120009] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Prontera ทางใต้ (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120010] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Prontera ทางใต้ (4)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Prontera ทางทิศใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120011] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Geffen ทางตะวันออก",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Geffen ทางทิศตะวันออก"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Geffen ทางทิศตะวันออก" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120012] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Geffen ทางตะวันออกเฉียงใต้",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Geffen ทางทิศตะวันออกเฉียงใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Geffen ทางทิศตะวันออกเฉียงใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120013] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Geffen ทางตะวันตกเฉียงเหนือ (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Geffen ทางทิศตะวันตกเฉียงเหนือ"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Geffen ทางทิศตะวันตกเฉียงเหนือ" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120014] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Geffen ทางตะวันตกเฉียงเหนือ (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Geffen ทางทิศตะวันตกเฉียงเหนือ"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Geffen ทางทิศตะวันตกเฉียงเหนือ" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120015] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Geffen ทางตะวันตกเฉียงเหนือ (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Geffen ทางทิศตะวันตกเฉียงเหนือ"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Geffen ทางทิศตะวันตกเฉียงเหนือ" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120016] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Geffen ทางใต้ (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Geffen ทางทิศใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Geffen ทางทิศใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120017] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Geffen ทางใต้ (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Geffen ทางทิศใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Geffen ทางทิศใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120018] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้าทะเลทราย Sograt (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้าทะเลทราย Sograt"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้าทะเลทราย Sograt" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120019] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้าทะเลทราย Sograt (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้าทะเลทราย Sograt"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้าทะเลทราย Sograt" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120020] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้าทะเลทราย Sograt (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้าทะเลทราย Sograt"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้าทะเลทราย Sograt" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120021] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้าทะเลทราย Sograt (4)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้าทะเลทราย Sograt"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้าทะเลทราย Sograt" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120022] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้าทะเลทราย Sograt (5)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้าทะเลทราย Sograt"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้าทะเลทราย Sograt" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120023] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้าทะเลทราย Sograt (6)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้าทะเลทราย Sograt"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้าทะเลทราย Sograt" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120024] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Payon ทางตะวันตกเฉียงใต้ (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันตกเฉียงใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันตกเฉียงใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120025] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Payon ทางตะวันตกเฉียงใต้ (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันตกเฉียงใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันตกเฉียงใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120026] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Payon ทางตะวันตกเฉียงใต้ (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันตกเฉียงใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันตกเฉียงใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120027] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Payon ทางตะวันตกเฉียงใต้ (4)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันตกเฉียงใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันตกเฉียงใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120028] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Payon ทางตะวันออก (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันออก"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันออก" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120029] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Payon ทางตะวันออก (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันออก"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันออก" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120030] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Payon ทางตะวันออก (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันออก"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันออก" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120031] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Payon ทางตะวันออก (4)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันออก"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Payon ทางทิศตะวันออก" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120032] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Mjolnir ทางเหนือ (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศเหนือ"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศเหนือ" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120033] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Mjolnir ทางเหนือ (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศเหนือ"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศเหนือ" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120034] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Mjolnir ทางเหนือ (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศเหนือ"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศเหนือ" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120035] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Mjolnir ทางเหนือ (4)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศเหนือ"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศเหนือ" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120036] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Mjolnir ทางเหนือ (5)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศเหนือ"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศเหนือ" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120037] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Mjolnir ทางใต้ (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120038] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Mjolnir ทางใต้ (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120039] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Mjolnir ทางใต้ (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120040] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Mjolnir ทางใต้ (4)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120041] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Mjolnir ทางใต้ (5)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120042] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Mjolnir ทางใต้ (6)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Mjolnir ทางทิศใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120043] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Aldebaran ทางใต้",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Aldebaran ทางทิศใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Aldebaran ทางทิศใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120044] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Comodo (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Comodo"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Comodo" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120045] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Comodo (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Comodo"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Comodo" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120046] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Comodo (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Comodo"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Comodo" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120047] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Comodo (4)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Comodo"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Comodo" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120048] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Comodo (5)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Comodo"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Comodo" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120049] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Comodo (6)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Comodo"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Comodo" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120050] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Comodo (7)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Comodo"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Comodo" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120051] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "สำรวจทุ่งหญ้า Comodo (8)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Comodo"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Comodo" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120052] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้าด่านตรวจชายแดน (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Border Checkpoint"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Border Checkpoint" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120053] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้าด่านตรวจชายแดน (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Border Checkpoint"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Border Checkpoint" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120054] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้าคฤหาสน์ Kiel Hyre",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Kiel Hyre Mansion"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Kiel Hyre Mansion" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120055] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้าที่ราบสูง El Mes (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า El Mes Plateau"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า El Mes Plateau" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120056] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้าที่ราบสูง El Mes (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า El Mes Plateau"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า El Mes Plateau" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120057] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้าที่ราบสูง El Mes (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า El Mes Plateau"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า El Mes Plateau" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120058] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้าหุบเขา El Mes",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า El Mes Gorge"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า El Mes Gorge" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120059] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้าสถาบัน Kiel Hyre",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Kiel Hyre Academy"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Kiel Hyre Academy" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120060] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้าค่ายทหารยาม",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Guard Camp"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Guard Camp" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120061] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้า Yuno",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Yuno"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Yuno" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120062] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้าหน้าหอคอย Thanatos",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้าหน้าหอคอย Thanatos"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้าหน้าหอคอย Thanatos" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120063] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้า Hugel (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Hugel"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Hugel" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120064] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้า Hugel (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Hugel"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Hugel" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120065] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้า Hugel (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Hugel"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Hugel" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120066] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้าทะเลสาบ Abyss (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Abyss Lake"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Abyss Lake" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120067] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้า Einbroch (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Einbroch"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Einbroch" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120068] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้า Einbroch (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Einbroch"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Einbroch" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120069] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้า Einbroch (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Einbroch"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Einbroch" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120070] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้า Einbroch (4)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Einbroch"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Einbroch" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120071] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้า Einbroch (5)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Einbroch"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Einbroch" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120072] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้า Einbroch (6)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Einbroch"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Einbroch" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120073] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้า Einbroch (7)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Einbroch"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Einbroch" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120074] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้า Einbroch (8)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Einbroch"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Einbroch" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120075] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้า Lighthalzen (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Lighthalzen"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Lighthalzen" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120076] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้า Lighthalzen (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Lighthalzen"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Lighthalzen" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120077] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "สำรวจทุ่งหญ้า Lighthalzen (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Lighthalzen"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Lighthalzen" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120078] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 2,
+		title = "สำรวจทุ่งหญ้าที่ราบ Rachel Audhumbla (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Rachel Audhumbla Plains"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Rachel Audhumbla Plains" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120079] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 2,
+		title = "สำรวจทุ่งหญ้าที่ราบ Rachel (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Rachel Plains"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Rachel Plains" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120080] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 2,
+		title = "สำรวจทุ่งหญ้าที่ราบ Rachel (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Rachel Plains"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Rachel Plains" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120081] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 2,
+		title = "สำรวจทุ่งหญ้าที่ราบ Rachel (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Rachel Plains"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Rachel Plains" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120082] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 2,
+		title = "สำรวจทุ่งหญ้า Rachel Audhumbla Grassland (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Rachel Audhumbla Grassland"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Rachel Audhumbla Grassland" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120083] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 2,
+		title = "สำรวจทุ่งหญ้า Rachel Audhumbla Grassland (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Rachel Audhumbla Grassland"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Rachel Audhumbla Grassland" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120084] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 2,
+		title = "สำรวจทุ่งหญ้า Portus Luna",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Portus Luna"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Portus Luna" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120085] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 2,
+		title = "สำรวจทุ่งหญ้า Veins (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Veins"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Veins" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120086] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 2,
+		title = "สำรวจทุ่งหญ้า Veins (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Veins"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Veins" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120087] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 2,
+		title = "สำรวจทุ่งหญ้า Veins (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Veins"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Veins" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120088] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 2,
+		title = "สำรวจทุ่งหญ้า Veins (4)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Veins"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Veins" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120089] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 2,
+		title = "สำรวจทุ่งหญ้า Veins (5)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Veins"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Veins" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120090] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 3,
+		title = "สำรวจทุ่งหญ้า Eclage",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Eclage"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Eclage" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120091] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 3,
+		title = "สำรวจทุ่งหญ้า Bitfrost ทางเหนือ (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Bifrost ทางทิศเหนือ"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Bifrost ทางทิศเหนือ" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120092] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 3,
+		title = "สำรวจทุ่งหญ้า Bitfrost ทางใต้ (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Bifrost ทางทิศใต้"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Bifrost ทางทิศใต้" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120093] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 3,
+		title = "สำรวจทุ่งหญ้า Splendide (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Splendide"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Splendide" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120094] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 3,
+		title = "สำรวจทุ่งหญ้า Splendide (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Splendide"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Splendide" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120095] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 3,
+		title = "สำรวจทุ่งหญ้า Splendide (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Splendide"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Splendide" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120096] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 3,
+		title = "สำรวจทุ่งหญ้า Manuk (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Manuk"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Manuk" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120097] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 3,
+		title = "สำรวจทุ่งหญ้า Manuk (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Manuk"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Manuk" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120098] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 3,
+		title = "สำรวจทุ่งหญ้า Manuk (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Manuk"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Manuk" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120099] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 3,
+		title = "สำรวจทุ่งหญ้าชานเมือง Kamidal (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Outskirts of Kamidal"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Outskirts of Kamidal" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120100] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 3,
+		title = "สำรวจทุ่งหญ้าชานเมือง Kamidal (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Outskirts of Kamidal"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Outskirts of Kamidal" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120101] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 4,
+		title = "สำรวจทุ่งหญ้า Amatsu",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Amatsu"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Amatsu" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120102] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 4,
+		title = "สำรวจทุ่งหญ้า Kunlun",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Kunlun"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Kunlun" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120103] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 4,
+		title = "สำรวจทุ่งหญ้า Gonryun",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Gonryun"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Gonryun" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120104] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 4,
+		title = "สำรวจทุ่งหญ้า Ayothaya",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Ayothaya"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Ayothaya" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120105] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 4,
+		title = "สำรวจทุ่งหญ้า Moscovia",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Moscovia"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Moscovia" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120106] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 4,
+		title = "สำรวจทุ่งหญ้า Brasilis",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Brasilis"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Brasilis" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120107] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 4,
+		title = "สำรวจทุ่งหญ้า Dewata",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Dewata"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Dewata" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120108] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 4,
+		title = "สำรวจทุ่งหญ้า Malaya (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Malaya"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Malaya" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120109] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 4,
+		title = "สำรวจทุ่งหญ้า Malaya (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในทุ่งหญ้า Malaya"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในทุ่งหญ้า Malaya" } },
+		reward = { item = 22876 },
+		score = 10
+	},
+	[120110] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนชั้นใต้ดิน Abbey",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Abbey Underground"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Abbey Underground" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120111] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนทะเลสาบ Abyss",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Abyss Lake"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Abyss Lake" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120112] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนหอคอยนาฬิกา Clock Tower",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Clock Tower"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Clock Tower" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120113] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Amatsu",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Amatsu"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Amatsu" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120114] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Ant Hell",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Ant Hell"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Ant Hell" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120115] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Ayothaya",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Ayothaya"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Ayothaya" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120116] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Comodo",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Comodo"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Comodo" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120117] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Brasilis",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Brasilis"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Brasilis" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120118] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนหอคอยนาฬิกา Clock Tower",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Clock Tower"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Clock Tower" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120119] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Istana",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Istana"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Istana" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120120] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนถ้ำแมลง Scaraba Hole",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Scaraba Hole"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Scaraba Hole" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120121] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Bitfrost",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Bifrost"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Bifrost" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120122] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Einbroch",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Einbroch"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Einbroch" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120123] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนชั้นใต้ดิน Geffen",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Geffen Underground"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Geffen Underground" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120124] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Glastheim (1)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Glastheim"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Glastheim" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120125] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Glastheim (2)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Glastheim"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Glastheim" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120126] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Glastheim (3)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Glastheim"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Glastheim" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120127] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Glastheim (4)",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Glastheim"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Glastheim" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120128] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Kunlun",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Kunlun"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Kunlun" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120129] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Rachel",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Rachel"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Rachel" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120130] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Sphinx",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Sphinx"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Sphinx" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120131] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Izlude",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Izlude"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Izlude" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120132] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนโรงงานหุ่นยนต์ Robot Factory",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Robot Factory"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Robot Factory" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120133] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนแล็บ Bio Lab",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Bio Lab"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Bio Lab" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120134] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Gonryun",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Gonryun"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Gonryun" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120135] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Nogg Road",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Nogg Road"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Nogg Road" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120136] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนเหมืองถ่านหิน Coal Mine",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Coal Mine"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Coal Mine" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120137] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Pyramid",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Pyramid"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Pyramid" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120138] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Orc",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Orc"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Orc" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120139] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยน Payon",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Payon"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Payon" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120140] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนเขาวงกต Labyrinth",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Labyrinth"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Labyrinth" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120141] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนอุโมงค์ใต้ทะเล Undersea Tunnel",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Undersea Tunnel"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Undersea Tunnel" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120142] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนหอคอย Thanatos",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Thanatos Tower"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Thanatos Tower" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120143] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนภูเขาไฟ Thor",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Thor Volcano"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Thor Volcano" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120144] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนเรืออับปาง Sunken Ship",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Sunken Ship"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Sunken Ship" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120145] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนเต่า Turtle Dungeon",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Turtle"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Turtle" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[120146] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 5,
+		title = "สำรวจดันเจี้ยนโรงงานของเล่น Toy Factory",
+		content = {
+			summary = "ค้นพบสมบัติที่ซ่อนอยู่",
+			details = "ค้นพบสมบัติในดันเจี้ยน Toy Factory"
+		},
+		resource = { [1] = { text = "ค้นพบสมบัติในดันเจี้ยน Toy Factory" } },
+		reward = { item = 22876 },
+		score = 20
+	},
+	[127001] = {
+		UI_Type = 1,
+		group = "CHATTING",
+		major = 4,
+		minor = 1,
+		title = "การสนับสนุน Prontera",
+		content = {
+			summary = "ชื่อเสียงในเมืองหลวงแห่ง Rune Midgard",
+			details = "การประเมินที่ Prontera มีต่อคุณ"
+		},
+		resource = {
+			[1] = { text = "คนแปลกหน้า", count = 3000 },
+			[2] = { text = "หน้าใหม่ในหมู่บ้าน", count = 6000 },
+			[3] = { text = "เพื่อนบ้าน", count = 12000 },
+			[4] = { text = "คนดัง", count = 20000 },
+			[5] = { text = "พลเมืองชั้นสูง", count = 1000 }
+		},
+		score = 10
+	},
+	[127002] = {
+		UI_Type = 1,
+		group = "CHATTING",
+		major = 4,
+		minor = 1,
+		title = "การสนับสนุน Geffen",
+		content = {
+			summary = "ชื่อเสียงในเมืองหลวงแห่ง Rune Midgard",
+			details = "การประเมินที่ Geffen มีต่อคุณ"
+		},
+		resource = {
+			[1] = { text = "คนแปลกหน้า", count = 3000 },
+			[2] = { text = "หน้าใหม่ในหมู่บ้าน", count = 6000 },
+			[3] = { text = "เพื่อนบ้าน", count = 12000 },
+			[4] = { text = "คนดัง", count = 20000 },
+			[5] = { text = "พลเมืองชั้นสูง", count = 1000 }
+		},
+		score = 10
+	},
+	[127003] = {
+		UI_Type = 1,
+		group = "CHATTING",
+		major = 4,
+		minor = 1,
+		title = "การสนับสนุน Morocc",
+		content = {
+			summary = "ชื่อเสียงในเมืองหลวงแห่ง Rune Midgard",
+			details = "การประเมินที่ Morocc มีต่อคุณ"
+		},
+		resource = {
+			[1] = { text = "คนแปลกหน้า", count = 3000 },
+			[2] = { text = "หน้าใหม่ในหมู่บ้าน", count = 6000 },
+			[3] = { text = "เพื่อนบ้าน", count = 12000 },
+			[4] = { text = "คนดัง", count = 20000 },
+			[5] = { text = "พลเมืองชั้นสูง", count = 1000 }
+		},
+		score = 10
+	},
+	[127004] = {
+		UI_Type = 1,
+		group = "CHATTING",
+		major = 4,
+		minor = 1,
+		title = "การสนับสนุน Payon",
+		content = {
+			summary = "ชื่อเสียงในเมืองหลวงแห่ง Rune Midgard",
+			details = "การประเมินที่ Payon มีต่อคุณ"
+		},
+		resource = {
+			[1] = { text = "คนแปลกหน้า", count = 3000 },
+			[2] = { text = "หน้าใหม่ในหมู่บ้าน", count = 6000 },
+			[3] = { text = "เพื่อนบ้าน", count = 12000 },
+			[4] = { text = "คนดัง", count = 20000 },
+			[5] = { text = "พลเมืองชั้นสูง", count = 1000 }
+		},
+		score = 10
+	},
+	[127005] = {
+		UI_Type = 1,
+		group = "CHATTING",
+		major = 4,
+		minor = 1,
+		title = "การสนับสนุน Yuno",
+		content = {
+			summary = "ชื่อเสียงในเมืองหลวงแห่ง Schwartzvald",
+			details = "การประเมินที่ Yuno มีต่อคุณ"
+		},
+		resource = {
+			[1] = { text = "คนแปลกหน้า", count = 3000 },
+			[2] = { text = "หน้าใหม่ในหมู่บ้าน", count = 6000 },
+			[3] = { text = "เพื่อนบ้าน", count = 12000 },
+			[4] = { text = "คนดัง", count = 20000 },
+			[5] = { text = "พลเมืองชั้นสูง", count = 1000 }
+		},
+		score = 10
+	},
+	[127006] = {
+		UI_Type = 1,
+		group = "CHATTING",
+		major = 4,
+		minor = 1,
+		title = "การสนับสนุน Lighthalzen",
+		content = {
+			summary = "ชื่อเสียงในเมืองหลวงแห่ง Schwartzvald",
+			details = "การประเมินที่ Lighthalzen มีต่อคุณ"
+		},
+		resource = {
+			[1] = { text = "คนแปลกหน้า", count = 3000 },
+			[2] = { text = "หน้าใหม่ในหมู่บ้าน", count = 6000 },
+			[3] = { text = "เพื่อนบ้าน", count = 12000 },
+			[4] = { text = "คนดัง", count = 20000 },
+			[5] = { text = "พลเมืองชั้นสูง", count = 1000 }
+		},
+		score = 10
+	},
+	[127007] = {
+		UI_Type = 1,
+		group = "CHATTING",
+		major = 4,
+		minor = 1,
+		title = "การสนับสนุน Einbroch",
+		content = {
+			summary = "ชื่อเสียงในเมืองหลวงแห่ง Schwartzvald",
+			details = "การประเมินที่ Einbroch มีต่อคุณ"
+		},
+		resource = {
+			[1] = { text = "คนแปลกหน้า", count = 3000 },
+			[2] = { text = "หน้าใหม่ในหมู่บ้าน", count = 6000 },
+			[3] = { text = "เพื่อนบ้าน", count = 12000 },
+			[4] = { text = "คนดัง", count = 20000 },
+			[5] = { text = "พลเมืองชั้นสูง", count = 1000 }
+		},
+		score = 10
+	},
+	[127008] = {
+		UI_Type = 1,
+		group = "CHATTING",
+		major = 4,
+		minor = 1,
+		title = "การสนับสนุน Rachel",
+		content = {
+			summary = "ชื่อเสียงในเมืองหลวงแห่ง Arunafeltz",
+			details = "การประเมินที่ Rachel มีต่อคุณ"
+		},
+		resource = {
+			[1] = { text = "คนแปลกหน้า", count = 3000 },
+			[2] = { text = "หน้าใหม่ในหมู่บ้าน", count = 6000 },
+			[3] = { text = "เพื่อนบ้าน", count = 12000 },
+			[4] = { text = "คนดัง", count = 20000 },
+			[5] = { text = "พลเมืองชั้นสูง", count = 1000 }
+		},
+		score = 10
+	},
+	[127009] = {
+		UI_Type = 1,
+		group = "CHATTING",
+		major = 4,
+		minor = 1,
+		title = "การสนับสนุน Veins",
+		content = {
+			summary = "ชื่อเสียงในเมืองหลวงแห่ง Arunafeltz",
+			details = "การประเมินที่ Veins มีต่อคุณ"
+		},
+		resource = {
+			[1] = { text = "คนแปลกหน้า", count = 3000 },
+			[2] = { text = "หน้าใหม่ในหมู่บ้าน", count = 6000 },
+			[3] = { text = "เพื่อนบ้าน", count = 12000 },
+			[4] = { text = "คนดัง", count = 20000 },
+			[5] = { text = "พลเมืองชั้นสูง", count = 1000 }
+		},
+		score = 10
+	},
+	[128000] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "แขกผู้ไม่ได้รับเชิญ",
+		content = {
+			summary = "กำจัด Celine Kimi",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Celine Kimi 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128001] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "แขกผู้แปลกประหลาด",
+		content = {
+			summary = "กำจัด Celine Kimi",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Celine Kimi 10 ตัว", count = 10 } },
+		reward = {},
+		score = 10
+	},
+	[128002] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "บางทีเราอาจจะเป็นเพื่อนกันได้...",
+		content = {
+			summary = "กำจัด Celine Kimi",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Celine Kimi 25 ตัว", count = 25 } },
+		reward = {},
+		score = 20
+	},
+	[128003] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "คนแปลกหน้าที่แสนดี",
+		content = {
+			summary = "กำจัด Celine Kimi",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Celine Kimi 50 ตัว", count = 50 } },
+		reward = {},
+		score = 30
+	},
+	[128004] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "เพื่อนรักของ Kimi",
+		content = {
+			summary = "กำจัด Celine Kimi",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Celine Kimi 100 ตัว", count = 100 } },
+		reward = {},
+		score = 50
+	},
+	[128005] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 2,
+		title = "นักตกปลามือใหม่",
+		content = {
+			summary = "กำจัด Bakonawa",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Bakonawa 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128006] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 2,
+		title = "นักล่าผู้กระหาย",
+		content = {
+			summary = "กำจัด Bakonawa",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Bakonawa 10 ตัว", count = 10 } },
+		reward = {},
+		score = 20
+	},
+	[128007] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 2,
+		title = "จ้าวแห่งจังหวะ",
+		content = {
+			summary = "กำจัด Bakonawa",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Bakonawa 50 ตัว", count = 50 } },
+		reward = {},
+		score = 50
+	},
+	[128008] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "นักผจญภัยผู้กล้าหาญ",
+		content = {
+			summary = "กำจัด Baphomet",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Baphomet 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128009] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "ฉันเกลียด Baphomet",
+		content = {
+			summary = "กำจัด Baphomet",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Baphomet 10 ตัว", count = 10 } },
+		reward = {},
+		score = 20
+	},
+	[128010] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "คู่ปรับของเจ้าแพะ",
+		content = {
+			summary = "กำจัด Baphomet",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Baphomet 50 ตัว", count = 50 } },
+		reward = {},
+		score = 50
+	},
+	[128011] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 1,
+		title = "นักท่องเที่ยวธรรมดา",
+		content = {
+			summary = "กำจัด Grim Reaper Ankou",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Grim Reaper Ankou 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128012] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 1,
+		title = "ผู้เชี่ยวชาญพื้นที่ทุรกันดาร",
+		content = {
+			summary = "กำจัด Grim Reaper Ankou",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Grim Reaper Ankou 10 ตัว", count = 10 } },
+		reward = {},
+		score = 20
+	},
+	[128013] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 1,
+		title = "ฉันว่าฉันกินเจ้านี่ได้นะ",
+		content = {
+			summary = "กำจัด Grim Reaper Ankou",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Grim Reaper Ankou 50 ตัว", count = 50 } },
+		reward = {},
+		score = 50
+	},
+	[128014] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 2,
+		title = "เนื้อที่ย่อยยาก",
+		content = {
+			summary = "กำจัด Buwaya",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Buwaya 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128015] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 2,
+		title = "จ้าวแห่งการหลบหนี",
+		content = {
+			summary = "กำจัด Buwaya",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Buwaya 10 ตัว", count = 10 } },
+		reward = {},
+		score = 20
+	},
+	[128016] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 2,
+		title = "นักล่าอมตะ",
+		content = {
+			summary = "กำจัด Buwaya",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Buwaya 50 ตัว", count = 50 } },
+		reward = {},
+		score = 50
+	},
+	[128017] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 1,
+		title = "ยืนหยัดก้าวข้ามความสิ้นหวัง",
+		content = {
+			summary = "กำจัด God of Despair Morocc",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด God of Despair Morocc 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128018] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 1,
+		title = "เปลวไฟแห่งความหวัง",
+		content = {
+			summary = "กำจัด God of Despair Morocc",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด God of Despair Morocc 10 ตัว", count = 10 } },
+		reward = {},
+		score = 10
+	},
+	[128019] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 1,
+		title = "แสงออโรร่าที่หลั่งไหล",
+		content = {
+			summary = "กำจัด God of Despair Morocc",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด God of Despair Morocc 25 ตัว", count = 25 } },
+		reward = {},
+		score = 20
+	},
+	[128020] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 1,
+		title = "ใครสิ้นหวังเหรอ? ฉันนี่แหละที่ไร้ความหวัง!",
+		content = {
+			summary = "กำจัด God of Despair Morocc",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด God of Despair Morocc 50 ตัว", count = 50 } },
+		reward = {},
+		score = 30
+	},
+	[128021] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 1,
+		title = "ฉันกลายเป็นพระเจ้าเพื่อช่วยโลกนี้",
+		content = {
+			summary = "กำจัด God of Despair Morocc",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด God of Despair Morocc 100 ตัว", count = 100 } },
+		reward = {},
+		score = 50
+	},
+	[128022] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 1,
+		title = "กองทัพไม่เคยปรานี Morocc",
+		content = {
+			summary = "กำจัด Morocc necromancer",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Morocc necromancer 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128023] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 1,
+		title = "กองทัพไม่เคยเกรงกลัว Morocc",
+		content = {
+			summary = "กำจัด Morocc necromancer",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Morocc necromancer 10 ตัว", count = 10 } },
+		reward = {},
+		score = 20
+	},
+	[128024] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 1,
+		title = "ผู้คุ้มกันกองทัพหัวกะโหลกผู้อ่อนแอ",
+		content = {
+			summary = "กำจัด Morocc necromancer",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Morocc necromancer 50 ตัว", count = 50 } },
+		reward = {},
+		score = 50
+	},
+	[128025] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "การเข้าเฝ้าราชินี",
+		content = {
+			summary = "กำจัด Faceworm Queen",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Faceworm Queen 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128026] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "ปฐพีที่อบอุ่น",
+		content = {
+			summary = "กำจัด Earth Faceworm Queen",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Earth Faceworm Queen 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128027] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "วารีที่สมบูรณ์แบบ",
+		content = {
+			summary = "กำจัด Water Faceworm Queen",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Water Faceworm Queen 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128028] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "สายลมที่รื่นรมย์",
+		content = {
+			summary = "กำจัด Wind Faceworm Queen",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Wind Faceworm Queen 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128029] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "ผู้มาเยือนปราสาทเก่า",
+		content = {
+			summary = "กำจัด Amdarais",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Amdarais 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128030] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "เจ้าแห่งปราสาทเก่า",
+		content = {
+			summary = "กำจัด Amdarais",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Amdarais 10 ตัว", count = 10 } },
+		reward = {},
+		score = 20
+	},
+	[128031] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "ผู้พิชิตปราสาทเก่า",
+		content = {
+			summary = "กำจัด Amdarais",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Amdarais 50 ตัว", count = 50 } },
+		reward = {},
+		score = 50
+	},
+	[128032] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "มือใหม่ผู้โกรธเกรี้ยว",
+		content = {
+			summary = "กำจัด Amdarais (Superior)",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Amdarais (Superior) 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128033] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "ภาคีแห่งความหวัง",
+		content = {
+			summary = "กำจัด Amdarais (Superior)",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Amdarais (Superior) 10 ตัว", count = 10 } },
+		reward = {},
+		score = 20
+	},
+	[128034] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "ผู้พิทักษ์ประชาชน",
+		content = {
+			summary = "กำจัด Amdarais (Superior)",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Amdarais (Superior) 50 ตัว", count = 50 } },
+		reward = {},
+		score = 50
+	},
+	[128035] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "นักเดินทางข้ามเวลา",
+		content = {
+			summary = "กำจัด Sarah Irene",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Sarah Irene 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128036] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "ผู้ฟื้นฟูโบราณวัตถุ",
+		content = {
+			summary = "กำจัด Sarah Irene",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Sarah Irene 10 ตัว", count = 10 } },
+		reward = {},
+		score = 20
+	},
+	[128037] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "จ้าวแห่งการขนส่งวัตถุโบราณ",
+		content = {
+			summary = "กำจัด Sarah Irene",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Sarah Irene 50 ตัว", count = 50 } },
+		reward = {},
+		score = 50
+	},
+	[128038] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "แสดงการแหกคุกให้กัปตันดู",
+		content = {
+			summary = "กำจัด Ferlock",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Ferlock 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128039] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "แสดงการแหกคุกให้กัปตันผู้อ่อนแอได้รับชม",
+		content = {
+			summary = "กำจัด Ferlock",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Ferlock 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128040] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "การจลาจลบนเรือ",
+		content = {
+			summary = "กำจัด Ferlock",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Ferlock 10 ตัว", count = 10 } },
+		reward = {},
+		score = 20
+	},
+	[128041] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "ความวุ่นวายบนเรือ",
+		content = {
+			summary = "กำจัด Ferlock",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Ferlock 10 ตัว", count = 10 } },
+		reward = {},
+		score = 20
+	},
+	[128042] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "การก่อกบฏบนเรือ",
+		content = {
+			summary = "กำจัด Ferlock",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Ferlock 50 ตัว", count = 50 } },
+		reward = {},
+		score = 50
+	},
+	[128043] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "การปฏิวัติแห่งการจลาจล",
+		content = {
+			summary = "กำจัด Ferlock",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Ferlock 50 ตัว", count = 50 } },
+		reward = {},
+		score = 50
+	},
+	[128044] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "แชมป์เปี้ยนการประลองเวทมนตร์",
+		content = {
+			summary = "กำจัด Fenrir",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Fenrir 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128045] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "กลาดิเอเตอร์แห่งโคลีเซียม",
+		content = {
+			summary = "กำจัด Fenrir",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Fenrir 10 ตัว", count = 10 } },
+		reward = {},
+		score = 20
+	},
+	[128046] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "ผู้สังหารแห่งโคลอสเซียม",
+		content = {
+			summary = "กำจัด Fenrir",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Fenrir 50 ตัว", count = 50 } },
+		reward = {},
+		score = 50
+	},
+	[128047] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "ผู้ท้าชิง Endless Tower",
+		content = {
+			summary = "กำจัด Naght Sieger",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Naght Sieger 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128048] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "ผู้สังหารแห่ง Endless Tower",
+		content = {
+			summary = "กำจัด Naght Sieger",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Naght Sieger 10 ตัว", count = 10 } },
+		reward = {},
+		score = 20
+	},
+	[128049] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "เจ้าแห่งหอคอย",
+		content = {
+			summary = "กำจัด Naght Sieger",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Naght Sieger 50 ตัว", count = 50 } },
+		reward = {},
+		score = 50
+	},
+	[128050] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "หมอผีฝึกหัด",
+		content = {
+			summary = "กำจัด Bangungot soul pillar",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Bangungot soul pillar 1 ตัว", count = 1 } },
+		reward = {},
+		score = 10
+	},
+	[128051] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "หมอผีผู้มีประสบการณ์",
+		content = {
+			summary = "กำจัด Bangungot soul pillar",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Bangungot soul pillar 10 ตัว", count = 10 } },
+		reward = {},
+		score = 20
+	},
+	[128052] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "หมอผีในตำนาน",
+		content = {
+			summary = "กำจัด Bangungot soul pillar",
+			details = "ดำเนินไปจนถึงจุดสิ้นสุดของดันเจี้ยน"
+		},
+		resource = { [1] = { text = "กำจัด Bangungot soul pillar 50 ตัว", count = 50 } },
+		reward = {},
+		score = 50
+	},
+	[129001] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "นักสำรวจ Prontera",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Prontera ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ North Prontera Field(1) สำเร็จ", shortcut = 120001 },
+			[2] = { text = "สำรวจพื้นที่ North Prontera Field(2) สำเร็จ", shortcut = 120002 },
+			[3] = { text = "สำรวจพื้นที่ North Prontera Field(3) สำเร็จ", shortcut = 120003 },
+			[4] = { text = "สำรวจพื้นที่ West Prontera Field(1) สำเร็จ", shortcut = 120004 },
+			[5] = { text = "สำรวจพื้นที่ West Prontera Field(2) สำเร็จ", shortcut = 120005 },
+			[6] = { text = "สำรวจพื้นที่ East Prontera Field(1) สำเร็จ", shortcut = 120006 },
+			[7] = { text = "สำรวจพื้นที่ South Prontera Field(1) สำเร็จ", shortcut = 120007 },
+			[8] = { text = "สำรวจพื้นที่ South Prontera Field(2) สำเร็จ", shortcut = 120008 },
+			[9] = { text = "สำรวจพื้นที่ South Prontera Field(3) สำเร็จ", shortcut = 120009 },
+			[10] = { text = "สำรวจพื้นที่ South Prontera Field(4) สำเร็จ", shortcut = 120010 }
+		},
+		reward = { item = 644 },
+		score = 20
+	},
+	[129002] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "นักสำรวจ Geffen",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Geffen ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ East Geffen Field(1) สำเร็จ", shortcut = 120011 },
+			[2] = { text = "สำรวจพื้นที่ Southeast Geffen Field(1) สำเร็จ", shortcut = 120012 },
+			[3] = { text = "สำรวจพื้นที่ Northwest Geffen Field(1) สำเร็จ", shortcut = 120013 },
+			[4] = { text = "สำรวจพื้นที่ Northwest Geffen Field(2) สำเร็จ", shortcut = 120014 },
+			[5] = { text = "สำรวจพื้นที่ Northwest Geffen Field(3) สำเร็จ", shortcut = 120015 },
+			[6] = { text = "สำรวจพื้นที่ South Geffen Field(1) สำเร็จ", shortcut = 120016 },
+			[7] = { text = "สำรวจพื้นที่ South Geffen Field(2) สำเร็จ", shortcut = 120017 }
+		},
+		reward = { item = 644 },
+		score = 20
+	},
+	[129003] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "นักสำรวจทะเลทราย Sograt",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ ทะเลทราย Sograt ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ Sograt Desert Field(1) สำเร็จ", shortcut = 120018 },
+			[2] = { text = "สำรวจพื้นที่ Sograt Desert Field(2) สำเร็จ", shortcut = 120019 },
+			[3] = { text = "สำรวจพื้นที่ Sograt Desert Field(3) สำเร็จ", shortcut = 120020 },
+			[4] = { text = "สำรวจพื้นที่ Sograt Desert Field(4) สำเร็จ", shortcut = 120021 },
+			[5] = { text = "สำรวจพื้นที่ Sograt Desert Field(5) สำเร็จ", shortcut = 120022 },
+			[6] = { text = "สำรวจพื้นที่ Sograt Desert Field(6) สำเร็จ", shortcut = 120023 }
+		},
+		reward = { item = 644 },
+		score = 20
+	},
+	[129004] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "นักสำรวจ Payon",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Payon ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ Southwest Payon Field(1) สำเร็จ", shortcut = 120024 },
+			[2] = { text = "สำรวจพื้นที่ Southwest Payon Field(2) สำเร็จ", shortcut = 120025 },
+			[3] = { text = "สำรวจพื้นที่ Southwest Payon Field(3) สำเร็จ", shortcut = 120026 },
+			[4] = { text = "สำรวจพื้นที่ Southwest Payon Field(4) สำเร็จ", shortcut = 120027 },
+			[5] = { text = "สำรวจพื้นที่ East Payon Field(1) สำเร็จ", shortcut = 120028 },
+			[6] = { text = "สำรวจพื้นที่ East Payon Field(2) สำเร็จ", shortcut = 120029 },
+			[7] = { text = "สำรวจพื้นที่ East Payon Field(3) สำเร็จ", shortcut = 120030 },
+			[8] = { text = "สำรวจพื้นที่ East Payon Field(4) สำเร็จ", shortcut = 120031 }
+		},
+		reward = { item = 644 },
+		score = 20
+	},
+	[129005] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "นักสำรวจ Mjolnir เหนือ",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Mjolnir เหนือ ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ North Mjolnir Field(1) สำเร็จ", shortcut = 120032 },
+			[2] = { text = "สำรวจพื้นที่ North Mjolnir Field(2) สำเร็จ", shortcut = 120033 },
+			[3] = { text = "สำรวจพื้นที่ North Mjolnir Field(3) สำเร็จ", shortcut = 120034 },
+			[4] = { text = "สำรวจพื้นที่ North Mjolnir Field(4) สำเร็จ", shortcut = 120035 },
+			[5] = { text = "สำรวจพื้นที่ North Mjolnir Field(5) สำเร็จ", shortcut = 120036 }
+		},
+		reward = { item = 644 },
+		score = 20
+	},
+	[129006] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "นักสำรวจ Mjolnir ใต้",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Mjolnir ใต้ ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ South Mjolnir Field(1) สำเร็จ", shortcut = 120037 },
+			[2] = { text = "สำรวจพื้นที่ South Mjolnir Field(2) สำเร็จ", shortcut = 120038 },
+			[3] = { text = "สำรวจพื้นที่ South Mjolnir Field(3) สำเร็จ", shortcut = 120039 },
+			[4] = { text = "สำรวจพื้นที่ South Mjolnir Field(4) สำเร็จ", shortcut = 120040 },
+			[5] = { text = "สำรวจพื้นที่ South Mjolnir Field(5) สำเร็จ", shortcut = 120041 },
+			[6] = { text = "สำรวจพื้นที่ South Mjolnir Field(6) สำเร็จ", shortcut = 120042 },
+			[7] = { text = "สำรวจพื้นที่ South Aldebaran Field(1) สำเร็จ", shortcut = 120043 }
+		},
+		reward = { item = 644 },
+		score = 20
+	},
+	[129007] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "นักสำรวจ Comodo",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Comodo ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ Comodo Field(1) สำเร็จ", shortcut = 120044 },
+			[2] = { text = "สำรวจพื้นที่ Comodo Field(2) สำเร็จ", shortcut = 120045 },
+			[3] = { text = "สำรวจพื้นที่ Comodo Field(3) สำเร็จ", shortcut = 120046 },
+			[4] = { text = "สำรวจพื้นที่ Comodo Field(4) สำเร็จ", shortcut = 120047 },
+			[5] = { text = "สำรวจพื้นที่ Comodo Field(5) สำเร็จ", shortcut = 120048 },
+			[6] = { text = "สำรวจพื้นที่ Comodo Field(6) สำเร็จ", shortcut = 120049 },
+			[7] = { text = "สำรวจพื้นที่ Comodo Field(7) สำเร็จ", shortcut = 120050 },
+			[8] = { text = "สำรวจพื้นที่ Comodo Field(8) สำเร็จ", shortcut = 120051 }
+		},
+		reward = { item = 644 },
+		score = 20
+	},
+	[129008] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 0,
+		title = "นักสำรวจ Rune Midgard",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Rune Midgard ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "นักสำรวจ Prontera", shortcut = 129001 },
+			[2] = { text = "นักสำรวจ Geffen", shortcut = 129002 },
+			[3] = { text = "นักสำรวจทะเลทราย Sograt", shortcut = 129003 },
+			[4] = { text = "นักสำรวจ Payon", shortcut = 129004 },
+			[5] = { text = "นักสำรวจ Mjolnir เหนือ", shortcut = 129005 },
+			[6] = { text = "นักสำรวจ Mjolnir ใต้", shortcut = 129006 },
+			[7] = { text = "นักสำรวจ Comodo", shortcut = 129007 }
+		},
+		reward = { item = 617 },
+		score = 50
+	},
+	[129009] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "นักสำรวจ Yuno",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Yuno ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ Border Checkpoint Field(1) สำเร็จ", shortcut = 120052 },
+			[2] = { text = "สำรวจพื้นที่ Border Checkpoint Field(2) สำเร็จ", shortcut = 120053 },
+			[3] = { text = "สำรวจพื้นที่ Kiel Hyre Mansion Field(1) สำเร็จ", shortcut = 120054 },
+			[4] = { text = "สำรวจพื้นที่ El Mes Plateau Field(1) สำเร็จ", shortcut = 120055 },
+			[5] = { text = "สำรวจพื้นที่ El Mes Plateau Field(2) สำเร็จ", shortcut = 120056 },
+			[6] = { text = "สำรวจพื้นที่ El Mes Plateau Field(3) สำเร็จ", shortcut = 120057 },
+			[7] = { text = "สำรวจพื้นที่ El Mes Gorge Field(1) สำเร็จ", shortcut = 120058 },
+			[8] = { text = "สำรวจพื้นที่ Kiel Hyre Academy Field(1) สำเร็จ", shortcut = 120059 },
+			[9] = { text = "สำรวจพื้นที่ Guard Camp Field(1) สำเร็จ", shortcut = 120060 },
+			[10] = { text = "สำรวจพื้นที่ Yuno Field(1) สำเร็จ", shortcut = 120061 }
+		},
+		reward = { item = 644 },
+		score = 20
+	},
+	[129010] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "นักสำรวจ Hugel",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Hugel ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ Front of Thanatos Tower Field(1) สำเร็จ", shortcut = 120062 },
+			[2] = { text = "สำรวจพื้นที่ Hugel Field(1) สำเร็จ", shortcut = 120063 },
+			[3] = { text = "สำรวจพื้นที่ Hugel Field(2) สำเร็จ", shortcut = 120064 },
+			[4] = { text = "สำรวจพื้นที่ Hugel Field(3) สำเร็จ", shortcut = 120065 },
+			[5] = { text = "สำรวจพื้นที่ Abyss Lake Field(1) สำเร็จ", shortcut = 120066 }
+		},
+		reward = { item = 644 },
+		score = 20
+	},
+	[129011] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "นักสำรวจ Einbroch",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Einbroch ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ Einbroch Field(1) สำเร็จ", shortcut = 120067 },
+			[2] = { text = "สำรวจพื้นที่ Einbroch Field(2) สำเร็จ", shortcut = 120068 },
+			[3] = { text = "สำรวจพื้นที่ Einbroch Field(3) สำเร็จ", shortcut = 120069 },
+			[4] = { text = "สำรวจพื้นที่ Einbroch Field(4) สำเร็จ", shortcut = 120070 },
+			[5] = { text = "สำรวจพื้นที่ Einbroch Field(5) สำเร็จ", shortcut = 120071 },
+			[6] = { text = "สำรวจพื้นที่ Einbroch Field(6) สำเร็จ", shortcut = 120072 },
+			[7] = { text = "สำรวจพื้นที่ Einbroch Field(7) สำเร็จ", shortcut = 120073 },
+			[8] = { text = "สำรวจพื้นที่ Einbroch Field(8) สำเร็จ", shortcut = 120074 }
+		},
+		reward = { item = 644 },
+		score = 20
+	},
+	[129012] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "นักสำรวจ Lighthalzen",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Lighthalzen ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ Lighthalzen Field(1) สำเร็จ", shortcut = 120075 },
+			[2] = { text = "สำรวจพื้นที่ Lighthalzen Field(2) สำเร็จ", shortcut = 120076 },
+			[3] = { text = "สำรวจพื้นที่ Lighthalzen Field(3) สำเร็จ", shortcut = 120077 }
+		},
+		reward = { item = 644 },
+		score = 20
+	},
+	[129013] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 1,
+		title = "นักสำรวจ Schwarzwald",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Schwarzwald ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "นักสำรวจ Yuno", shortcut = 129009 },
+			[2] = { text = "นักสำรวจ Hugel", shortcut = 129010 },
+			[3] = { text = "นักสำรวจ Einbroch", shortcut = 129011 },
+			[4] = { text = "นักสำรวจ Lighthalzen", shortcut = 129012 }
+		},
+		reward = { item = 617 },
+		score = 50
+	},
+	[129014] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 2,
+		title = "นักสำรวจ Rachel",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Rachel ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ Rachel Audhumbla Plains Field(1) สำเร็จ", shortcut = 120078 },
+			[2] = { text = "สำรวจพื้นที่ Rachel Plains Field(1) สำเร็จ", shortcut = 120079 },
+			[3] = { text = "สำรวจพื้นที่ Rachel Plains Field(2) สำเร็จ", shortcut = 120080 },
+			[4] = { text = "สำรวจพื้นที่ Rachel Plains Field(3) สำเร็จ", shortcut = 120081 },
+			[5] = { text = "สำรวจพื้นที่ Rachel Audhumbla Grassland Field(1) สำเร็จ", shortcut = 120082 },
+			[6] = { text = "สำรวจพื้นที่ Rachel Audhumbla Grassland Field(2) สำเร็จ", shortcut = 120083 },
+			[7] = { text = "สำรวจพื้นที่ Portus Luna Field(1) สำเร็จ", shortcut = 120084 }
+		},
+		reward = { item = 644 },
+		score = 20
+	},
+	[129015] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 2,
+		title = "นักสำรวจ Veins",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Veins ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ Veins Field(1) สำเร็จ", shortcut = 120085 },
+			[2] = { text = "สำรวจพื้นที่ Veins Field(2) สำเร็จ", shortcut = 120086 },
+			[3] = { text = "สำรวจพื้นที่ Veins Field(3) สำเร็จ", shortcut = 120087 },
+			[4] = { text = "สำรวจพื้นที่ Veins Field(4) สำเร็จ", shortcut = 120088 },
+			[5] = { text = "สำรวจพื้นที่ Veins Field(5) สำเร็จ", shortcut = 120089 }
+		},
+		reward = { item = 644 },
+		score = 20
+	},
+	[129016] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 2,
+		title = "นักสำรวจ Arunafeltz",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Arunafeltz ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "นักสำรวจ Rachel", shortcut = 129014 },
+			[2] = { text = "นักสำรวจ Veins", shortcut = 129015 }
+		},
+		reward = { item = 617 },
+		score = 50
+	},
+	[129017] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 3,
+		title = "นักสำรวจ Laphine",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Laphine ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ Eclage Field(1) สำเร็จ", shortcut = 120090 },
+			[2] = { text = "สำรวจพื้นที่ North Bitfrost Field(1) สำเร็จ", shortcut = 120091 },
+			[3] = { text = "สำรวจพื้นที่ South Bitfrost Field(1) สำเร็จ", shortcut = 120092 },
+			[4] = { text = "สำรวจพื้นที่ Splendide Field(1) สำเร็จ", shortcut = 120093 },
+			[5] = { text = "สำรวจพื้นที่ Splendide Field(2) สำเร็จ", shortcut = 120094 },
+			[6] = { text = "สำรวจพื้นที่ Splendide Field(3) สำเร็จ", shortcut = 120095 }
+		},
+		reward = { item = 644 },
+		score = 20
+	},
+	[129018] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 3,
+		title = "นักสำรวจ Manuk",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Manuk ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ Manuk Field(1) สำเร็จ", shortcut = 120096 },
+			[2] = { text = "สำรวจพื้นที่ Manuk Field(2) สำเร็จ", shortcut = 120097 },
+			[3] = { text = "สำรวจพื้นที่ Manuk Field(3) สำเร็จ", shortcut = 120098 },
+			[4] = { text = "สำรวจพื้นที่ Outskirts of Kamidal Field(1) สำเร็จ", shortcut = 120099 },
+			[5] = { text = "สำรวจพื้นที่ Outskirts of Kamidal Field(2) สำเร็จ", shortcut = 120100 }
+		},
+		reward = { item = 644 },
+		score = 20
+	},
+	[129019] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 3,
+		title = "นักสำรวจ Eclage",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ Eclage ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "นักสำรวจ Laphine", shortcut = 129017 },
+			[2] = { text = "นักสำรวจ Manuk", shortcut = 120918 }
+		},
+		reward = { item = 617 },
+		score = 50
+	},
+	[129020] = {
+		UI_Type = 0,
+		group = "ADVENTURE",
+		major = 2,
+		minor = 4,
+		title = "นักสำรวจพื้นที่เฉพาะถิ่น",
+		content = {
+			summary = "บรรลุวัตถุประสงค์การสำรวจพื้นที่",
+			details = "สำรวจพื้นที่รอบๆ เขตพื้นที่เฉพาะถิ่น (Localizing fields) ให้ครบถ้วน"
+		},
+		resource = {
+			[1] = { text = "สำรวจพื้นที่ Amatsu Field(1) สำเร็จ", shortcut = 120101 },
+			[2] = { text = "สำรวจพื้นที่ Kunlun Field(1) สำเร็จ", shortcut = 120102 },
+			[3] = { text = "สำรวจพื้นที่ Gonryun Field(1) สำเร็จ", shortcut = 120103 },
+			[4] = { text = "สำรวจพื้นที่ Ayothaya Field(1) สำเร็จ", shortcut = 120104 },
+			[5] = { text = "สำรวจพื้นที่ Moscovia Field(1) สำเร็จ", shortcut = 120105 },
+			[6] = { text = "สำรวจพื้นที่ Brasilis Field(1) สำเร็จ", shortcut = 120106 },
+			[7] = { text = "สำรวจพื้นที่ Dewata Field(1) สำเร็จ", shortcut = 120107 },
+			[8] = { text = "สำรวจพื้นที่ Malaya Field(1) สำเร็จ", shortcut = 120108 },
+			[9] = { text = "สำรวจพื้นที่ Malaya Field(2) สำเร็จ", shortcut = 120109 }
+		},
+		reward = { item = 617 },
+		score = 50
+	},
+	[129021] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 5,
+		minor = 0,
+		title = "โหมดท้าทาย Glast Heim",
+		content = {
+			summary = "สำเร็จโหมดท้าทาย Glast Heim",
+			details = "สำเร็จ Memorial Dungeon จนถึงจุดสิ้นสุด"
+		},
+		resource = {
+			[1] = { text = "จำนวนครั้งที่ท้าทายสำเร็จ", count = 100 }
+		},
+		reward = { title = 1045 },
+		score = 10
+	},
+	[130000] = {
+		UI_Type = 0,
+		group = "CHATTING",
+		major = 4,
+		minor = 0,
+		title = "เปิดตัวคนดัง",
+		content = {
+			summary = "เยี่ยมชม 7 ตระกูลราชวงศ์",
+			details = "เยี่ยมชม 7 ตระกูลราชวงศ์ในพระราชวังแยกทิศตะวันออกและทิศตะวันตก"
+		},
+		resource = {
+			[1] = { text = "เยี่ยมชมราชวงศ์ Heine และเริ่มการสนทนา" },
+			[2] = { text = "เยี่ยมชมราชวงศ์ Nerius และเริ่มการสนทนา" },
+			[3] = { text = "เยี่ยมชมราชวงศ์ Walter และเริ่มการสนทนา" },
+			[4] = { text = "เยี่ยมชมราชวงศ์ Wigner และเริ่มการสนทนา" },
+			[5] = { text = "เยี่ยมชมราชวงศ์ Richard และเริ่มการสนทนา" },
+			[6] = { text = "เยี่ยมชมราชวงศ์ Gaebolg และเริ่มการสนทนา" },
+			[7] = { text = "เยี่ยมชมราชวงศ์ Lugenburg และเริ่มการสนทนา" }
+		},
+		reward = { title = 1034 },
+		score = 10
+	},
+	[130005] = {
+		UI_Type = 0,
+		group = "CHATTING",
+		major = 4,
+		minor = 0,
+		title = "ผู้สร้างกษัตริย์",
+		content = {
+			summary = "กษัตริย์ที่ฉันสร้างขึ้น",
+			details = "กอบกู้เกียรติยศแห่ง Terra Gloria และสวมมงกุฎให้แก่เหล่าตัวเอก"
+		},
+		resource = {
+			[1] = { text = "เข้าร่วมพิธีบรมราชาภิเษกของกษัตริย์องค์ใหม่แห่ง Rune-Midgards" }
+		},
+		reward = { title = 1046 },
+		score = 10
+	},
+	[170000] = {
+		UI_Type = 0,
+		group = "HEAR",
+		major = 4,
+		minor = 0,
+		title = "ห้องขับขานไม่ใช่เรื่องบังเอิญ",
+		content = {
+			summary = "รับฟังเพลงลับของนักดนตรีในราชสำนัก",
+			details = "รับฟังเพลงลับจากนักดนตรีในราชสำนักที่แนะนำทั้ง 5 คน"
+		},
+		resource = { [1] = { text = "รับฟังเพลงลับจากนักดนตรีในราชสำนักที่แนะนำทั้ง 5 คน" } },
+		reward = {},
+		score = 10
+	},
+	[190000] = {
+		UI_Type = 1,
+		group = "CHATTING",
+		major = 4,
+		minor = 1,
+		title = "เหล่าแรงงานพันธมิตรแห่งเมืองพาณิชย์",
+		content = {
+			summary = "แรงงานพันธมิตรในเมืองใหญ่แห่งพ่อค้า",
+			details = "คุณต้องการจะท้าทายคำร้องขอทั้งหมดของพันธมิตรเมืองพาณิชย์ใช่หรือไม่? ถ้าอย่างนั้นก็จงทำงานให้หนักขึ้น! เมืองพาณิชย์ไม่ใช่สถานที่สำหรับคนที่ไม่กระตือรือร้น"
+		},
+		resource = {
+			[1] = { text = "ระดับ Amethyst ฝึกหัด", count = 1 },
+			[2] = { text = "ระดับ Sardonyx ผู้เชี่ยวชาญ", count = 10 },
+			[3] = { text = "ระดับ Aquamarine ผู้มีความสามารถ", count = 30 },
+			[4] = { text = "ระดับ Diamond ประกายแวววาว", count = 100 }
+		},
+		reward = {},
+		score = 50
+	},
+	[200000] = {
+		UI_Type = 0,
+		group = "GOAL_LEVEL",
+		major = 1,
+		minor = 0,
+		title = "ครอบครองออร่าแรก!",
+		content = {
+			summary = "บรรลุ Base Level 99!",
+			details = "บรรลุ Base Level 99"
+		},
+		resource = { [1] = { text = "Base Level 99" } },
+		reward = { title = 1000, buff = 10, item = 12549 },
+		score = 50
+	},
+	[200001] = {
+		UI_Type = 0,
+		group = "GOAL_LEVEL",
+		major = 1,
+		minor = 0,
+		title = "ครอบครองออร่าที่สอง!",
+		content = {
+			summary = "บรรลุ Base Level 150!",
+			details = "บรรลุ Base Level 150"
+		},
+		resource = { [1] = { text = "Base Level 150" } },
+		reward = { title = 1001, buff = 10, item = 5364 },
+		score = 60
+	},
+	[200002] = {
+		UI_Type = 0,
+		group = "GOAL_LEVEL",
+		major = 1,
+		minor = 0,
+		title = "ครอบครองออร่าที่สาม!",
+		content = {
+			summary = "บรรลุ Base Level 175!",
+			details = "บรรลุ Base Level 175"
+		},
+		resource = { [1] = { text = "Base Level 175" } },
+		reward = { title = 1002, buff = 10, item = 18880 },
+		score = 70
+	},
+	[200003] = {
+		UI_Type = 0,
+		group = "GOAL_LEVEL",
+		major = 1,
+		minor = 0,
+		title = "ปรมาจารย์ระดับ Job!",
+		content = {
+			summary = "บรรลุ Job Level 50!",
+			details = "บรรลุ Job level 50"
+		},
+		resource = { [1] = { text = "Job level 50" } },
+		reward = { title = 1003, buff = 10, item = 617 },
+		score = 30
+	},
+	[200004] = {
+		UI_Type = 0,
+		group = "GOAL_LEVEL",
+		major = 1,
+		minor = 0,
+		title = "แกรนด์มาสเตอร์ระดับ Job!",
+		content = {
+			summary = "บรรลุ Job Level 70!",
+			details = "บรรลุ Job level 70"
+		},
+		resource = { [1] = { text = "Job level 70" } },
+		reward = { title = 1004, buff = 10, item = 12817 },
+		score = 50
+	},
+	[200005] = {
+		UI_Type = 0,
+		group = "JOB_CHANGE",
+		major = 1,
+		minor = 0,
+		title = "นักผจญภัยอย่างเป็นทางการ",
+		content = {
+			summary = "เปลี่ยนอาชีพเป็นคลาสแรก",
+			details = "Acolyte, Merchant, Swordman, Mage, Thief หรือ Archer"
+		},
+		resource = { [1] = { text = "เปลี่ยนอาชีพเป็นคลาสแรก" } },
+		reward = { buff = 12 },
+		score = 10
+	},
+	[200006] = {
+		UI_Type = 0,
+		group = "JOB_CHANGE",
+		major = 1,
+		minor = 0,
+		title = "ก้าวแรกของการเปลี่ยนอาชีพ!",
+		content = {
+			summary = "ก้าวแรกของการเปลี่ยนอาชีพ",
+			details = "Acolyte, Merchant, Swordman, Mage, Thief หรือ Archer"
+		},
+		resource = { [1] = { text = "ก้าวแรกของการเปลี่ยนอาชีพ" } },
+		reward = { buff = 12 },
+		score = 20
+	},
+	[200007] = {
+		UI_Type = 0,
+		group = "JOB_CHANGE",
+		major = 1,
+		minor = 0,
+		title = "นักผจญภัยผู้ช่ำชอง! (1)",
+		content = {
+			summary = "เปลี่ยนอาชีพเป็นคลาส 2-1",
+			details = "Knight, Blacksmith, Assassin, Wizard, Priest หรือ Hunter"
+		},
+		resource = { [1] = { text = "เปลี่ยนอาชีพเป็นคลาส 2-1" } },
+		reward = { buff = 12 },
+		score = 25
+	},
+	[200008] = {
+		UI_Type = 0,
+		group = "JOB_CHANGE",
+		major = 1,
+		minor = 0,
+		title = "นักผจญภัยผู้ช่ำชอง! (2)",
+		content = {
+			summary = "เปลี่ยนอาชีพเป็นคลาส 2-2",
+			details = "Crusader, Alchemist, Rogue, Sage, Monk, Bard หรือ Dancer"
+		},
+		resource = { [1] = { text = "เปลี่ยนอาชีพเป็นคลาส 2-2" } },
+		reward = { buff = 12 },
+		score = 25
+	},
+	[200009] = {
+		UI_Type = 0,
+		group = "JOB_CHANGE",
+		major = 1,
+		minor = 0,
+		title = "นักรบ (1)",
+		content = {
+			summary = "เปลี่ยนอาชีพเป็นคลาส High 2-1 (transcendent)",
+			details = "Lord Knight, White Smith, Assassin Cross, High Wizard, High Priest หรือ Sniper"
+		},
+		resource = { [1] = { text = "เปลี่ยนอาชีพเป็นคลาส High 2-1 (transcendent)" } },
+		reward = { buff = 12 },
+		score = 30
+	},
+	[200010] = {
+		UI_Type = 0,
+		group = "JOB_CHANGE",
+		major = 1,
+		minor = 0,
+		title = "นักรบ (2)",
+		content = {
+			summary = "เปลี่ยนอาชีพเป็นคลาส High 2-2 (transcendent)",
+			details = "Paladin, Creator, Stalker, Professor, Champion, Clown หรือ Gypsy"
+		},
+		resource = { [1] = { text = "เปลี่ยนอาชีพเป็นคลาส High 2-2 (transcendent)" } },
+		reward = { buff = 12 },
+		score = 30
+	},
+	[200011] = {
+		UI_Type = 0,
+		group = "JOB_CHANGE",
+		major = 1,
+		minor = 0,
+		title = "นักผจญภัยระดับแนวหน้า! (1)",
+		content = {
+			summary = "เปลี่ยนอาชีพเป็นคลาส 3-1",
+			details = "Rune Knight, Mechanic, Guillotine Cross, Warlock, Arch Bishop หรือ Ranger"
+		},
+		resource = { [1] = { text = "เปลี่ยนอาชีพเป็นคลาส 3-1" } },
+		reward = { buff = 12, item = 16483 },
+		score = 50
+	},
+	[200012] = {
+		UI_Type = 0,
+		group = "JOB_CHANGE",
+		major = 1,
+		minor = 0,
+		title = "ผู้ก้าวข้ามขีดจำกัด! (1)",
+		content = {
+			summary = "เปลี่ยนอาชีพเป็นคลาส 3-1 หลังจากจุติ (transcendent)",
+			details = "Rune Knight, Mechanic, Guillotine Cross, Warlock, Arch Bishop หรือ Ranger หลังจากจุติ"
+		},
+		resource = { [1] = { text = "เปลี่ยนอาชีพเป็นคลาส 3-1 หลังจากจุติ" } },
+		reward = { buff = 12, item = 16483 },
+		score = 60
+	},
+	[200013] = {
+		UI_Type = 0,
+		group = "JOB_CHANGE",
+		major = 1,
+		minor = 0,
+		title = "นักผจญภัยระดับแนวหน้า! (2)",
+		content = {
+			summary = "เปลี่ยนอาชีพเป็นคลาส 3-2",
+			details = "Royal Guard, Geneticist, Shadow Chaser, Sorcerer, Sura, Minstrel หรือ Wanderer"
+		},
+		resource = { [1] = { text = "เปลี่ยนอาชีพเป็นคลาส 3-2" } },
+		reward = { buff = 12, item = 16483 },
+		score = 50
+	},
+	[200014] = {
+		UI_Type = 0,
+		group = "JOB_CHANGE",
+		major = 1,
+		minor = 0,
+		title = "ผู้ก้าวข้ามขีดจำกัด! (2)",
+		content = {
+			summary = "เปลี่ยนอาชีพเป็นคลาส 3-2 หลังจากจุติ (transcendent)",
+			details = "Royal Guard, Geneticist, Shadow Chaser, Sorcerer, Sura, Minstrel หรือ Wanderer หลังจากจุติ"
+		},
+		resource = { [1] = { text = "เปลี่ยนอาชีพเป็นคลาส 3-2 หลังจากจุติ" } },
+		reward = { buff = 12, item = 16483 },
+		score = 60
+	},
+	[200015] = {
+		UI_Type = 0,
+		group = "JOB_CHANGE",
+		major = 1,
+		minor = 0,
+		title = "วิถีแห่งตัวละครพิเศษ",
+		content = {
+			summary = "เปลี่ยนอาชีพเป็นคลาสเสริม (expanded classes)",
+			details = "Taekwon, Gunslinger, Super Novice หรือ Ninja"
+		},
+		resource = { [1] = { text = "เปลี่ยนอาชีพเป็นคลาสเสริม" } },
+		reward = { buff = 12 },
+		score = 10
+	},
+	[200016] = {
+		UI_Type = 0,
+		group = "JOB_CHANGE",
+		major = 1,
+		minor = 0,
+		title = "นี่คือวิถีของฉัน!",
+		content = {
+			summary = "เปลี่ยนอาชีพเป็นคลาสเสริมขั้นที่ 2",
+			details = "Soul Linker, Star Gladiator, Rebellion, Oboro หรือ Kagerou"
+		},
+		resource = { [1] = { text = "คลาสเสริมขั้นที่ 2" } },
+		reward = { buff = 12, item = 16483 },
+		score = 20
+	},
+	[200017] = {
+		UI_Type = 0,
+		group = "GOAL_STATUS",
+		major = 1,
+		minor = 0,
+		title = "พลังแห่งหมี!",
+		content = {
+			summary = "บรรลุค่า STR พื้นฐาน 90",
+			details = "บรรลุค่า STR พื้นฐานตั้งแต่ 90 ขึ้นไป"
+		},
+		resource = { [1] = { text = "บรรลุค่า STR พื้นฐาน 90" } },
+		reward = {},
+		score = 10
+	},
+	[200018] = {
+		UI_Type = 0,
+		group = "GOAL_STATUS",
+		major = 1,
+		minor = 0,
+		title = "เวทมนตร์ที่เอ่อล้น!",
+		content = {
+			summary = "บรรลุค่า INT พื้นฐาน 90",
+			details = "บรรลุค่า INT พื้นฐานตั้งแต่ 90 ขึ้นไป"
+		},
+		resource = { [1] = { text = "บรรลุค่า INT พื้นฐาน 90" } },
+		reward = {},
+		score = 10
+	},
+	[200019] = {
+		UI_Type = 0,
+		group = "GOAL_STATUS",
+		major = 1,
+		minor = 0,
+		title = "ร่างกายแข็งแรงและสุขภาพจิตดี!",
+		content = {
+			summary = "บรรลุค่า VIT พื้นฐาน 90",
+			details = "บรรลุค่า VIT พื้นฐานตั้งแต่ 90 ขึ้นไป"
+		},
+		resource = { [1] = { text = "บรรลุค่า VIT พื้นฐาน 90" } },
+		reward = {},
+		score = 10
+	},
+	[200020] = {
+		UI_Type = 0,
+		group = "GOAL_STATUS",
+		major = 1,
+		minor = 0,
+		title = "ความเร็วแสง",
+		content = {
+			summary = "บรรลุค่า AGI พื้นฐาน 90",
+			details = "บรรลุค่า AGI พื้นฐานตั้งแต่ 90 ขึ้นไป"
+		},
+		resource = { [1] = { text = "บรรลุค่า AGI พื้นฐาน 90" } },
+		reward = {},
+		score = 10
+	},
+	[200021] = {
+		UI_Type = 0,
+		group = "GOAL_STATUS",
+		major = 1,
+		minor = 0,
+		title = "ดวงตาเหยี่ยว",
+		content = {
+			summary = "บรรลุค่า DEX พื้นฐาน 90",
+			details = "บรรลุค่า DEX พื้นฐานตั้งแต่ 90 ขึ้นไป"
+		},
+		resource = { [1] = { text = "บรรลุค่า DEX พื้นฐาน 90" } },
+		reward = {},
+		score = 10
+	},
+	[200022] = {
+		UI_Type = 0,
+		group = "GOAL_STATUS",
+		major = 1,
+		minor = 0,
+		title = "โชคขั้นสูงสุด",
+		content = {
+			summary = "บรรลุค่า LUK พื้นฐาน 90",
+			details = "บรรลุค่า LUK พื้นฐานตั้งแต่ 90 ขึ้นไป"
+		},
+		resource = { [1] = { text = "บรรลุค่า LUK พื้นฐาน 90" } },
+		reward = {},
+		score = 10
+	},
+	[200023] = {
+		UI_Type = 0,
+		group = "GOAL_STATUS",
+		major = 1,
+		minor = 0,
+		title = "พลังดั่งมังกร!",
+		content = {
+			summary = "บรรลุค่า STR พื้นฐาน 125",
+			details = "บรรลุค่า STR พื้นฐานตั้งแต่ 125 ขึ้นไป"
+		},
+		resource = { [1] = { text = "บรรลุค่า STR พื้นฐาน 125" } },
+		reward = { buff = 319 },
+		score = 20
+	},
+	[200024] = {
+		UI_Type = 0,
+		group = "GOAL_STATUS",
+		major = 1,
+		minor = 0,
+		title = "ความคลั่งไคล้ในมนตรา",
+		content = {
+			summary = "บรรลุค่า INT พื้นฐาน 125",
+			details = "บรรลุค่า INT พื้นฐานตั้งแต่ 125 ขึ้นไป"
+		},
+		resource = { [1] = { text = "บรรลุค่า INT พื้นฐาน 125" } },
+		reward = { buff = 611 },
+		score = 20
+	},
+	[200025] = {
+		UI_Type = 0,
+		group = "GOAL_STATUS",
+		major = 1,
+		minor = 0,
+		title = "หินผาผสมเหล็กกล้า",
+		content = {
+			summary = "บรรลุค่า VIT พื้นฐาน 125",
+			details = "บรรลุค่า VIT พื้นฐานตั้งแต่ 125 ขึ้นไป"
+		},
+		resource = { [1] = { text = "บรรลุค่า VIT พื้นฐาน 125" } },
+		reward = { buff = 293 },
+		score = 20
+	},
+	[200026] = {
+		UI_Type = 0,
+		group = "GOAL_STATUS",
+		major = 1,
+		minor = 0,
+		title = "ความเร็วแสง",
+		content = {
+			summary = "บรรลุค่า AGI พื้นฐาน 125",
+			details = "บรรลุค่า AGI พื้นฐานตั้งแต่ 125 ขึ้นไป"
+		},
+		resource = { [1] = { text = "บรรลุค่า AGI พื้นฐาน 125" } },
+		reward = { buff = 296 },
+		score = 20
+	},
+	[200027] = {
+		UI_Type = 0,
+		group = "GOAL_STATUS",
+		major = 1,
+		minor = 0,
+		title = "ดวงตาแห่งเหยี่ยว",
+		content = {
+			summary = "บรรลุค่า DEX พื้นฐาน 125",
+			details = "บรรลุค่า DEX พื้นฐานตั้งแต่ 125 ขึ้นไป"
+		},
+		resource = { [1] = { text = "บรรลุค่า DEX พื้นฐาน 125" } },
+		reward = { buff = 295 },
+		score = 20
+	},
+	[200028] = {
+		UI_Type = 0,
+		group = "GOAL_STATUS",
+		major = 1,
+		minor = 0,
+		title = "โชคลาภพุ่งพล่าน",
+		content = {
+			summary = "บรรลุค่า LUK พื้นฐาน 125",
+			details = "บรรลุค่า LUK พื้นฐานตั้งแต่ 125 ขึ้นไป"
+		},
+		resource = { [1] = { text = "บรรลุค่า LUK พื้นฐาน 125" } },
+		reward = { buff = 21 },
+		score = 20
+	},
+	[200029] = {
+		UI_Type = 0,
+		group = "GOAL_STATUS",
+		major = 1,
+		minor = 0,
+		title = "ร่างอวตารแห่งความรักและความแค้น",
+		content = {
+			summary = "บรรลุ Base Level 99 ในอาชีพ Novice",
+			details = "บรรลุ Base Level 99 ด้วยตัวละครอาชีพ Novice"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 99 ในอาชีพ Novice" } },
+		reward = { buff = 10, item = 16483 },
+		score = 30
+	},
+	[200030] = {
+		UI_Type = 0,
+		group = "GOAL_STATUS",
+		major = 1,
+		minor = 0,
+		title = "ฉันรักมันจริงๆ นะ!",
+		content = {
+			summary = "บรรลุ Base Level 99 ในอาชีพคลาสแรก",
+			details = "บรรลุ Base Level 99 ด้วยตัวละครอาชีพคลาสแรก"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 99 ในอาชีพคลาสแรก" } },
+		reward = { buff = 10, item = 101948 },
+		score = 30
+	},
+	[200031] = {
+		UI_Type = 0,
+		group = "JOB_CHANGE",
+		major = 1,
+		minor = 0,
+		title = "เกิดใหม่ใน Valhalla!",
+		content = {
+			summary = "เปลี่ยนอาชีพเป็น High Novice (transcendent)",
+			details = "สนทนากับ Valkyrie เพื่อเปลี่ยนอาชีพเป็น High Novice"
+		},
+		resource = { [1] = { text = "เปลี่ยนอาชีพเป็น High Novice" } },
+		reward = { buff = 12, item = 22808 },
+		score = 10
+	},
+	[200032] = {
+		UI_Type = 0,
+		group = "GOAL_LEVEL",
+		major = 1,
+		minor = 0,
+		title = "จุดเริ่มต้นของการผจญภัยครั้งใหม่!",
+		content = {
+			summary = "บรรลุ Base Lv 100!",
+			details = "บรรลุ Base Lv 100" 
+		},
+		resource = { [1] = { text = "Base Level 100" } },
+		reward = { item = 23585 },
+		score = 10
+	},
+	[200033] = {
+		UI_Type = 0,
+		group = "GOAL_LEVEL",
+		major = 1,
+		minor = 0,
+		title = "ความมุ่งมั่นครั้งใหม่!(1)",
+		content = {
+			summary = "บรรลุ Base Lv 170 ในอาชีพคลาส 3-1!",
+			details = "บรรลุ Base Lv 170 ด้วยตัวละครอาชีพคลาส 3-1"
+		},
+		resource = { [1] = { text = "Base Level 170" } },
+		reward = { item = 6959 },
+		score = 50
+	},
+	[200034] = {
+		UI_Type = 0,
+		group = "GOAL_LEVEL",
+		major = 1,
+		minor = 0,
+		title = "ความมุ่งมั่นครั้งใหม่!(2)",
+		content = {
+			summary = "บรรลุ Base Lv 170 ในอาชีพคลาส 3-2!",
+			details = "บรรลุ Base Lv 170 ด้วยตัวละครอาชีพคลาส 3-2"
+		},
+		resource = { [1] = { text = "Base Level 170" } },
+		reward = { item = 6959 },
+		score = 50
+	},
+	[200035] = {
+		UI_Type = 0,
+		group = "GOAL_LEVEL",
+		major = 1,
+		minor = 0,
+		title = "บรรลุเลเวล 200 สำเร็จ!",
+		content = {
+			summary = "บรรลุ Base Lv 200!",
+			details = "บรรลุ Base Lv 200"
+		},
+		resource = {[1] = { text = "Base Level 200" } },
+		reward = { buff = 10, item = 400124 },
+		score = 100
+	},
+	[230100] = {
+		UI_Type = 0,
+		group = "GOAL_LEVEL",
+		major = 3,
+		minor = 1,
+		title = "Poring คือความรัก",
+		content = {
+			summary = "บรรลุภารกิจตามเป้าหมายทั้งหมด",
+			details = "คุณคือผู้คลั่งไคล้ในทุกสรรพสิ่งที่เป็น Poring ตัวจริง!"
+		},
+		resource = {
+			[1] = { text = "สำเร็จการท้าทาย 'Poring - การทำให้เชื่อง'", shortcut = 230101 },
+			[2] = { text = "สำเร็จการท้าทาย 'Drops - การทำให้เชื่อง'", shortcut = 230102 },
+			[3] = { text = "สำเร็จการท้าทาย 'Poporing - การทำให้เชื่อง'", shortcut = 230103 },
+			[4] = { text = "สำเร็จการท้าทาย 'Novice Poring - การทำให้เชื่อง'", shortcut = 230104 }
+		},
+		reward = { title = 1025, buff = 12 },
+		score = 50
+	},
+	[230110] = {
+		UI_Type = 0,
+		group = "GOAL_LEVEL",
+		major = 3,
+		minor = 1,
+		title = "นักกีฏวิทยา",
+		content = {
+			summary = "บรรลุภารกิจตามเป้าหมายทั้งหมด",
+			details = "คุณตื่นรู้ด้วยความคิดที่จะสะสมแมลงเพื่อกลายเป็นนักกีฏวิทยาที่แท้จริง!"
+		},
+		resource = {
+			[1] = { text = "สำเร็จการท้าทาย 'Chonchon - การทำให้เชื่อง'", shortcut = 230111 },
+			[2] = { text = "สำเร็จการท้าทาย 'Steel Chonchon - การทำให้เชื่อง'", shortcut = 230112 },
+			[3] = { text = "สำเร็จการท้าทาย 'Hunter Fly - การทำให้เชื่อง'", shortcut = 230113 },
+			[4] = { text = "สำเร็จการท้าทาย 'Rocker - การทำให้เชื่อง'", shortcut = 230114 },
+			[5] = { text = "สำเร็จการท้าทาย 'Spore - การทำให้เชื่อง'", shortcut = 230115 },
+			[6] = { text = "สำเร็จการท้าทาย 'Poison Spore - การทำให้เชื่อง'", shortcut = 230116 }
+		},
+		reward = { title = 1026, buff = 12 },
+		score = 50
+	},
+	[230120] = {
+		UI_Type = 0,
+		group = "GOAL_LEVEL",
+		major = 3,
+		minor = 1,
+		title = "สัตว์คือเพื่อนของเรา",
+		content = {
+			summary = "บรรลุภารกิจตามเป้าหมายทั้งหมด",
+			details = "คุณตื่นรู้ด้วยความคิดที่จะกลายเป็นคนรักสัตว์ที่แท้จริง!"
+		},
+		resource = {
+			[1] = { text = "สำเร็จการท้าทาย 'Lunatic - การทำให้เชื่อง'", shortcut = 230121 },
+			[2] = { text = "สำเร็จการท้าทาย 'Picky - การทำให้เชื่อง'", shortcut = 230122 },
+			[3] = { text = "สำเร็จการท้าทาย 'Savage Bebe - การทำให้เชื่อง'", shortcut = 230123 },
+			[4] = { text = "สำเร็จการท้าทาย 'Baby Desert Wolf - การทำให้เชื่อง'", shortcut = 230124 },
+			[5] = { text = "สำเร็จการท้าทาย 'Smokie - การทำให้เชื่อง'", shortcut = 230125 },
+			[6] = { text = "สำเร็จการท้าทาย 'Yoyo - การทำให้เชื่อง'", shortcut = 230126 },
+			[7] = { text = "สำเร็จการท้าทาย 'Peco Peco - การทำให้เชื่อง'", shortcut = 230127 },
+			[8] = { text = "สำเร็จการท้าทาย 'Petite - การทำให้เชื่อง'", shortcut = 230128 }
+		},
+		reward = { title = 1027, buff = 12 },
+		score = 50
+	},
+	[230140] = {
+		UI_Type = 0,
+		group = "GOAL_LEVEL",
+		major = 3,
+		minor = 1,
+		title = "รวมพลังมอนสเตอร์สาว!!",
+		content = {
+			summary = "บรรลุภารกิจตามเป้าหมายทั้งหมด",
+			details = "คุณตื่นรู้ด้วยความคิดที่จะกลายเป็นโปรดิวเซอร์ของเหล่ามอนสเตอร์สาว!"
+		},
+		resource = {
+			[1] = { text = "สำเร็จการท้าทาย 'Munak - การทำให้เชื่อง'", shortcut = 230141 },
+			[2] = { text = "สำเร็จการท้าทาย 'Isis - การทำให้เชื่อง'", shortcut = 230142 },
+			[3] = { text = "สำเร็จการท้าทาย 'Sohee - การทำให้เชื่อง'", shortcut = 230143 },
+			[4] = { text = "สำเร็จการท้าทาย 'Zherlthsh - การทำให้เชื่อง'", shortcut = 230144 },
+			[5] = { text = "สำเร็จการท้าทาย 'Alice - การทำให้เชื่อง'", shortcut = 230145 },
+			[6] = { text = "สำเร็จการท้าทาย 'Succubus - การทำให้เชื่อง'", shortcut = 230146 },
+			[7] = { text = "สำเร็จการท้าทาย 'Loli Ruri - การทำให้เชื่อง'", shortcut = 230147 }
+		},
+		reward = { title = 1029, buff = 12 },
+		score = 50
+	},
+	[230101] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Poring - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Poring เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Poring กันเถอะ คุณสามารถใช้ 'Unripe Apple' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Poring เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230102] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Drops - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Drops เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Drops กันเถอะ คุณสามารถใช้ 'Orange Juice' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Drops เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230103] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Poporing - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Poporing เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Poporing กันเถอะ คุณสามารถใช้ 'Bitter Herb' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Poporing เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230104] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Novice Poring - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Novice Poring เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Novice Poring กันเถอะ คุณสามารถใช้ 'Little Unripe Apple' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Novice Poring เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230111] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Chonchon - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Chonchon เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Chonchon กันเถอะ คุณสามารถใช้ 'Rotten Fish' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Chonchon เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230112] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Steel Chonchon - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Steel Chonchon เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Steel Chonchon กันเถอะ คุณสามารถใช้ 'Rusty Iron' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Steel Chonchon เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230113] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Hunter Fly - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Hunter Fly เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Hunter Fly กันเถอะ คุณสามารถใช้ 'Monster Juice' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Hunter Fly เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230114] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Rocker - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Rocker เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Rocker กันเถอะ คุณสามารถใช้ 'Singing Flower' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Rocker เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230115] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Spore - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Spore เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Spore กันเถอะ คุณสามารถใช้ 'Dew Laden Moss' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Spore เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230116] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Poison Spore - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Poison Spore เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Poison Spore กันเถอะ คุณสามารถใช้ 'Deadly Noxious Herb' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Poison Spore เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230121] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Lunatic - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Lunatic เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Lunatic กันเถอะ คุณสามารถใช้ 'Rainbow Carrot' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Lunatic เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230122] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Picky - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Picky เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Picky กันเถอะ คุณสามารถใช้ 'Earthworm the Dude' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Picky เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230123] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Savage Bebe - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Savage Bebe เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Savage Bebe กันเถอะ คุณสามารถใช้ 'Sweet Milk' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Savage Bebe เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230124] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Baby Desert Wolf - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Baby Desert Wolf เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Baby Desert Wolf กันเถอะ คุณสามารถใช้ 'Well-Dried Bone' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Baby Desert Wolf เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230125] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Smokie - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Smokie เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Smokie กันเถอะ คุณสามารถใช้ 'Baked Yam' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Smokie เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230126] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Yoyo - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Yoyo เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Yoyo กันเถอะ คุณสามารถใช้ 'Tropical Banana' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Yoyo เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230127] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Peco Peco - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Peco Peco เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Peco Peco กันเถอะ คุณสามารถใช้ 'Fatty Chubby Earthworm' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Peco Peco เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230128] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Petite - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Petite เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Petite กันเถอะ คุณสามารถใช้ 'Shining Stone' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Petite เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230141] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Munak - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Munak เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Munak กันเถอะ คุณสามารถใช้ 'No Recipient' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Munak เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230142] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Isis - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Isis เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Isis กันเถอะ คุณสามารถใช้ 'Armlet of Obedience' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Isis เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230143] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Sohee - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Sohee เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Sohee กันเถอะ คุณสามารถใช้ 'Silver Knife of Chastity' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Sohee เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230144] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Zherlthsh - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Zherlthsh เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Zherlthsh กันเถอะ คุณสามารถใช้ 'Forbidden Red Candle' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Zherlthsh เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230145] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Alice - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Alice เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Alice กันเถอะ คุณสามารถใช้ 'Soft Apron' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Alice เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230146] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Succubus - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Succubus เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Succubus กันเถอะ คุณสามารถใช้ 'Boy's Pure Heart' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Succubus เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[230147] = {
+		UI_Type = 0,
+		group = "TAMING",
+		major = 3,
+		minor = 1,
+		title = "Loli Ruri - การทำให้เชื่อง",
+		content = {
+			summary = "ทำให้ Loli Ruri เชื่องได้สำเร็จ",
+			details = "มาหาเลี้ยงสัตว์เลี้ยง Loli Ruri กันเถอะ คุณสามารถใช้ 'Very Red Juice' ได้"
+		},
+		resource = { [1] = { text = "ทำให้ Loli Ruri เชื่องได้สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[220000] = {
+		UI_Type = 0,
+		group = "CHATTING",
+		major = 1,
+		minor = 2,
+		title = "เริ่มต้นสังคม",
+		content = {
+			summary = "สร้างห้องแชท",
+			details = "มาสร้างห้องแชทกันเถอะ กดปุ่มลัดบนคีย์บอร์ด Alt+C"
+		},
+		resource = { [1] = { text = "สร้างห้องแชท" } },
+		reward = {},
+		score = 10
+	},
+	[220001] = {
+		UI_Type = 0,
+		group = "CHATTING_DYING",
+		major = 1,
+		minor = 2,
+		title = "คนช่างคุยหลังความตาย",
+		content = {
+			summary = "สร้างห้องแชทในขณะที่หมดสติ (KO)",
+			details = "สร้างห้องแชทในขณะที่หมดสติ (KO) กดปุ่มลัดบนคีย์บอร์ด Alt+C"
+		},
+		resource = { [1] = { text = "สร้างห้องแชทในขณะที่หมดสติ" } },
+		reward = {},
+		score = 10
+	},
+	[220002] = {
+		UI_Type = 0,
+		group = "CHATTING20",
+		major = 1,
+		minor = 2,
+		title = "คุยจ๊อกไม่หยุดหย่อน",
+		content = {
+			summary = "ทำให้ห้องแชทเต็มไปด้วยผู้คน 20 คน",
+			details = "รวบรวมผู้คนและเริ่มการสนทนา ทำให้ห้องแชทมีคนครบ 20 คน"
+		},
+		resource = { [1] = { text = "ทำให้ห้องแชทเต็มไปด้วยคน 20 คน" } },
+		reward = {},
+		score = 10
+	},
+	[220003] = {
+		UI_Type = 0,
+		group = "ADD_FRIEND",
+		major = 1,
+		minor = 2,
+		title = "เพื่อนรัก~ เพื่อนเลิฟ~",
+		content = {
+			summary = "เพิ่มเพื่อน 1 คน",
+			details = "มาหาเพื่อนร่วมทางและเริ่มต้นการเดินทางไปด้วยกัน เพิ่มเพื่อน 1 คน"
+		},
+		resource = { [1] = { text = "เพิ่มเพื่อน 1 คน" } },
+		reward = {},
+		score = 10
+	},
+	[220004] = {
+		UI_Type = 0,
+		group = "ADD_FRIEND",
+		major = 1,
+		minor = 2,
+		title = "คนดังสุดฮอต",
+		content = {
+			summary = "เพิ่มเพื่อน 10 คน",
+			details = "มาหาเพื่อนร่วมทางและเริ่มต้นการเดินทางไปด้วยกัน เพิ่มเพื่อน 10 คน"
+		},
+		resource = { [1] = { text = "เพิ่มเพื่อน 10 คน" } },
+		reward = {},
+		score = 10
+	},
+	[220005] = {
+		UI_Type = 0,
+		group = "PARTY",
+		major = 1,
+		minor = 2,
+		title = "มาตั้งปาร์ตี้กันเถอะ~",
+		content = {
+			summary = "สร้างปาร์ตี้",
+			details = "การผจญภัยคนเดียวนั้นช่างยากลำบาก! มาสร้างปาร์ตี้กันเถอะ"
+		},
+		resource = { [1] = { text = "สร้างปาร์ตี้" } },
+		reward = {},
+		score = 10
+	},
+	[220006] = {
+		UI_Type = 0,
+		group = "MARRY",
+		major = 1,
+		minor = 2,
+		title = "คุณแต่งงานแล้วหรือยัง..?",
+		content = {
+			summary = "แต่งงานสำเร็จ",
+			details = "การใช้ชีวิตในโลกนี้มันช่างเหนื่อยยาก มาเติมเต็มมันด้วยความรักกันเถอะ มาแต่งงานกับคนที่คุณรักกัน"
+		},
+		resource = { [1] = { text = "แต่งงานสำเร็จ" } },
+		reward = { title = 1022 },
+		score = 20
+	},
+	[220007] = {
+		UI_Type = 0,
+		group = "BABY",
+		major = 1,
+		minor = 2,
+		title = "เลี้ยงดูฉันได้ไหม?",
+		content = {
+			summary = "ถูกรับเลี้ยงโดยพ่อแม่",
+			details = "ก้าวผ่านโลกที่โหดร้ายด้วยความช่วยเหลือจากพ่อแม่"
+		},
+		resource = { [1] = { text = "ถูกรับเลี้ยงโดยพ่อแม่" } },
+		reward = { title = 1032 },
+		score = 20
+	},
+	[220008] = {
+		UI_Type = 0,
+		group = "BABY",
+		major = 1,
+		minor = 2,
+		title = "การเป็นพ่อแม่คน",
+		content = {
+			summary = "รับเลี้ยงบุตรบุญธรรม",
+			details = "รับเด็กที่มีความสุขมาเลี้ยง และสร้างเรื่องราวครอบครัวที่สวยงามผ่านการรับเลี้ยงบุตรบุญธรรม"
+		},
+		resource = { [1] = { text = "รับเลี้ยงบุตรบุญธรรม" } },
+		reward = { title = 1033 },
+		score = 20
+	},
+	[220009] = {
+		UI_Type = 1,
+		group = "SPEND_ZENY",
+		major = 1,
+		minor = 1,
+		title = "กระตุ้นเศรษฐกิจตลาด (1)",
+		content = {
+			summary = "ใช้จ่าย 10,000 zeny กับร้านค้าตั้งแผงลอย",
+			details = "นี่คือรูปแบบหนึ่งของกระบวนการหมุนเวียนเงิน ใช้จ่าย 10,000 zeny กับร้านค้าตั้งแผงลอย"
+		},
+		resource = { [1] = { text = "ใช้จ่าย 10,000 zeny กับร้านค้าตั้งแผงลอย", count = 10000 } },
+		reward = {},
+		score = 10
+	},
+	[220010] = {
+		UI_Type = 1,
+		group = "SPEND_ZENY",
+		major = 1,
+		minor = 1,
+		title = "กระตุ้นเศรษฐกิจตลาด (2)",
+		content = {
+			summary = "ใช้จ่าย 100,000 zeny กับร้านค้าตั้งแผงลอย",
+			details = "นี่คือรูปแบบหนึ่งของกระบวนการหมุนเวียนเงิน ใช้จ่าย 100,000 zeny กับร้านค้าตั้งแผงลอย"
+		},
+		resource = { [1] = { text = "ใช้จ่าย 100,000 zeny กับร้านค้าตั้งแผงลอย", count = 100000 } },
+		reward = {},
+		score = 15
+	},
+	[220011] = {
+		UI_Type = 1,
+		group = "SPEND_ZENY",
+		major = 1,
+		minor = 1,
+		title = "กระตุ้นเศรษฐกิจตลาด (3)",
+		content = {
+			summary = "ใช้จ่าย 500,000 zeny กับร้านค้าตั้งแผงลอย",
+			details = "นี่คือรูปแบบหนึ่งของกระบวนการหมุนเวียนเงิน ใช้จ่าย 500,000 zeny กับร้านค้าตั้งแผงลอย"
+		},
+		resource = { [1] = { text = "ใช้จ่าย 500,000 zeny กับร้านค้าตั้งแผงลอย", count = 500000 } },
+		reward = {},
+		score = 20
+	},
+	[220012] = {
+		UI_Type = 1,
+		group = "SPEND_ZENY",
+		major = 1,
+		minor = 1,
+		title = "กระตุ้นเศรษฐกิจตลาด (4)",
+		content = {
+			summary = "ใช้จ่าย 1,000,000 zeny กับร้านค้าตั้งแผงลอย",
+			details = "นี่คือรูปแบบหนึ่งของกระบวนการหมุนเวียนเงิน ใช้จ่าย 1,000,000 zeny กับร้านค้าตั้งแผงลอย"
+		},
+		resource = { [1] = { text = "ใช้จ่าย 1,000,000 zeny กับร้านค้าตั้งแผงลอย", count = 1000000 } },
+		reward = {},
+		score = 30
+	},
+	[220013] = {
+		UI_Type = 1,
+		group = "SPEND_ZENY",
+		major = 1,
+		minor = 1,
+		title = "กระตุ้นเศรษฐกิจตลาด (5)",
+		content = {
+			summary = "ใช้จ่าย 5,000,000 zeny กับร้านค้าตั้งแผงลอย",
+			details = "นี่คือรูปแบบหนึ่งของกระบวนการหมุนเวียนเงิน ใช้จ่าย 5,000,000 zeny กับร้านค้าตั้งแผงลอย"
+		},
+		resource = { [1] = { text = "ใช้จ่าย 5,000,000 zeny กับร้านค้าตั้งแผงลอย", count = 5000000 } },
+		reward = {},
+		score = 50
+	},
+	[220014] = {
+		UI_Type = 0,
+		group = "ENCHANT_SUCCESS",
+		major = 1,
+		minor = 1,
+		title = "ฉันเลิกตีบวกไม่ได้จริงๆ! (1)",
+		content = {
+			summary = "ตีบวกอาวุธ Level 1 เป็น +7 สำเร็จ",
+			details = "โชคของฉันอยู่ที่ไหนกันนะ? ตีบวกอาวุธ Level 1 เป็น +7 สำเร็จ"
+		},
+		resource = { [1] = { text = "ตีบวกอาวุธ Level 1 เป็น +7 สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[220015] = {
+		UI_Type = 0,
+		group = "ENCHANT_SUCCESS",
+		major = 1,
+		minor = 1,
+		title = "ฉันเลิกตีบวกไม่ได้จริงๆ! (2)",
+		content = {
+			summary = "ตีบวกอาวุธ Level 1 เป็น +12 สำเร็จ",
+			details = "โชคของฉันอยู่ที่ไหนกันนะ? ตีบวกอาวุธ Level 1 เป็น +12 สำเร็จ"
+		},
+		resource = { [1] = { text = "ตีบวกอาวุธ Level 1 เป็น +12 สำเร็จ" } },
+		reward = {},
+		score = 15
+	},
+	[220016] = {
+		UI_Type = 0,
+		group = "ENCHANT_SUCCESS",
+		major = 1,
+		minor = 1,
+		title = "ฉันเลิกตีบวกไม่ได้จริงๆ! (3)",
+		content = {
+			summary = "ตีบวกอาวุธ Level 2 เป็น +7 สำเร็จ",
+			details = "โชคของฉันอยู่ที่ไหนกันนะ? ตีบวกอาวุธ Level 2 เป็น +7 สำเร็จ"
+		},
+		resource = { [1] = { text = "ตีบวกอาวุธ Level 2 เป็น +7 สำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[220017] = {
+		UI_Type = 0,
+		group = "ENCHANT_SUCCESS",
+		major = 1,
+		minor = 1,
+		title = "ฉันเลิกตีบวกไม่ได้จริงๆ! (4)",
+		content = {
+			summary = "ตีบวกอาวุธ Level 2 เป็น +12 สำเร็จ",
+			details = "โชคของฉันอยู่ที่ไหนกันนะ? ตีบวกอาวุธ Level 2 เป็น +12 สำเร็จ"
+		},
+		resource = { [1] = { text = "ตีบวกอาวุธ Level 2 เป็น +12 สำเร็จ" } },
+		reward = {},
+		score = 15
+	},
+	[220018] = {
+		UI_Type = 0,
+		group = "ENCHANT_SUCCESS",
+		major = 1,
+		minor = 1,
+		title = "ฉันเลิกตีบวกไม่ได้จริงๆ! (5)",
+		content = {
+			summary = "ตีบวกอาวุธ Level 3 เป็น +7 สำเร็จ",
+			details = "โชคของฉันอยู่ที่ไหนกันนะ? ตีบวกอาวุธ Level 3 เป็น +7 สำเร็จ"
+		},
+		resource = { [1] = { text = "ตีบวกอาวุธ Level 3 เป็น +7 สำเร็จ" } },
+		reward = {},
+		score = 15
+	},
+	[220019] = {
+		UI_Type = 0,
+		group = "ENCHANT_SUCCESS",
+		major = 1,
+		minor = 1,
+		title = "ฉันเลิกตีบวกไม่ได้จริงๆ! (6)",
+		content = {
+			summary = "ตีบวกอาวุธ Level 3 เป็น +12 สำเร็จ",
+			details = "โชคของฉันอยู่ที่ไหนกันนะ? ตีบวกอาวุธ Level 3 เป็น +12 สำเร็จ"
+		},
+		resource = { [1] = { text = "ตีบวกอาวุธ Level 3 เป็น +12 สำเร็จ" } },
+		reward = {},
+		score = 20
+	},
+	[220020] = {
+		UI_Type = 0,
+		group = "ENCHANT_SUCCESS",
+		major = 1,
+		minor = 1,
+		title = "ฉันเลิกตีบวกไม่ได้จริงๆ! (7)",
+		content = {
+			summary = "ตีบวกอาวุธ Level 4 เป็น +7 สำเร็จ",
+			details = "โชคของฉันอยู่ที่ไหนกันนะ? ตีบวกอาวุธ Level 4 เป็น +7 สำเร็จ"
+		},
+		resource = { [1] = { text = "ตีบวกอาวุธ Level 4 เป็น +7 สำเร็จ" } },
+		reward = {},
+		score = 20
+	},
+	[220021] = {
+		UI_Type = 0,
+		group = "ENCHANT_SUCCESS",
+		major = 1,
+		minor = 1,
+		title = "ฉันเลิกตีบวกไม่ได้จริงๆ! (8)",
+		content = {
+			summary = "ตีบวกอาวุธ Level 4 เป็น +12 สำเร็จ",
+			details = "โชคของฉันอยู่ที่ไหนกันนะ? ตีบวกอาวุธ Level 4 เป็น +12 สำเร็จ"
+		},
+		resource = { [1] = { text = "ตีบวกอาวุธ Level 4 เป็น +12 สำเร็จ" } },
+		reward = {},
+		score = 30
+	},
+	[220022] = {
+		UI_Type = 0,
+		group = "ENCHANT_FAIL",
+		major = 1,
+		minor = 1,
+		title = "ความโลภของมนุษย์นั้นไม่มีที่สิ้นสุด..",
+		content = {
+			summary = "สัมผัสประสบการณ์ความล้มเหลวในการตีบวก",
+			details = "ความโลภของมนุษย์ไม่มีที่สิ้นสุดและมักจะซ้ำรอยเดิมเสมอ แต่ขอให้ได้รับบทเรียนจากความผิดพลาดนั้น สัมผัสประสบการณ์ความล้มเหลวในการตีบวก"
+		},
+		resource = { [1] = { text = "สัมผัสประสบการณ์ความล้มเหลวในการตีบวก" } },
+		reward = {},
+		score = 10
+	},
+	[220023] = {
+		UI_Type = 0,
+		group = "GET_ITEM",
+		major = 1,
+		minor = 1,
+		title = "ฉันเจอมันแล้ว! (1)",
+		content = {
+			summary = "ได้รับไอเทมที่มีมูลค่ามากกว่า 100 zeny",
+			details = "ฉันโชคดีจัง! ได้รับไอเทมที่มีมูลค่ามากกว่า 100 zeny เมื่อขายให้กับ NPC"
+		},
+		resource = { [1] = { text = "ได้รับไอเทมที่มีมูลค่ามากกว่า 100 zeny" } },
+		reward = {},
+		score = 10
+	},
+	[220024] = {
+		UI_Type = 0,
+		group = "GET_ITEM",
+		major = 1,
+		minor = 1,
+		title = "ฉันเจอมันแล้ว! (2)",
+		content = {
+			summary = "ได้รับไอเทมที่มีมูลค่ามากกว่า 1,000 zeny",
+			details = "ฉันโชคดีจัง! ได้รับไอเทมที่มีมูลค่ามากกว่า 1,000 zeny เมื่อขายให้กับ NPC"
+		},
+		resource = { [1] = { text = "ได้รับไอเทมที่มีมูลค่ามากกว่า 1,000 zeny" } },
+		reward = {},
+		score = 10
+	},
+	[220025] = {
+		UI_Type = 0,
+		group = "GET_ITEM",
+		major = 1,
+		minor = 1,
+		title = "ฉันเจอมันแล้ว! (3)",
+		content = {
+			summary = "ได้รับไอเทมที่มีมูลค่ามากกว่า 5,000 zeny",
+			details = "ฉันโชคดีจัง! ได้รับไอเทมที่มีมูลค่ามากกว่า 5,000 zeny เมื่อขายให้กับ NPC"
+		},
+		resource = { [1] = { text = "ได้รับไอเทมที่มีมูลค่ามากกว่า 5,000 zeny" } },
+		reward = {},
+		score = 15
+	},
+	[220026] = {
+		UI_Type = 0,
+		group = "GET_ITEM",
+		major = 1,
+		minor = 1,
+		title = "ฉันเจอมันแล้ว! (4)",
+		content = {
+			summary = "ได้รับไอเทมที่มีมูลค่ามากกว่า 10,000 zeny",
+			details = "ฉันโชคดีจัง! ได้รับไอเทมที่มีมูลค่ามากกว่า 10,000 zeny เมื่อขายให้กับ NPC"
+		},
+		resource = { [1] = { text = "ได้รับไอเทมที่มีมูลค่ามากกว่า 10,000 zeny" } },
+		reward = {},
+		score = 15
+	},
+	[220027] = {
+		UI_Type = 0,
+		group = "GET_ITEM",
+		major = 1,
+		minor = 1,
+		title = "ฉันเจอมันแล้ว! (5)",
+		content = {
+			summary = "ได้รับไอเทมที่มีมูลค่ามากกว่า 50,000 zeny",
+			details = "ฉันโชคดีจัง! ได้รับไอเทมที่มีมูลค่ามากกว่า 50,000 zeny เมื่อขายให้กับ NPC"
+		},
+		resource = { [1] = { text = "ได้รับไอเทมที่มีมูลค่ามากกว่า 50,000 zeny" } },
+		reward = {},
+		score = 20
+	},
+	[220028] = {
+		UI_Type = 0,
+		group = "GET_ITEM",
+		major = 1,
+		minor = 1,
+		title = "ฉันเจอมันแล้ว! (6)",
+		content = {
+			summary = "ได้รับไอเทมที่มีมูลค่ามากกว่า 100,000 zeny",
+			details = "ฉันโชคดีจัง! ได้รับไอเทมที่มีมูลค่ามากกว่า 100,000 zeny เมื่อขายให้กับ NPC"
+		},
+		resource = { [1] = { text = "ได้รับไอเทมที่มีมูลค่ามากกว่า 100,000 zeny" } },
+		reward = {},
+		score = 20
+	},
+	[220029] = {
+		UI_Type = 0,
+		group = "GET_ITEM",
+		major = 1,
+		minor = 1,
+		title = "ฉันเจอมันแล้ว! (7)",
+		content = {
+			summary = "ได้รับไอเทมที่มีมูลค่ามากกว่า 150,000 zeny",
+			details = "ฉันโชคดีจัง! ได้รับไอเทมที่มีมูลค่ามากกว่า 150,000 zeny เมื่อขายให้กับ NPC"
+		},
+		resource = { [1] = { text = "ได้รับไอเทมที่มีมูลค่ามากกว่า 150,000 zeny" } },
+		reward = {},
+		score = 30
+	},
+	[220030] = {
+		UI_Type = 0,
+		group = "GET_ZENY",
+		major = 1,
+		minor = 1,
+		title = "ราชาเศรษฐี (1)",
+		content = {
+			summary = "ถือเงินในกระเป๋ามากกว่า 10,000 zeny",
+			details = "เงินไม่ใช่ทุกอย่างงั้นเหรอ? นั่นเป็นเพราะคุณยังจนอยู่น่ะสิ ถือเงินในกระเป๋ามากกว่า 10,000 zeny"
+		},
+		resource = { [1] = { text = "ถือเงินในกระเป๋ามากกว่า 10,000 zeny" } },
+		reward = {},
+		score = 10
+	},
+	[220031] = {
+		UI_Type = 0,
+		group = "GET_ZENY",
+		major = 1,
+		minor = 1,
+		title = "ราชาเศรษฐี (2)",
+		content = {
+			summary = "ถือเงินในกระเป๋ามากกว่า 100,000 zeny",
+			details = "เงินไม่ใช่ทุกอย่างงั้นเหรอ? นั่นเป็นเพราะคุณยังจนอยู่น่ะสิ ถือเงินในกระเป๋ามากกว่า 100,000 zeny"
+		},
+		resource = { [1] = { text = "ถือเงินในกระเป๋ามากกว่า 100,000 zeny" } },
+		reward = {},
+		score = 15
+	},
+	[220032] = {
+		UI_Type = 0,
+		group = "GET_ZENY",
+		major = 1,
+		minor = 1,
+		title = "ราชาเศรษฐี (3)",
+		content = {
+			summary = "ถือเงินในกระเป๋ามากกว่า 1,000,000 zeny",
+			details = "เงินไม่ใช่ทุกอย่างงั้นเหรอ? นั่นเป็นเพราะคุณยังจนอยู่น่ะสิ ถือเงินในกระเป๋ามากกว่า 1,000,000 zeny"
+		},
+		resource = { [1] = { text = "ถือเงินในกระเป๋ามากกว่า 1,000,000 zeny" } },
+		reward = {},
+		score = 20
+	},
+	[220033] = {
+		UI_Type = 0,
+		group = "GET_ZENY",
+		major = 1,
+		minor = 1,
+		title = "ราชาเศรษฐี (4)",
+		content = {
+			summary = "ถือเงินในกระเป๋ามากกว่า 10,000,000 zeny",
+			details = "เงินไม่ใช่ทุกอย่างงั้นเหรอ? นั่นเป็นเพราะคุณยังจนอยู่น่ะสิ ถือเงินในกระเป๋ามากกว่า 10,000,000 zeny"
+		},
+		resource = { [1] = { text = "ถือเงินในกระเป๋ามากกว่า 10,000,000 zeny" } },
+		reward = {},
+		score = 25
+	},
+	[220034] = {
+		UI_Type = 0,
+		group = "GET_ZENY",
+		major = 1,
+		minor = 1,
+		title = "ราชาเศรษฐี (5)",
+		content = {
+			summary = "ถือเงินในกระเป๋ามากกว่า 100,000,000 zeny",
+			details = "เงินไม่ใช่ทุกอย่างงั้นเหรอ? นั่นเป็นเพราะคุณยังจนอยู่น่ะสิ ถือเงินในกระเป๋ามากกว่า 100,000,000 zeny"
+		},
+		resource = { [1] = { text = "ถือเงินในกระเป๋ามากกว่า 100,000,000 zeny" } },
+		reward = {},
+		score = 30
+	},
+	[220035] = {
+		UI_Type = 0,
+		group = "GET_ZENY",
+		major = 1,
+		minor = 1,
+		title = "ราชาเศรษฐี (6)",
+		content = {
+			summary = "ถือเงินในกระเป๋ามากกว่า 1,000,000,000 zeny",
+			details = "เงินไม่ใช่ทุกอย่างงั้นเหรอ? นั่นเป็นเพราะคุณยังจนอยู่น่ะสิ ถือเงินในกระเป๋ามากกว่า 1,000,000,000 zeny"
+		},
+		resource = { [1] = { text = "ถือเงินในกระเป๋ามากกว่า 1,000,000,000 zeny" } },
+		reward = {},
+		score = 40
+	},
+	[230200] = {
+		UI_Type = 0,
+		group = "GOAL_LEVEL",
+		major = 3,
+		minor = 1,
+		title = "นักล่า Poring",
+		content = {
+			summary = "ทำภารกิจเป้าหมายทั้งหมดให้สำเร็จ",
+			details = "Poring เป็นสิ่งมีชีวิตที่แปลกประหลาด ไม่ใช่ทั้งพืชและสัตว์ วิธีที่ดีที่สุดในการเรียนรู้เกี่ยวกับ Poring ให้มากขึ้นคือการสัมผัสประสบการณ์การโต้ตอบแบบเผชิญหน้า"
+		},
+		resource = {
+			[1] = { text = "ทำภารกิจ 'สำรวจชีวิตของ Poring (1)' ให้สำเร็จ", shortcut = 230201 },
+			[2] = { text = "ทำภารกิจ 'สำรวจชีวิตของ Poring (2)' ให้สำเร็จ", shortcut = 230202 },
+			[3] = { text = "ทำภารกิจ 'สำรวจชีวิตของ Poring (3)' ให้สำเร็จ", shortcut = 230203 }
+		},
+		reward = {},
+		score = 10
+	},
+	[230201] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 3,
+		minor = 1,
+		title = "สำรวจชีวิตของ Poring (1)",
+		content = {
+			summary = "ล่าเป้าหมายที่กำหนด",
+			details = "รูปลักษณ์ของ Poring จะเปลี่ยนไปตามถิ่นที่อยู่อาศัย มาเผชิญหน้ากับคู่ต่อสู้ที่ง่ายๆ กันก่อนเถอะ"
+		},
+		resource = {
+			[1] = { text = "ล่า Poring 10 ตัว", count = 10 },
+			[2] = { text = "ล่า Novice Poring 10 ตัว", count = 10 },
+			[3] = { text = "ล่า Drops 10 ตัว", count = 10 },
+			[4] = { text = "ล่า Poporing 10 ตัว", count = 10 },
+			[5] = { text = "ล่า Marin 10 ตัว", count = 10 }
+		},
+		reward = {},
+		score = 10
+	},
+	[230202] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 3,
+		minor = 1,
+		title = "สำรวจชีวิตของ Poring (2)",
+		content = {
+			summary = "ล่าเป้าหมายที่กำหนด",
+			details = "ในโลกของ Poring ก็มีพวกที่แข็งแกร่งอยู่เหมือนกัน อย่าเพิ่งเผชิญหน้ากับพวกที่แข็งแกร่งโดยตรงเลย"
+		},
+		resource = {
+			[1] = { text = "ล่า Mastering 1 ตัว", count = 1 },
+			[2] = { text = "ล่า Devilring 1 ตัว", count = 1 },
+			[3] = { text = "ล่า Angelring 1 ตัว", count = 1 },
+			[4] = { text = "ล่า Arch Angelring 1 ตัว", count = 1 },
+			[5] = { text = "ล่า Ghostring 1 ตัว", count = 1 }
+		},
+		reward = {},
+		score = 20
+	},
+	[230203] = {
+		UI_Type = 1,
+		group = "BATTLE",
+		major = 3,
+		minor = 1,
+		title = "สำรวจชีวิตของ Poring (3)",
+		content = {
+			summary = "ล่าเป้าหมายที่กำหนด",
+			details = "ในตระกูล Poring มีบางตัวที่มีลักษณะเรืองแสง จำเป็นต้องมีการวิจัยเพิ่มเติม"
+		},
+		resource = {
+			[1] = { text = "ล่า Metalring 5 ตัว", count = 5 },
+			[2] = { text = "ล่า Heavy Metalring 5 ตัว", count = 5 },
+			[3] = { text = "ล่า Magmaring 5 ตัว", count = 5 } },
+		reward = {},
+		score = 20
+	},
+	[240000] = {
+		UI_Type = 0,
+		group = "GOAL_LEVEL",
+		major = 6,
+		minor = 0,
+		title = "ทำภารกิจแนะนำครั้งแรกสำเร็จ",
+		content = {
+			summary = "ทำภารกิจแนะนำครั้งแรกสำเร็จ",
+			details = "ทำภารกิจแนะนำครั้งแรกสำเร็จ"
+		},
+		resource = { [1] = { text = "ทำภารกิจแนะนำครั้งแรกสำเร็จ" } },
+		reward = {},
+		score = 10
+	},
+	[240001] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 1",
+		content = {
+			summary = "บรรลุ Base Level 1",
+			details = "บรรลุ Base Level 1"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 1" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240002] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 2",
+		content = {
+			summary = "บรรลุ Base Level 2",
+			details = "บรรลุ Base Level 2"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 2" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240003] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 3",
+		content = {
+			summary = "บรรลุ Base Level 3",
+			details = "บรรลุ Base Level 3"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 3" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240004] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 4",
+		content = {
+			summary = "บรรลุ Base Level 4",
+			details = "บรรลุ Base Level 4"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 4" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240005] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 5",
+		content = {
+			summary = "บรรลุ Base Level 5",
+			details = "บรรลุ Base Level 5"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 5" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240006] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 6",
+		content = {
+			summary = "บรรลุ Base Level 6",
+			details = "บรรลุ Base Level 6"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 6" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240007] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 7",
+		content = {
+			summary = "บรรลุ Base Level 7",
+			details = "บรรลุ Base Level 7"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 7" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240008] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 8",
+		content = {
+			summary = "บรรลุ Base Level 8",
+			details = "บรรลุ Base Level 8"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 8" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240009] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 9",
+		content = {
+			summary = "บรรลุ Base Level 9",
+			details = "บรรลุ Base Level 9"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 9" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240010] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 10",
+		content = {
+			summary = "บรรลุ Base Level 10",
+			details = "ความสำเร็จบรรลุ Base Level 10 คุณจะได้รับรางวัลเป็นฉายา"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 10" } },
+		reward = { title = 1023, buff = 12, item = 644 },
+		score = 10
+	},
+	[240011] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 11",
+		content = {
+			summary = "บรรลุ Base Level 11",
+			details = "บรรลุ Base Level 11"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 11" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240012] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 12",
+		content = {
+			summary = "บรรลุ Base Level 12",
+			details = "บรรลุ Base Level 12"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 12" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240013] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 13",
+		content = {
+			summary = "บรรลุ Base Level 13",
+			details = "บรรลุ Base Level 13"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 13" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240014] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 14",
+		content = {
+			summary = "บรรลุ Base Level 14",
+			details = "บรรลุ Base Level 14"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 14" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240015] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 15",
+		content = {
+			summary = "บรรลุ Base Level 15",
+			details = "บรรลุ Base Level 15"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 15" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240016] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 16",
+		content = {
+			summary = "บรรลุ Base Level 16",
+			details = "บรรลุ Base Level 16"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 16" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240017] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 17",
+		content = {
+			summary = "บรรลุ Base Level 17",
+			details = "บรรลุ Base Level 17"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 17" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240018] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 18",
+		content = {
+			summary = "บรรลุ Base Level 18",
+			details = "บรรลุ Base Level 18"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 18" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240019] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 19",
+		content = {
+			summary = "บรรลุ Base Level 19",
+			details = "บรรลุ Base Level 19"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 19" } },
+		reward = { buff = 12, item = 644 },
+		score = 10
+	},
+	[240020] = {
+		UI_Type = 0,
+		group = "GOAL_ACHIEVE",
+		major = 6,
+		minor = 0,
+		title = "บรรลุ Base Level 20",
+		content = {
+			summary = "บรรลุ Base Level 20",
+			details = "ความสำเร็จบรรลุ Base Level 20 คุณจะได้รับรางวัลเป็นฉายา"
+		},
+		resource = { [1] = { text = "บรรลุ Base Level 20" } },
+		reward = { title = 1024, buff = 12, item = 644 },
+		score = 10
+	},
+	[220036] = {
+		UI_Type = 0,
+		group = "EAT",
+		major = 1,
+		minor = 2,
+		title = "จุดเริ่มต้นของกิจกรรมกลางแจ้ง",
+		content = {
+			summary = "ได้รับชุดอุปกรณ์ทำอาหารกลางแจ้ง",
+			details = "ได้รับชุดอุปกรณ์ทำอาหารกลางแจ้ง"
+		},
+		resource = { [1] = { text = "ได้รับชุดอุปกรณ์ทำอาหารกลางแจ้ง" } },
+		reward = {},
+		score = 20
+	},
+	[220037] = {
+		UI_Type = 0,
+		group = "EAT",
+		major = 1,
+		minor = 2,
+		title = "ก้าวแรกสู่การเป็นเชฟ",
+		content = {
+			summary = "ได้รับทักษะการทำอาหาร Level 1",
+			details = "ได้รับทักษะการทำอาหาร Level 1"
+		},
+		resource = { [1] = { text = "ได้รับทักษะการทำอาหาร Level 1" } },
+		reward = {},
+		score = 20
+	}
+}
+
+function main()
+	for achieveID, achieveInfo in pairs(achievement_tbl) do
+		result, msg = InsertAchieveInfo(achieveID, achieveInfo.title, achieveInfo.content.summary, achieveInfo.content.details, achieveInfo.score)
+		if not result then
+			return false, msg
+		end
+		if nil ~= achieveInfo.resource then
+			for index, resource in ipairs(achieveInfo.resource) do
+				if nil ~= resource.shortcut then
+					shortcut = resource.shortcut
+				else
+					shortcut = -1
+				end
+				if 0 == achieveInfo.UI_Type then
+					result, msg = InsertAchieveResource(achieveID, resource.text, 0, shortcut)
+				elseif 1 == achieveInfo.UI_Type then
+					result, msg = InsertAchieveResource(achieveID, resource.text, resource.count, shortcut)
+				end
+				if not result then
+					return false, msg
+				end
+			end
+		end
+		if nil ~= achieveInfo.reward then
+			if nil ~= achieveInfo.reward.item then
+				result, msg = InsertAchieveRewardItem(achieveID, achieveInfo.reward.item)
+			end
+			if nil ~= achieveInfo.reward.title then
+				result, msg = InsertAchieveRewardTitle(achieveID, achieveInfo.reward.title)
+				if not result then
+					return false, msg
+				end
+			end
+			if nil ~= achieveInfo.reward.buff then
+				result, msg = InsertAchieveRewardBuff(achieveID, achieveInfo.reward.buff)
+				if not result then
+					return false, msg
+				end
+			end
+		end
+		result, msg = InsertAchieveUIType(achieveID, achieveInfo.UI_Type, achieveInfo.group)
+		if not result then
+			return false, msg
+		end
+		result, msg = SetAchieveIDByTab(achieveID, achieveInfo.major, achieveInfo.minor)
+		if not result then
+			return false, msg
+		end
+	end
+	return true, "good"
+end
