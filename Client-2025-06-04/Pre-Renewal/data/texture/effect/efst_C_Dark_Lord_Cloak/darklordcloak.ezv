@@ -1,0 +1,382 @@
+EVFF0.95
+
+fps=60
+
+maxkey=85
+
+layernum=6
+
+layer:Back
+{
+    display=1
+    group=0
+    type=1
+    texcnt=0
+
+    anikeynum=0
+
+}
+
+layer:bback_2
+{
+    display=0
+    group=0
+    type=0
+    texcnt=1
+    texname=bback_2.bmp
+
+    anikeynum=2
+
+    {
+        frame=0
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=320.0000,240.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=800.0000,600.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,7
+        mtpreset=0
+        points=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        rpoints=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=85
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=320.0000,240.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=800.0000,600.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,7
+        mtpreset=0
+        points=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        rpoints=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:darklord_01
+{
+    display=1
+    group=0
+    type=0
+    texcnt=6
+    texname=darklord_01.tga
+    texname=darklord_02.tga
+    texname=darklord_03.tga
+    texname=darklord_04.tga
+    texname=darklord_05.tga
+    texname=darklord_06.tga
+
+    anikeynum=2
+
+    {
+        frame=0
+        aniframe=0
+        anitype=3
+        delay=7.0000
+        pos=324.5000,187.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=120.0000,180.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-60.0000,-90.0000  60.0000,-90.0000  60.0000,90.0000  -60.0000,90.0000
+        rpoints=-60.0000,-90.0000  60.0000,-90.0000  60.0000,90.0000  -60.0000,90.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=85
+        aniframe=0
+        anitype=3
+        delay=7.0000
+        pos=324.5000,187.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=120.0000,180.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-60.0000,-90.0000  60.0000,-90.0000  60.0000,90.0000  -60.0000,90.0000
+        rpoints=-60.0000,-90.0000  60.0000,-90.0000  60.0000,90.0000  -60.0000,90.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:smoke1_3
+{
+    display=1
+    group=0
+    type=0
+    texcnt=2
+    texname=smoke1_3.bmp
+    texname=smoke1_2.bmp
+
+    anikeynum=3
+
+    {
+        frame=0
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=320.5000,244.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=102.4000,51.2000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,0.0, 5,7
+        mtpreset=0
+        points=-51.2000,-25.6000  51.2000,-25.6000  51.2000,25.6000  -51.2000,25.6000
+        rpoints=-51.2000,-25.6000  51.2000,-25.6000  51.2000,25.6000  -51.2000,25.6000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=45
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=320.5000,244.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=153.6000,76.8000
+        angle=0.0000,0.0000,0.0000
+        color=0.0,0.0,160.0,200.0, 5,7
+        mtpreset=0
+        points=-78.3059,-39.1529  78.3059,-39.1529  78.3059,39.1529  -78.3059,39.1529
+        rpoints=-78.3059,-39.1529  78.3059,-39.1529  78.3059,39.1529  -78.3059,39.1529
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=85
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=320.5000,244.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=204.8000,102.4000
+        angle=0.0000,0.0000,0.0000
+        color=128.0,0.0,128.0,0.0, 5,7
+        mtpreset=0
+        points=-102.4000,-51.2000  102.4000,-51.2000  102.4000,51.2000  -102.4000,51.2000
+        rpoints=-102.4000,-51.2000  102.4000,-51.2000  102.4000,51.2000  -102.4000,51.2000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:darklbg_01
+{
+    display=1
+    group=0
+    type=0
+    texcnt=12
+    texname=darklbg_01.tga
+    texname=darklbg_02.tga
+    texname=darklbg_03.tga
+    texname=darklbg_04.tga
+    texname=darklbg_05.tga
+    texname=darklbg_06.tga
+    texname=darklbg_07.tga
+    texname=darklbg_08.tga
+    texname=darklbg_09.tga
+    texname=darklbg_10.tga
+    texname=darklbg_11.tga
+    texname=darklbg_12.tga
+
+    anikeynum=2
+
+    {
+        frame=0
+        aniframe=0
+        anitype=3
+        delay=3.5000
+        pos=324.5000,243.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=90.0000,48.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-45.0000,-24.0000  45.0000,-24.0000  45.0000,24.0000  -45.0000,24.0000
+        rpoints=-45.0000,-24.0000  45.0000,-24.0000  45.0000,24.0000  -45.0000,24.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=85
+        aniframe=0
+        anitype=3
+        delay=3.5000
+        pos=324.5000,243.5000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=90.0000,48.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-45.0000,-24.0000  45.0000,-24.0000  45.0000,24.0000  -45.0000,24.0000
+        rpoints=-45.0000,-24.0000  45.0000,-24.0000  45.0000,24.0000  -45.0000,24.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+
+layer:bback_22
+{
+    display=0
+    group=0
+    type=0
+    texcnt=1
+    texname=bback_22.bmp
+
+    anikeynum=2
+
+    {
+        frame=0
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=320.0000,240.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=800.0000,600.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        rpoints=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+    {
+        frame=85
+        aniframe=0
+        anitype=0
+        delay=0.0000
+        pos=320.0000,240.0000
+        uv=0.0000,0.0000
+        uvs=1.0000,1.0000
+        uv2=0.0000,0.0000
+        uvs2=1.0000,1.0000
+        scale=800.0000,600.0000
+        angle=0.0000,0.0000,0.0000
+        color=255.0,255.0,255.0,255.0, 5,6
+        mtpreset=0
+        points=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        rpoints=-400.0000,-300.0000  400.0000,-300.0000  400.0000,300.0000  -400.0000,300.0000
+        bezier=0.0000,0.0000  0.0000,0.0000
+        afbias=0.0000
+        posbias=0.0000
+        ptbias=0.0000
+        angbias=0.0000
+        uvbias=0.0000
+        uvsbias=0.0000
+        uvbias2=0.0000
+        uvsbias2=0.0000
+    }
+}
+

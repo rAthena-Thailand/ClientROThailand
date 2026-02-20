@@ -1,0 +1,245 @@
+from: "D:/GitHub/ClientROThailand/Client-2025-06-04/2025-06-04_Ragexe_1748494356_clientinfo.xml.exe"
+to: "D:/GitHub/ClientROThailand/Client-2025-06-04/2025-06-04_Ragexe_1748494356_clientinfo.xml_patched.exe"
+inputs:
+    $viewIDLimit:
+        data: '007d0000'
+        display: 32000
+        type: 2
+    
+    $dataINI:
+        data: '444154412e494e4900'
+        display: "DATA.INI"
+        type: 10
+    
+    $customWindowTitle:
+        data: '5261676e61726f6b204f6e6c696e65204d2d53637269707400'
+        display: "Ragnarok Online M-Script"
+        type: 10
+    
+    $newMonSizeEffect:
+        data: '53797374656d454e5c6d6f6e737465725f73697a655f6566666563742e6c756200'
+        display: "SystemEN\\monster_size_effect.lub"
+        type: 10
+    
+    $newruneSystable:
+        data: '53797374656d454e5c52756e655c53797374656d5f7461626c652e6c756200'
+        display: "SystemEN\\Rune\\System_table.lub"
+        type: 10
+    
+    $pmBoxLen:
+        data: 'ff000000'
+        display: 255
+        type: 2
+    
+    $newruneinfo:
+        data: '53797374656d454e5c52756e655c696e666f2e6c756200'
+        display: "SystemEN\\Rune\\info.lub"
+        type: 10
+    
+    $chatBoxLen:
+        data: 'ff000000'
+        display: 255
+        type: 2
+    
+    $newOngQInfoList:
+        data: '53797374656d454e5c4f6e676f696e6751756573747300'
+        display: "SystemEN\\OngoingQuests"
+        type: 10
+    
+    $newrunesysid:
+        data: '53797374656d454e5c52756e655c73797374656d69642e6c756200'
+        display: "SystemEN\\Rune\\systemid.lub"
+        type: 10
+    
+    $newrunesetinfo:
+        data: '53797374656d454e5c52756e655c7365745f696e666f2e6c756200'
+        display: "SystemEN\\Rune\\set_info.lub"
+        type: 10
+    
+    $newRuneSetDesc:
+        data: '53797374656d454e5c52756e655c7365745f646573632e6c756200'
+        display: "SystemEN\\Rune\\set_desc.lub"
+        type: 10
+    
+    $newspopup:
+        data: '53797374656d454e5c73706f7075702e6c756200'
+        display: "SystemEN\\spopup.lub"
+        type: 10
+    
+    $MaxHair:
+        data: 'e803'
+        display: 1000
+        type: 2
+    
+    $newTipBox:
+        data: '53797374656d454e5c746970626f782e6c756200'
+        display: "SystemEN\\tipbox.lub"
+        type: 10
+    
+    $newTownInfo:
+        data: '53797374656d454e5c546f776e696e666f2e6c756200'
+        display: "SystemEN\\Towninfo.lub"
+        type: 10
+    
+    $newQuestQuali:
+        data: '53797374656d454e5c5175657374436c617373696669636174696f6e496e666f2e6c756200'
+        display: "SystemEN\\QuestClassificationInfo.lub"
+        type: 10
+    
+    $newCheckAtt:
+        data: '53797374656d454e5c436865636b417474656e64616e63652e6c756200'
+        display: "SystemEN\\CheckAttendance.lub"
+        type: 10
+    
+    $chatRoomBoxLen:
+        data: 'ff000000'
+        display: 255
+        type: 2
+    
+    $newRuneDesc:
+        data: '53797374656d454e5c52756e655c646573632e6c756200'
+        display: "SystemEN\\Rune\\desc.lub"
+        type: 10
+    
+    $newPrivAirplane:
+        data: '53797374656d454e5c50726976617465416972706c616e652e6c756200'
+        display: "SystemEN\\PrivateAirplane_true.lub"
+        type: 10
+    
+    $translationFile:
+        data: ''
+        display: "Inputs/Translations_EN.yml"
+        type: 10
+    
+    $newitemDecom:
+        data: '53797374656d454e5c52756e655c6974656d4465636f6d2e6c756200'
+        display: "SystemEN\\Rune\\itemDecom.lub"
+        type: 10
+    
+    $newchangemat:
+        data: '53797374656d454e5c4368616e67654d6174657269616c2e6c756200'
+        display: "SystemEN\\ChangeMaterial.lub"
+        type: 10
+    
+    $newrunerewInfo:
+        data: '53797374656d454e5c52756e655c7365745f7265776172642e6c756200'
+        display: "SystemEN\\Rune\\set_reward.lub"
+        type: 10
+    
+    $newPetEvoCln:
+        data: '53797374656d454e5c50657445766f6c7574696f6e2e6c756200'
+        display: "SystemEN\\PetEvolution.lub"
+        type: 10
+    
+    $npcBoxLength:
+        data: '00100000'
+        display: 4096
+        type: 2
+    
+    $newAchieveList:
+        data: '53797374656d454e5c616368696576656d656e74732e6c756200'
+        display: "SystemEN\\achievements.lub"
+        type: 10
+    
+    $newrunesysInfo:
+        data: '53797374656d454e5c52756e655c73797374656d496e666f00'
+        display: "SystemEN\\Rune\\systemInfo"
+        type: 10
+    
+    .choice:
+        data: ''
+        display: ""
+        type: 10
+    
+    $newRcmdQInfoList:
+        data: '53797374656d454e5c5265636f6d6d656e64656451756573747300'
+        display: "SystemEN\\RecommendedQuests"
+        type: 10
+    
+    $newMapInfo:
+        data: '53797374656d454e5c6d6170496e666f2e6c756200'
+        display: "SystemEN\\mapInfo.lub"
+        type: 10
+    
+    $newItemInfo:
+        data: '53797374656d454e5c6974656d696e666f2e6c756100'
+        display: "SystemEN\\iteminfo.lua"
+        type: 10
+    
+patches:
+    - ShowBGEmblem
+    - IncreaseHairsLimit
+    - ShowResButton
+    - EnableWho
+    - EnableShowName
+    - ResizeChatBox
+    - ResizeChatRoomBox
+    - ResizePMBox
+    - ResizeNpcBox
+    - PreviewInShop
+    - PreviewInTrader
+    - MediumCamAngle
+    - ZoomMax
+    - UseOldLogin
+    - EnableEotFonts
+    - AlwaysAscii
+    - CallKoreaClientInfo
+    - DataFolderFirst
+    - PlainTextDesc
+    - LoadKrExtSettings
+    - IncrViewID
+    - EnableEffectTool
+    - ItemInfoPerServer
+    - HideBuildInfo
+    - TranslateClient
+    - NoGGuard
+    - CustomItemInfoLub
+    - CustomAchieveLub
+    - CustomMonSizeEffLub
+    - CustomTownInfoLub
+    - CustomPetEvoClnLub
+    - CustomTipboxLub
+    - CustomCheckAttLub
+    - CustomPrivAirplaneLub
+    - CustomMapInfoLub
+    - CustomOngQuestInfoLub
+    - CustomRcmdQuestInfoLub
+    - CustomspopupLub
+    - CustomChangeMatLub
+    - CustomQuestQualiLub
+    - CustomRuneDescLub
+    - CustomRuneSetDescLub
+    - CustomitemDecomLub
+    - CustomRuneInfoLub
+    - CustomRuneSetInfoLub
+    - CustomRuneSystemTableLub
+    - CustomRuneSystemIdLub
+    - CustomRuneSystemInfoLub
+    - CustomRuneRewardLub
+    - GRFsFromIni
+    - NoFilenameCheck
+    - CustomWinTitle
+    - No1and1Arg
+    - EnableDnsSupport
+    - NoNagle
+    - EnableProxy
+    - SendClientFlags
+    - NoSwearFilter
+    - OpenToServiceSelect
+    - GuildBrackets
+    - FixChatAt
+    - AlwaysOfficialBG
+    - NoHourly
+    - NoHelpMsg
+    - CloseCutinOnEsc
+    - EnableNpcDialogueScrolling
+    - ShortcutForAll
+    - EnableFlagAnimation
+    - RestoreBattlegroundUI
+    - InsensitiveStorageSearch
+    - InsensitiveShopSearch
+    - NoGravityAds
+    - NoGravityLogo
+    - FixLatestNCWin
+    - DisConnToLogin
+    - ShowReplayBtn

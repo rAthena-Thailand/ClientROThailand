@@ -1,0 +1,117 @@
+-- Original translation works of zackdreaver: https://github.com/zackdreaver/ROenglishRE
+-- Continuated by llchrisll at https://github.com/llchrisll/ROenglishRE
+-- This file can be distributed, used and modified freely
+-- This file shouldn't be claimed as part of your project, unless you fork it from https://github.com/llchrisll/ROenglishRE
+-- Last updated: 20250416
+
+SPUI_IDS = {
+	SPU_CHAT = 0,
+	SPU_FLOATING = 1,
+	SPU_FLOATING_CHAT = 2
+}
+popuptbl = {
+	[1] = {
+		uitype = SPUI_IDS.SPU_CHAT,
+		textcolor = 16763904,
+		Description = {
+			"This is an area where PVP rules exclusive to Herosria Siege are applied.",
+			"The power of some skills and items may be adjusted, or functions and uses may be limited."
+		}
+	},
+	[2] = {
+		uitype = SPUI_IDS.SPU_FLOATING_CHAT,
+		textcolor = 16763904,
+		Description = {
+			"This is an area where PVP rules exclusive to Herosria Siege are applied.",
+			"The power of some skills and items may be adjusted, or functions and uses may be limited."
+		}
+	}, 
+	[3] = {
+		uitype = SPUI_IDS.SPU_FLOATING_CHAT,
+		textcolor = 16763904,
+		Description = {
+			"This is the Biosphere area.",
+			"Monsters evolve in the sample environment and receive less damage."
+		}
+	},
+	[4] = {
+		uitype = SPUI_IDS.SPU_FLOATING_CHAT,
+		textcolor = 16763904,
+		Description = {
+			"This area is affected by the Magic Swordsman Thanatos.",
+			"Teleport is not available on this map."
+		}
+	},
+	[5] = {
+		uitype = SPUI_IDS.SPU_FLOATING_CHAT,
+		textcolor = 16763904,
+		Description = {
+			"Teleport cannot be used due to the unknown power of the Tatami Labyrinth."
+		}
+	},
+	[6] = {
+		uitype = SPUI_IDS.SPU_FLOATING_CHAT,
+		textcolor = 16763904,
+		Description = {
+			"Entered the Tomb of the Dead.",
+			"All skills and items related to teleportation are prohibited."
+		}
+	},
+	[7] = {
+		uitype = SPUI_IDS.SPU_FLOATING_CHAT,
+		textcolor = 16763904,
+		Description = {
+			"You have entered the depths of the Biosphere.",
+			"Teleportation-related skills and items are prohibited.",
+			"Some movement related skills are prohibited."
+		}
+	},
+	[8] = {
+		uitype = SPUI_IDS.SPU_FLOATING_CHAT,
+		textcolor = 16763904,
+		Description = {
+			"You have entered a forgotten Realm of Time.",
+			"Teleportation-related skills and items are prohibited.",
+			"Some movement related skills are prohibited."
+		}
+	},
+	[9] = {
+		uitype = SPUI_IDS.SPU_FLOATING_CHAT,
+		textcolor = 16763904,
+		Description = {
+			"You have entered the deep Abyss of the Biosphere.",
+			"Teleportation-related skills and items are prohibited."
+		}
+	},
+	[10] = {
+		uitype = SPUI_IDS.SPU_FLOATING_CHAT,
+		textcolor = 16763904,
+		Description = {
+			"You have entered Yorscalp.",
+			"Teleportation-related skills and items are prohibited."
+		}
+	}, 
+	[11] = {
+		uitype = SPUI_IDS.SPU_FLOATING_CHAT,
+		textcolor = 16763904,
+		Description = {
+			"You have entered an area with strong dimensional magic.",
+			"Teleportation-related skills and items are prohibited."
+		}
+	}
+}
+function main()
+	for ppID,PPDESC in pairs(popuptbl) do
+		result = AddMsg(ppID, PPDESC.uitype, PPDESC.textcolor)
+		if not result then
+			return false, msg
+		end
+		for k,v in pairs(PPDESC.Description) do
+			result = AddDesc(ppID, v)
+			if not result then
+				return false, msg
+			end
+		end
+	end
+	return true, "good"
+end

@@ -1,0 +1,4256 @@
+COLOR_TITLE_BUFF = { 155, 202, 155 }
+COLOR_TITLE_DEBUFF = { 250, 100, 100 }
+COLOR_TITLE_TOGGLE = { 190, 190, 250 }
+COLOR_TITLE_SYSTEM = { 255, 255, 0 }
+COLOR_TIME = { 255, 176, 98 }
+StateIconList = {}
+StateIconList[EFST_IDs.EFST_OVERTHRUSTMAX] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Maximum Power Thrust", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มพลังโจมตี (ATK)" },
+		{ "มีโอกาสทำให้อาวุธที่สวมใส่เสียหาย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SUFFRAGIUM] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Suffragium", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดระยะเวลาในการร่ายเวทย์" }
+	}
+}
+StateIconList[EFST_IDs.EFST_OVERTHRUST] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Power Thrust", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มพลังโจมตี (ATK)" },
+		{ "มีโอกาสทำให้อาวุธที่สวมใส่เสียหาย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_AUTOBERSERK] = {
+	descript = {
+		{ "Berserk", COLOR_TITLE_BUFF },
+		{ "ทำให้เข้าสู่สภาวะบ้าคลั่งเมื่อจำนวน" },
+		{ "HP ที่เหลืออยู่ต่ำกว่า 25% ของ MaxHP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BEYOND_OF_WARCRY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Beyond of Warcry", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มพลังโจมตี (ATK)" },
+		{ "ลดพลังโจมตีเวท (MATK)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SWORDREJECT] = {
+	descript = {
+		{ "Reject Sword", COLOR_TITLE_BUFF },
+		{ "ลดความเสียหายจากดาบและมีดลงครึ่งหนึ่ง" },
+		{ "(รวมถึงการโจมตีจากมอนสเตอร์ทุกชนิดลงครึ่งหนึ่ง)" },
+		{ "สะท้อนความเสียหายอีกครึ่งหนึ่งกลับไปยังศัตรู" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MANU_DEF] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Manuk's Will", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดความเสียหายทางกายภาพและทางเวทมนตร์" },
+		{ "ที่ได้รับจากมอนสเตอร์ในแผนที่ Manuk" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CONCENTRATION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Improve Concentration", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า DEX และ AGI" },
+		{ "สามารถตรวจจับศัตรูที่ซ่อนตัวอยู่ได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GRIFFON] = {
+	descript = {
+		{ "Riding Gryphon", COLOR_TITLE_BUFF }
+	}
+}
+StateIconList[EFST_IDs.EFST_GS_MADNESSCANCEL] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Madness Canceller", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มพลังโจมตี (ATK)" },
+		{ "เพิ่มความเร็วในการโจมตี (ASPD)" },
+		{ "ไม่สามารถเคลื่อนที่ได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GS_ACCURACY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Increase Accuracy", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า AGI, DEX และ HIT" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FOOD_STR] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า STR" }
+	}
+}
+StateIconList[EFST_IDs.EFST_HALLUCINATIONWALK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Hallucination Walk", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า Flee" },
+		{ "มีโอกาสหลบหลีกการโจมตีทางเวทมนตร์" }
+	}
+}
+StateIconList[EFST_IDs.EFST_STORMKICK_ON] = {
+	descript = {
+		{ "Tornado Kick", COLOR_TITLE_BUFF },
+		{ "เมื่อโจมตีถูกเป้าหมาย" },
+		{ "จะมีโอกาสเข้าสู่สภาวะ Tornado Stance" }
+	}
+}
+StateIconList[EFST_IDs.EFST_KAUPE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Kaupe", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มโอกาสในการหลบหลีกการโจมตีของศัตรู" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SHIELDSPELL_DEF] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Shield Spell", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เปิดใช้งานเวทมนตร์ขึ้นอยู่กับอัตราการป้องกันของโล่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_WARMER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Warmer", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ยกเลิกสถานะแช่แข็ง (Frozen)" },
+		{ "ป้องกันสถานะแช่แข็ง (Frozen)" },
+		{ "ฟื้นฟู HP ทุกๆ 3 วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROTECT_MDEF] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "MDEF Potion", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความต้านทานต่อการโจมตีทางเวทมนตร์" }
+	}
+}
+StateIconList[EFST_IDs.EFST_STAR_COMFORT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Star Comfort", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเร็วในการโจมตี (ASPD)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FOOD_CRITICALSUCCESSVALUE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มอัตราคริติคอล (Critical rate)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROPERTYTELEKINESIS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "สร้างความเสียหายธาตุวิญญาณ (Ghost) แก่ศัตรู" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GLOOMYDAY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Gloomy Shyness", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเสียหายของสกิลบางชนิด" },
+		{ "ลดค่า Flee และ ASPD" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SIRCLEOFNATURE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Circle of Nature", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ดูดซับ SP และฟื้นฟู HP ทุกวินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_DEADLYINFECT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Deadly Infection", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "แพร่กระจายสถานะคำสาปทุกประเภท" },
+		{ "ไปยังมอนสเตอร์ที่คุณโจมตี" },
+		{ "และมอนสเตอร์ที่โจมตีคุณ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SYMPHONY_LOVE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Symphony of Lover", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่าพลังป้องกันเวท (MDEF)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BANDING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Banding", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "หากอยู่ในระยะของ Royal Guard ที่ใช้ Banding" },
+		{ "จะเพิ่มค่า ATK และ DEF และแบ่งปันค่า HP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_NJ_BUNSINJYUTSU] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Mirror Image", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "หลบหลีกการโจมตีทางกายภาพระยะไกลและระยะประชิด" },
+		{ "ไม่สามารถป้องกันการโจมตีทางเวทมนตร์ได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_WUGRIDER] = {
+	descript = {
+		{ "Wug Rider", COLOR_TITLE_BUFF },
+		{ "ไม่สามารถใช้ธนูได้" },
+		{ "สามารถใช้ได้เพียงสกิลของ Wug เท่านั้น" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATKER_BLOOD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "SP Consumption Decrease Potion", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดการใช้ SP เมื่อใช้งานสกิล" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BODYPAINT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Body Painting", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ยกเลิกสภาวะซ่อนตัว (Hiding)" },
+		{ "มีโอกาสทำให้เกิดสถานะตาบอด (Blind)" },
+		{ "มีโอกาสลดความเร็วในการโจมตี (ASPD)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_NJ_UTSUSEMI] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Cicada Skin Shed", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "หลบหลีกการโจมตีของศัตรูตามจำนวนครั้งที่กำหนด" },
+		{ "เคลื่อนที่ไปยังฝั่งตรงข้ามของผู้โจมตี" }
+	}
+}
+StateIconList[EFST_IDs.EFST_POISONINGWEAPON] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Poisoning Weapon", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ทำให้ศัตรูติดพิษด้วยอาวุธเคลือบยาพิษ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CASH_DEATHPENALTY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "ยกเลิกการเสียค่าประสบการณ์ (EXP) เมื่อตัวละครตาย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GS_ADJUSTMENT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Adjustment", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดค่า HIT" },
+		{ "เพิ่มค่า Flee" },
+		{ "ลดความเสียหายจากการโจมตีทางกายภาพระยะไกล" }
+	}
+}
+StateIconList[EFST_IDs.EFST_AUTOSPELL] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Auto Spell", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "มีโอกาสร่ายเวทย์อัตโนมัติ" },
+		{ "ตามสกิลที่เลือกไว้เมื่อทำการโจมตีระยะประชิด" },
+		{ "การใช้ SP คือ 2/3 ของการใช้ปกติ" },
+		{ "ไม่สามารถเปิดใช้งานสกิลได้เมื่อ SP ต่ำ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_DEC_AGI] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Decrease AGI", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดค่า AGI" },
+		{ "ลดความเร็วในการเคลื่อนที่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_NOEQUIPWEAPON] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Strip Weapon", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถสวมใส่อาวุธได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SHIELDSPELL_MDEF] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Shield Spell", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เปิดใช้งานเวทมนตร์ขึ้นอยู่กับค่า MDEF ของโล่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_AUTOGUARD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Auto Guard", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "มีโอกาสบล็อกการโจมตีทางกายภาพ" },
+		{ "ทั้งระยะประชิดและระยะไกล" }
+	}
+}
+StateIconList[EFST_IDs.EFST_TAROTCARD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Tarot Card of Fate", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "สุ่มเลือกผลลัพธ์จาก 1 ใน 14 ใบของการ์ดทาโรต์" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FEARBREEZE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Fear Breeze", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มโอกาสในการโจมตีเป้าหมายหลายครั้ง" },
+		{ "เมื่อโจมตีด้วยธนู" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GN_CARTBOOST] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Cart Boost", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเร็วในการเคลื่อนที่เมื่อสวมใส่รถเข็น" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SHIELDSPELL_REF] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Shield Spell", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เปิดใช้งานเวทมนตร์ขึ้นอยู่กับระดับการตีบวกของโล่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FOOD_INT_CASH] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า INT" }
+	}
+}
+StateIconList[EFST_IDs.EFST_NOEQUIPSHIELD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Strip Shield", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถสวมใส่โล่ได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MELTDOWN] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Meltdown", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "มีโอกาสทำลายอาวุธหรือชุดเกราะ" },
+		{ "ที่ผู้เล่นอื่นสวมใส่อยู่" },
+		{ "ลดค่า ATK หรือ DEF" },
+		{ "เมื่อใช้กับมอนสเตอร์" }
+	}
+}
+StateIconList[EFST_IDs.EFST_QUAGMIRE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Quagmire", COLOR_TITLE_DEBUFF},
+		{ "%s", COLOR_TIME },
+		{ "ลดความเร็วในการเคลื่อนที่" },
+		{ "ลดค่า AGI และ DEX" }
+	}
+}
+StateIconList[EFST_IDs.EFST_KAIZEL] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Kaizel", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ค่า DEX ไม่มีผลต่อระยะเวลาในการร่ายของผู้เล่น" },
+		{ "ชุบชีวิตตัวละครที่ตายทันทีและ" },
+		{ "จะอยู่ในสถานะ Kyrie Eleison เป็นเวลา 2 วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CR_SHRINK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Shrink", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "มีโอกาสผลักศัตรูออกไป" },
+		{ "เมื่อสกิล Guard ทำงาน" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FOOD_VIT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า VIT" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PARRYING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Parry", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "มีโอกาสบล็อกการโจมตีของศัตรู" },
+		{ "เมื่อสวมใส่ดาบสองมือ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROTECTWEAPON] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Chemical Protection Weapon", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ป้องกันอาวุธที่สวมใส่จากการถูกทำลาย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FOOD_AGI] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า AGI" }
+	}
+}
+StateIconList[EFST_IDs.EFST_INC_AGI] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Increase Agility", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเร็วในการเคลื่อนที่" },
+		{ "เพิ่มค่า AGI" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SHOUT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Crazy Uproar", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า STR" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CASH_RECEIVEITEM] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มอัตราการดรอปไอเทมขึ้น 100%" },
+		{ "เมื่อกำจัดมอนสเตอร์" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SPL_DEF] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Honey Jam", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดความเสียหายทางกายภาพและเวทมนตร์ที่ได้รับ" },
+		{ "จากมอนสเตอร์ในแผนที่ Splendide" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ILLUSION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Hallucination", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "หน้าจอบิดเบี้ยว" },
+		{ "การแสดงผลค่าความเสียหายผิดพลาด" },
+		{ "การร่ายเวทย์หยุดชะงัก" }
+	}
+}
+StateIconList[EFST_IDs.EFST_HOVERING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Hover", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ต้านทานกับดักและเวทมนตร์พื้นดินบางชนิด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BENEDICTIO] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "มอบคุณสมบัติศักดิ์สิทธิ์ (Holy) ให้กับชุดเกราะ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_WEAPONBLOCKING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Weapon Blocking", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "มีโอกาสบล็อกการโจมตีทางกายภาพระยะประชิด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ANGELUS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Angelus", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า DEF" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MARSHOFABYSS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Marsh Of Abyss", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดความเร็วในการเคลื่อนที่" },
+		{ "ลดค่า DEF และ Flee" }
+	}
+}
+StateIconList[EFST_IDs.EFST_STEALTHFIELD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Stealth Field", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ทำให้เป้าหมายทั้งหมดภายใน" },
+		{ "ระยะของสกิลอยู่ในสภาวะพรางตัว (Cloaking)" },
+		{ "ใช้ค่า SP อย่างต่อเนื่อง" },
+		{ "ลดความเร็วในการเคลื่อนที่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ADRENALINE2] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Full Adrenaline Rush", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า ASPD ให้กับอาวุธทุกประเภท ยกเว้นธนู" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MANU_MATK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Manuk's Faith", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มพลังโจมตีเวทมนตร์ต่อ" },
+		{ "มอนสเตอร์ทั้งหมดในแผนที่ Manuk" }
+	}
+}
+StateIconList[EFST_IDs.EFST_NOEQUIPARMOR] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Strip Armor", COLOR_TITLE_DEBUFF	},
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถสวมใส่ชุดเกราะได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ENERGYCOAT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Energy Coat", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดความเสียหายจากศัตรู" },
+		{ "ตามจำนวน SP ที่เหลืออยู่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_RENOVATIO] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Renovatio", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ฟื้นฟู HP จำนวนหนึ่งในทุกๆ 5 วินาที" },
+		{ "สร้างความเสียหายจำนวนหนึ่งแก่มอนสเตอร์ธาตุผีดิบ (Undead)" },
+		{ "ตามระดับเลเวลของผู้ร่าย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_HIDING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Hiding", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ซ่อนตัวอยู่ใต้ดินเพื่อหลบหลีกการโจมตีของศัตรู" },
+		{ "สามารถถูกตรวจพบได้ด้วยสกิลตรวจจับ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_WEIGHTOVER50] = {
+	descript = {
+		{ "Weight over 50%", COLOR_TITLE_DEBUFF },
+		{ "ระงับการฟื้นฟู HP และ SP ตามธรรมชาติ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_STRUP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Sprint", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า STR" },
+		{ "เมื่อไม่ได้สวมใส่อาวุธใดๆ" },
+		{ "เพิ่มค่า ATK ตามระดับเลเวลของ Sprint" }
+	}
+}
+StateIconList[EFST_IDs.EFST_NOEQUIPHELM] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Strip Helm", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถสวมใส่หมวก (Headgear) ได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATTHASTE_POTION3] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Berserk Potion", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเร็วในการโจมตี (ASPD)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ENDURE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Endure", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ต้านทานการชะงักจากการโจมตีของศัตรู" },
+		{ "จะถูกยกเลิกหลังจากผู้ร่ายถูกโจมตีครบจำนวนครั้งที่กำหนด" },
+		{ "เพิ่มค่า MDEF" }
+	}
+}
+StateIconList[EFST_IDs.EFST_TURNKICK_ON] = {
+	descript = {
+		{ "Roundhouse Stance", COLOR_TITLE_BUFF },
+		{ "มีโอกาสเข้าสู่สภาวะ Roundhouse Stance" },
+		{ "โดยอัตโนมัติเมื่อผู้ร่ายโจมตีถูกเป้าหมาย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ENCHANTPOISON] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Enchant Poison", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เคลือบอาวุธที่สวมใส่ด้วยธาตุพิษ (Poison)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SPL_ATK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Pinguicula's Pickled Fruit", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มพลังโจมตีทางกายภาพต่อ" },
+		{ "มอนสเตอร์ทั้งหมดในแผนที่ Splendide" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BLESSING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Blessing", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า DEX, INT และ STR" },
+		{ "รักษาจากสถานะคำสาป (Curse) และสถานะเป็นหิน (Stone Curse)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ONEHANDQUICKEN] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "One Hand Quicken", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า ASPD เมื่อใช้ดาบมือเดียว" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SPEARQUICKEN] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Spear Quicken", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า ASPD เมื่อใช้หอก" },
+		{ "เพิ่มอัตราคริติคอล (Critical rate)" },
+		{ "เพิ่มค่า Flee" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BROKENWEAPON] = {
+	descript = {
+		{ "Broken Weapon", COLOR_TITLE_DEBUFF }
+	}
+}
+StateIconList[EFST_IDs.EFST_ASSUMPTIO] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Assumptio", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า DEF" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MAXIMIZE] = {
+	descript = {
+		{ "Maximize Power", COLOR_TITLE_BUFF },
+		{ "เพิ่มพลังของอาวุธให้ถึงขีดสุด" },
+		{ "ใช้ค่า SP อย่างต่อเนื่อง" }
+	}
+}
+StateIconList[EFST_IDs.EFST_LG_REFLECTDAMAGE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Reflect Damage", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "สะท้อนความเสียหายทางกายภาพบางส่วนไปยังบริเวณรอบๆ" },
+		{ "ใช้ค่า SP จำนวนหนึ่งในทุกๆ วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROTECTSHIELD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Chemical Protection Shield", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ป้องกันโล่ที่สวมใส่จากการถูกทำลาย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MAGNIFICAT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Magnificat", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเร็วในการฟื้นฟู SP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATTHASTE_POTION1] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Concentration Potion", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเร็วในการโจมตี (ASPD)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_POISONREACT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Poison React", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ร่ายการโจมตีด้วยพิษใส่ศัตรูโดยอัตโนมัติ" },
+		{ "ร่ายสกิล Envenom ใส่ศัตรู" },
+		{ "เมื่อผู้ร่ายได้รับความเสียหายจากการโจมตีปกติ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MOVHASTE_HORSE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเร็วในการเคลื่อนที่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CRESCENTELBOW] = {
+	descript = {
+		{ "Crescent Elbow", COLOR_TITLE_BUFF },
+		{ "สร้างความเสียหายแก่ศัตรูโดยการทำให้ล้มลง" },
+		{ "ผู้ร่ายจะได้รับความเสียหายบางส่วนจากสิ่งนั้น" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SONG_OF_MANA] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Song Of Mana", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ฟื้นฟูค่า SP จำนวนหนึ่งทุกๆ 5 วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_KAAHI] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Kaahi", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ฟื้นฟู HP โดยการใช้ SP เมื่อได้รับความเสียหายจากการโจมตีทางกายภาพ" },
+		{ "ยกเว้นการโจมตีด้วยสกิล" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ECHOSONG] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Echo Song", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า DEF" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PRESERVE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Preserve", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ระงับสกิล Plagiarism" }
+	}
+}
+StateIconList[EFST_IDs.EFST_WEAPONPERFECT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Weapon Perfection", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "สร้างความเสียหาย 100%" },
+		{ "ต่อมอนสเตอร์ทุกขนาด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROVOKE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Provoke", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดค่า DEF" },
+		{ "เพิ่มค่า ATK" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MOVHASTE_POTION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเร็วในการเคลื่อนที่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_EDP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Enchant Deadly Poison", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มโอกาสทำให้ศัตรูติดพิษร้ายแรง" },
+		{ "ความเสียหายเพิ่มเติมไม่มีผลกับมอนสเตอร์ระดับ Boss", COLOR_SYSTEM }
+	}
+}
+StateIconList[EFST_IDs.EFST_JOINTBEAT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Joint Beat", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ทำให้ศัตรูติดสถานะผิดปกติ" },
+		{ "โดยการโจมตีที่ข้อต่อ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROVIDENCE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Providence", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความต้านทานต่อมอนสเตอร์ประเภท" },
+		{ "Demon และมอนสเตอร์ธาตุศักดิ์สิทธิ์ (Holy)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FIGHTINGSPIRIT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Fighting Spirit", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า ATK" },
+		{ "เพิ่มความเร็วในการโจมตี (ASPD) ของผู้ร่าย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FOOD_VIT_CASH] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า VIT" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SATURDAY_NIGHT_FEVER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Madness", COLOR_TITLE_DEBUFF},
+		{ "%s", COLOR_TIME },
+		{ "สูญเสีย HP และ SP ในทุกๆ 3 วินาที" },
+		{ "เพิ่มค่า ATK, ลดค่า DEF และ Flee" },
+		{ "ไม่สามารถใช้สกิลและไอเทมได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_TRUESIGHT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "True Sight", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่าสถานะ (Stats) ทั้งหมด" },
+		{ "เพิ่มค่า HIT, ความเสียหาย และอัตราคริติคอล" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CASH_PLUSONLYJOBEXP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "ได้รับ Job EXP 1.5 เท่า เมื่อกำจัดมอนสเตอร์" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ARMOR_PROPERTY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Change Property Scroll", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เปลี่ยนคุณสมบัติธาตุ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_TENSIONRELAX] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Tension Relax", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเร็วในการฟื้นฟู HP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_DEATHHURT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Death Hurt", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดประสิทธิภาพของสกิลการรักษา (Healing)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_IMPOSITIO] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Impositio Manus", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า ATK ของอาวุธ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_LEECHESEND] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Leech End", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "สูญเสีย HP จำนวนหนึ่งในทุกๆ วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_REPRODUCE] = {
+	descript = {
+		{ "Reproduce", COLOR_TITLE_BUFF },
+		{ "เรียนรู้สกิลที่เล็งเป้าหมายมายังผู้ร่าย" },
+		{ "สามารถเรียนรู้ได้เพียง 1 สกิลเท่านั้น" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ACCELERATION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Acceleration", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเร็วในการเคลื่อนที่ของ Madogear" }
+	}
+}
+StateIconList[EFST_IDs.EFST_NJ_NEN] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Ninja Aura", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า INT และ STR" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FORCEOFVANGUARD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Vanguard Force", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า MaxHP และ DEF" },
+		{ "สะสมอัตรา Rage ทุกครั้งที่ได้รับความเสียหาย" },
+		{ "ใช้ค่า SP อย่างต่อเนื่อง" }
+	}
+}
+StateIconList[EFST_IDs.EFST_RG_CCONFINE_M] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Close Confine", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ทำให้ผู้ร่ายและเป้าหมายไม่สามารถเคลื่อนที่ได้" },
+		{ "เพิ่มค่า Flee" },
+		{ "ไม่สามารถใช้กับมอนสเตอร์ระดับ Boss ได้", COLOR_SYSTEM }
+	}
+}
+StateIconList[EFST_IDs.EFST_TRICKDEAD] = {
+	descript = {
+		{ "Play Dead", COLOR_TITLE_TOGGLE},
+		{ "กำลังแกล้งตาย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROPERTYWATER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Frost Weapon", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "มอบคุณสมบัติธาตุน้ำ (Water) ให้กับอาวุธ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ADORAMUS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Adoramus", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดค่า AGI และทำให้ติดสถานะตาบอด (Blind)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GENTLETOUCH_ENERGYGAIN] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Gentle Touch - Silence", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เมื่อโจมตีด้วยการโจมตีระยะประชิดหรือถูกโจมตี" },
+		{ "จะสร้าง Spirit Sphere 1 ลูก" }
+	}
+}
+StateIconList[EFST_IDs.EFST_NEUTRALBARRIER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Neutral Barrier", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า DEF และ MDEF" },
+		{ "ต้านทานการโจมตีระยะไกล" }
+	}
+}
+StateIconList[EFST_IDs.EFST_EARTHSCROLL] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Happy Break", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เมื่อใช้ไอเทม Earth Spike spell scroll" },
+		{ "จะใช้ค่า SP จำนวนหนึ่ง" },
+		{ "มีโอกาสต่ำที่จะใช้ไอเทม spell scroll" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FALCON] = {
+	descript = {
+		{ "Falconry Mastery", COLOR_TITLE_TOGGLE },
+		{ "กำลังเช่า Falcon" }
+	}
+}
+StateIconList[EFST_IDs.EFST_TWOHANDQUICKEN] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Two-Hand Quicken", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเร็วในการโจมตี" },
+		{ "เมื่อสวมใส่ดาบสองมือ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SUN_COMFORT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Solar Protection", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า DEF" }
+	}
+}
+StateIconList[EFST_IDs.EFST_KYRIE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Kyrie Eleison", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เกราะป้องกันเป้าหมายจากการโจมตีตามจำนวนครั้งที่กำหนด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROTECTARMOR] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Chemical Protection Armor", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ป้องกันชุดเกราะที่สวมใส่จากการถูกทำลาย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GIANTGROWTH] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Giant Growth", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า STR" },
+		{ "เมื่อโจมตีด้วยการโจมตีระยะประชิด" },
+		{ "จะเพิ่มโอกาสในการสร้างความเสียหายอย่างรุนแรง" },
+		{ "มีโอกาสทำลายอาวุธของผู้ร่าย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_STR_SCROLL] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า STR" }
+	}
+}
+StateIconList[EFST_IDs.EFST_AB_SECRAMENT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Sacrament", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดระยะเวลาในการร่ายคงที่ (Fixed cast time)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PARALYSE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Paralyze", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดค่า ASPD, Flee และความเร็วในการเคลื่อนที่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROPERTYGROUND] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Seismic Weapon", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เคลือบอาวุธด้วยธาตุดิน (Earth)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_DOUBLECASTING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Double Casting", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มโอกาสในการใช้สกิลประเภท Bolt ซ้ำ" },
+		{ "ที่ได้ร่ายไปแล้ว" }
+	}
+}
+StateIconList[EFST_IDs.EFST_RG_CCONFINE_S] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Close Confine", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ทำให้ผู้ร่ายและเป้าหมายไม่สามารถเคลื่อนที่ได้" },
+		{ "เพิ่มค่า Flee" },
+		{ "ไม่สามารถใช้กับมอนสเตอร์ระดับ Boss ได้", COLOR_SYSTEM }
+	}
+}
+StateIconList[EFST_IDs.EFST_OVERHEAT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "Over Heat", COLOR_TITLE_BUFF },
+		{ "สถานะความร้อนเกินพิกัดของ Madogear" },
+		{ "ลดค่า HP จำนวนหนึ่งในทุกๆ วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SPL_MATK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Cornus's Tear", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มพลังโจมตีเวทมนตร์ต่อ" },
+		{ "มอนสเตอร์ทั้งหมดในแผนที่ Splendide" }
+	}
+}
+StateIconList[EFST_IDs.EFST_DEEP_SLEEP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Deep Sleep", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ได้รับความเสียหาย 1.5 เท่า" },
+		{ "ฟื้นฟู HP/SP จำนวนหนึ่งในทุกๆ 2 วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_RECOGNIZEDSPELL] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Recognized Spell", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "โจมตีด้วยค่า MATK สูงสุด" },
+		{ "เพิ่มการใช้ค่า SP ของสกิล" }
+	}
+}
+StateIconList[EFST_IDs.EFST_TARGET_ASPD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า MaxSP" },
+		{ "ลดการใช้ค่า SP ของสกิล" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FOOD_BASICAVOIDANCE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า Flee" }
+	}
+}
+StateIconList[EFST_IDs.EFST_DEFENDER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Defending Aura", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดความเสียหายทางกายภาพระยะไกลที่ได้รับ" },
+		{ "ลด ASPD, ความเร็วในการเคลื่อนที่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_WEAPONPROPERTY] = {
+	haveTimeLimit = 0,
+	descript = {
+		{ "เพิ่มธาตุให้กับอาวุธ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_S_LIFEPOTION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Small Life Potion", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ฟื้นฟู HP จำนวนหนึ่งในทุกๆ 5 วินาที" },
+		{ "ไม่มีผลในสภาวะ Berserk" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FOOD_LUK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม LUK" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BLOODING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Bleeding", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ระงับการฟื้นฟู HP และ SP ตามธรรมชาติ" },
+		{ "เสีย HP จำนวนหนึ่งอย่างต่อเนื่อง" }
+	}
+}
+StateIconList[EFST_IDs.EFST_REFRESH] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Refresh", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ฟื้นฟูจากสถานะผิดปกติและดีบัฟทุกชนิด" },
+		{ "ต้านทานสถานะผิดปกติและดีบัฟ" },
+		{ "ฟื้นฟู HP จำนวนหนึ่ง" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FOOD_LUK_CASH] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม LUK" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BROKENARMOR] = {
+	descript = {
+		{ "Broken Armor", COLOR_TITLE_DEBUFF }
+	}
+}
+StateIconList[EFST_IDs.EFST_DODGE_ON] = {
+	descript = {
+		{ "Tumbling", COLOR_TITLE_BUFF },
+		{ "เตรียมพร้อมสำหรับ Flying Kick" },
+		{ "มีโอกาสบล็อกการโจมตีทางกายภาพระยะไกล" },
+		{ "หรือการโจมตีด้วยเวทมนตร์" },
+		{ "เมื่อผู้ใช้ร่ายอยู่ในสภาวะ Spurt" },
+		{ "จะสามารถบล็อกการโจมตีระยะประชิดได้ด้วย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_TARGET_BLOOD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Abnormal Status Resistance Potion", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความต้านทานต่อสถานะ:" },
+		{ "Stun, Freezing, Stone Curse, Sleep, Silence" },
+		{ "Blind, Curse, Poison, Bleeding, Confusion" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MELODYOFSINK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Sinking Melody", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม MATK" },
+		{ "ลด ATK" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CRUCIS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Signum Crucis", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดพลังป้องกันของมอนสเตอร์ประเภท Undead และ Ghost" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SLOWCAST] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Slow Cast", COLOR_TITLE_DEBUFF},
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มระยะเวลาการร่ายเวท" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROPERTYWIND] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Lightning Loader", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มธาตุลมให้กับอาวุธ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ENCHANTBLADE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Enchant Blade", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม MATK ให้กับการโจมตีทางกายภาพระยะประชิด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ADRENALINE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Adrenaline Rush", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม ASPD เมื่อใช้อาวุธประเภท" },
+		{ "ขวาน (Axe) และ กระบอง (Mace)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MAGICMUSHROOM] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Magic Mushroom", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "แสดงอิโมติคอนหัวเราะ" },
+		{ "ร่ายทักษะสุ่มในทุกๆ 4 วินาที" },
+		{ "เสีย HP จำนวนหนึ่งในทุกๆ 4 วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CASH_PLUSEXP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มจำนวน EXP ที่ได้รับ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATTHASTE_POTION2] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Awakening Potion", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม ASPD" }
+	}
+}
+StateIconList[EFST_IDs.EFST_TOXIN] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Toxin", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "รบกวนการร่ายทักษะทุกๆ 10 วินาที" },
+		{ "ยกเลิกผลของ Phen Card" },
+		{ "เสีย SP จำนวนหนึ่งในทุกๆ 10 วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_RAISINGDRAGON] = {
+	descript = {
+		{ "Raising Dragon", COLOR_TITLE_BUFF },
+		{ "เพิ่มจำนวน Spirit Sphere สูงสุด" },
+		{ "เพิ่ม MaxHP, MaxSP" },
+		{ "เพิ่ม ASPD" },
+		{ "รักษาสถานะ Explosion Spirit ให้คงอยู่" },
+		{ "เสีย HP จำนวนหนึ่งในทุกๆ วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_HARMONIZE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Harmonize", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ปรับเปลี่ยนค่าสถานะเพิ่มเติม" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CHASEWALK2] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม STR" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FOOD_STR_CASH] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม STR" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CLOAKINGEXCEED] = {
+	descript = {
+		{ "Cloaking Exceed", COLOR_TITLE_BUFF },
+		{ "ไม่ถูกตรวจจับโดยมอนสเตอร์ประเภทแมลง (Insect) และกึ่งอมนุษย์ (Demon)" },
+		{ "สถานะจะไม่ถูกยกเลิกจนกว่าจะได้รับความเสียหายตามจำนวนครั้งที่กำหนด" },
+		{ "เพิ่มความเร็วในการเคลื่อนที่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ASSUMPTIO2] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Assumptio", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม DEF" }
+	}
+}
+StateIconList[EFST_IDs.EFST_THORNS_TRAP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Thorns Trap", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ได้รับความเสียหายทีละนิดอย่างต่อเนื่อง" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SLOWPOISON] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Slow Poison", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "หยุดการแพร่กระจายของยาพิษชั่วคราว" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CLOAKING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Cloaking", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถมองเห็นได้โดยผู้อื่น" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PARTYFLEE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม Flee" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CRITICALPERCENT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Abrasive", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มอัตรา Critical" }
+	}
+}
+StateIconList[EFST_IDs.EFST_INSPIRATION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Inspiration", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม HIT, Status, ATK, MaxHP" },
+		{ "ยกเลิกบัฟและสถานะผิดปกติบางอย่าง" },
+		{ "ลด HP, SP อย่างต่อเนื่อง" },
+		{ "ยกเลิกบัฟและสถานะผิดปกติทุกชนิด" },
+		{ "สูญเสีย EXP จำนวนหนึ่ง" }
+	}
+}
+StateIconList[EFST_IDs.EFST_UNLIMITED_HUMMING_VOICE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Unlimited Humming Voice", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "การร่ายทักษะและเวทมนตร์ไม่สามารถถูกขัดจังหวะได้" },
+		{ "เพิ่มการบริโภค SP เมื่อใช้ทักษะ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FOOD_DEX] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม DEX" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ANALYZE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Analyze", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดพลังป้องกันทางกายภาพและเวทมนตร์" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GENTLETOUCH_REVITALIZE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Gentle Touch - Alive", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม VIT, DEF, MaxHP" },
+		{ "เพิ่มการฟื้นฟู HP ตามธรรมชาติ" },
+		{ "ฟื้นฟู HP ขณะเคลื่อนที่และโจมตี" }
+	}
+}
+StateIconList[EFST_IDs.EFST_COUNTER_ON] = {
+	descript = {
+		{ "Counter Kick Stance", COLOR_TITLE_BUFF },
+		{ "เมื่อผู้ใช้โจมตีเป้าหมายสำเร็จ" },
+		{ "มีโอกาสเข้าสู่ท่าร่าง Counter Kick" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GLORIA] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Gloria", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม LUK" }
+	}
+}
+StateIconList[EFST_IDs.EFST_RUSH_WINDMILL] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Rush To Windmill", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม ATK" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PYREXIA] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Pyrexia", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "สถานะตาบอด (Blind) และสับสน (Confusion)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_DANCE_WITH_WUG] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Dance With Wug", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม ASPD" },
+		{ "ลดระยะเวลาร่ายคงที่ (Fixed Cast Time)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SWING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Swing Dance", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม ASPD, ความเร็วในการเคลื่อนที่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MOON_COMFORT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Lunar Protection", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม Flee" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MOONLIT_SERENADE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Moonlight Serenade", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม MATK" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GENTLETOUCH_CHANGE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Gentle Touch - Opposite", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลด VIT, MDEF" },
+		{ "เพิ่ม ATK, ASPD" }
+	}
+}
+StateIconList[EFST_IDs.EFST_STRIPACCESSARY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Strip Accessory", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถสวมใส่เครื่องประดับได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROPERTYUNDEAD] = {
+	haveTimeLimit = 0,
+	descript = {
+		{ "คุณสมบัติธาตุ Undead" }
+	}
+}
+StateIconList[EFST_IDs.EFST_INVISIBILITY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Invisibility", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "สามารถโจมตีได้ในขณะอยู่ในสถานะล่องหน" },
+		{ "เปลี่ยนธาตุการโจมตีเป็นธาตุวิญญาณ (Ghost) ระดับ 1" },
+		{ "ใช้ SP อย่างต่อเนื่อง" },
+		{ "ไม่สามารถใช้ทักษะและไอเทมได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ABUNDANCE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Abundance", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ฟื้นฟู SP จำนวนหนึ่งในทุกๆ 10 วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FOOD_BASICHIT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม HIT" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FOOD_AGI_CASH] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม AGI" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SHADOWFORM] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Shadow Form", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "โอนถ่ายความเสียหายของผู้ใช้ไปยังเป้าหมาย" },
+		{ "ตามระดับเลเวลทักษะของผู้ใช้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_AUTOSHADOWSPELL] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Auto Shadow Spell", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เปิดใช้งานการร่ายเวทอัตโนมัติ" },
+		{ "ที่เรียนรู้มาจาก Plagiarism หรือ Reproduce" },
+		{ "เมื่อโจมตีทางกายภาพระยะประชิด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SHAPESHIFT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Shift Shape", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เปลี่ยนธาตุของ Madogear" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MANU_ATK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Manuk's Golden Chance", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มพลังโจมตีทางกายภาพต่อ" },
+		{ "มอนสเตอร์ทั้งหมดในแผนที่ Manuk" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MARIONETTE_MASTER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Marionette Control", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ส่งต่อค่าสถานะไปยัง" },
+		{ "ผู้เล่นที่กำหนด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MARIONETTE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Marionette Control", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ได้รับโบนัสค่าสถานะ" },
+		{ "จากผู้ร่าย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_WZ_SIGHTBLASTER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Sight Blaster", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ผลักศัตรูออกไปและสร้างความเสียหาย" },
+		{ "เท่ากับค่า MATK ของผู้ร่าย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_LEXAETERNA] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Lex Aeterna", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ได้รับความเสียหายเพิ่มเป็นสองเท่า" }
+	}
+}
+StateIconList[EFST_IDs.EFST_INFRAREDSCAN] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Infra Red Scan", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ตรวจจับศัตรูที่ซ่อนตัวอยู่" },
+		{ "มีโอกาสลดค่า Flee ของเป้าหมายทั้งหมดในระยะ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_INT_SCROLL] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม INT" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ASPERSIO] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Aspersio", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มธาตุศักดิ์สิทธิ์ (Holy) ให้กับอาวุธ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MOVHASTE_INFINITY] = {
+	descript = {
+		{ "เพิ่มความเร็วในการเคลื่อนที่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_LERADS_DEW] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Lerad's Dew", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม MaxHP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FOOD_INT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม INT" }
+	}
+}
+StateIconList[EFST_IDs.EFST_VENOMBLEED] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Venom Bleed", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลด MaxHP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GS_GATLINGFEVER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Gatling Fever", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม ASPD, ATK" },
+		{ "ลด Flee, ความเร็วในการเคลื่อนที่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_VITALITYACTIVATION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Vitality Activation", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มผลของทักษะการฟื้นฟู HP" },
+		{ "และไอเทมฟื้นฟู" },
+		{ "ระงับการฟื้นฟู SP ตามธรรมชาติ" },
+		{ "ลดผลของไอเทมฟื้นฟู SP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_STONEHARDSKIN] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Stonehard Skin", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "สร้างเกราะป้องกันหลังจากใช้ HP ไปตามจำนวนที่กำหนด" },
+		{ "เมื่อผู้เล่นอื่นโจมตีทางกายภาพระยะประชิดใส่ผู้ร่าย" },
+		{ "มีโอกาสทำลายอาวุธของศัตรู" },
+		{ "มีโอกาสลดค่า ATK ของมอนสเตอร์" }
+	}
+}
+StateIconList[EFST_IDs.EFST_WEIGHTOVER90] = {
+	descript = {
+		{ "น้ำหนักเกิน 90% (Weight Over 90%)", COLOR_TITLE_DEBUFF },
+		{ "ระงับการฟื้นฟู HP และ SP ตามธรรมชาติ" },
+		{ "ไม่สามารถโจมตีและใช้ทักษะได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROTECTHELM] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Chemical Protection Helm", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ป้องกันเครื่องป้องกันส่วนศีรษะจากการถูกทำลาย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PLUSAVOIDVALUE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Cup of Welcome", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มอัตราหลบหลีกสมบูรณ์ (Perfect Dodge)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_OBLIVIONCURSE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Oblivion Curse", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "สถานะลืมเลือน (Oblivion)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_HEALPLUS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Regeneration Potion", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มผลของทักษะการฟื้นฟู" },
+		{ "และไอเทมฟื้นฟูบางชนิด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROTECT_DEF] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Physical Defense Potion", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความต้านทานต่อการโจมตีทางกายภาพ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CRITICALWOUND] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Critical Wound", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดผลของทักษะการฟื้นฟู" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PRESTIGE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Prestige", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มอัตราการหลบหลีกเวทมนตร์ตามค่าสถานะของผู้ร่าย" },
+		{ "เพิ่ม DEF" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FOOD_DEX_CASH] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม DEX" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CARTBOOST] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Cart Boost", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเร็วในการเคลื่อนที่เมื่อติดตั้งรถเข็น (Cart)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_L_LIFEPOTION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Medium Life Potion", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ฟื้นฟู HP จำนวนหนึ่งในทุกๆ 4 วินาที" },
+		{ "ไม่มีผลในสภาวะ Berserk" }
+	}
+}
+StateIconList[EFST_IDs.EFST_WINDWALK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Wind Walk", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม Flee, ความเร็วในการเคลื่อนที่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROPERTYFIRE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Flame Launcher", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มธาตุไฟให้กับอาวุธ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_STRIKING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Striking", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม ATK, อัตรา Critical" }
+	}
+}
+StateIconList[EFST_IDs.EFST_DOWNKICK_ON] = {
+	descript = {
+		{ "Heel Drop Stance", COLOR_TITLE_BUFF },
+		{ "มีโอกาสเข้าสู่ท่าร่าง Heel Drop" },
+		{ "เมื่อผู้ใช้โจมตีเป้าหมายสำเร็จ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROPERTYDARK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มธาตุมืด (Shadow Property)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_REFLECTSHIELD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Reflect Shield", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "สะท้อนความเสียหายบางส่วนกลับไปยังศัตรู" },
+		{ "ที่ผู้ร่ายได้รับจากการโจมตีทางกายภาพระยะประชิด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_RIDING] = {
+	descript = {
+		{ "Riding", COLOR_TITLE_TOGGLE }
+	}
+}
+StateIconList[EFST_IDs.EFST_LIGHTNINGWALK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Lightning Walk", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มโอกาสหลบหลีกการโจมตี" },
+		{ "ทางกายภาพระยะไกลและการโจมตีด้วยเวทมนตร์" },
+		{ "และเคลื่อนย้ายไปอยู่หน้าศัตรูทันที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FROSTMISTY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Frost Misty", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลด DEF, ASPD, ความเร็วในการเคลื่อนที่" },
+		{ "เพิ่มระยะเวลาร่ายคงที่ (Fixed Cast Time)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_COLD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Freezing State", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ระงับการเคลื่อนที่, โจมตี, ใช้ทักษะ และไอเทม" },
+		{ "ลด HP และ SP อย่างช้าๆ" },
+		{ "เพิ่มความเสียหายที่ได้รับจากขวาน (Axe), ขวานสองมือ และกระบอง (Mace)" },
+		{ "เพิ่มความเสียหายที่ได้รับจากเวทมนตร์ธาตุลม" },
+		{ "ลดความเสียหายที่ได้รับจากมีด (Dagger), ดาบ, ดาบสองมือ และลูกธนู" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GROUNDMAGIC] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "แสดงผลของเวทมนตร์พื้นที่ (Ground Magic)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_HELLPOWER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Hell Power", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถฟื้นคืนชีพได้" },
+		{ "ไม่สามารถใช้ทักษะ Sacrifice ได้" },
+		{ "ไม่สามารถใช้ไอเทม Token of Siegfried ได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SAVAGE_STEAK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Savage BBQ", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม STR" }
+	}
+}
+StateIconList[EFST_IDs.EFST_COCKTAIL_WARG_BLOOD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Wug Blood Cocktail", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม INT" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MINOR_BBQ] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Minor Brisket", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม VIT" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SIROMA_ICE_TEA] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Siroma Icetea", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม DEX" }
+	}
+}
+StateIconList[EFST_IDs.EFST_DROCERA_HERB_STEAMED] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Drocera Herb Stew", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม AGI" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PUTTI_TAILS_NOODLES] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Petit Tail Noodle", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม LUK" }
+	}
+}
+StateIconList[EFST_IDs.EFST_STOMACHACHE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Stomach Ache", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดค่าสถานะเพิ่มเติมทั้งหมด" },
+		{ "ลดความเร็วในการเคลื่อนที่" },
+		{ "ถูกบังคับให้นั่งลงทุกๆ 10 วินาที" },
+		{ "ใช้ SP จำนวนหนึ่งเป็นเวลา 10 วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROTECTEXP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Mom, Dad, I love you!", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่เสีย EXP เมื่อผู้ร่ายเสียชีวิต" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ANGEL_PROTECT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Thank You So Much", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มการฟื้นฟู HP และ SP ตามธรรมชาติ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MORA_BUFF] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Mora Berry", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความต้านทานต่อ" },
+		{ "มอนสเตอร์ในแผนที่รอบๆ หมู่บ้าน Mora" }
+	}
+}
+StateIconList[EFST_IDs.EFST_POPECOOKIE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Pope Cookie", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม ATK, MATK" },
+		{ "เพิ่มความต้านทานต่อการโจมตีจากทุกธาตุ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_VITALIZE_POTION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Vitalize Potion", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม ATK, MATK" },
+		{ "เพิ่มผลของทักษะการฟื้นฟูและไอเทมฟื้นฟู" }
+	}
+}
+StateIconList[EFST_IDs.EFST_G_LIFEPOTION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Life Potion", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ฟื้นฟู HP จำนวนหนึ่งในทุกๆ 3 วินาที" },
+		{ "ไม่มีผลในสภาวะ Berserk" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ODINS_POWER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Odin's Power", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม ATK, MATK" },
+		{ "ลด DEF, MDEF" }
+	}
+}
+StateIconList[EFST_IDs.EFST_STYLE_CHANGE] = {
+	haveTimeLimit = 0,
+	descript = {
+		{ "Fighter Mode", COLOR_TITLE_TOGGLE },
+		{ "โหมดนักสู้ของ Ernoa" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MAGMA_FLOW] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Magma Flow", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เมื่อได้รับความเสียหาย" },
+		{ "มีโอกาสที่แมกม่าจะปะทุออกจากร่างกาย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GRANITIC_ARMOR] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Granatic Armor", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดความเสียหายที่ Dieter และเจ้าของได้รับ" },
+		{ "เสีย HP จำนวนหนึ่งเมื่อสิ้นสุดระยะเวลา" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PYROCLASTIC] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Pyroclastic", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "อาวุธของ Dieter และเจ้าของ" },
+		{ "เปลี่ยนเป็นธาตุไฟ" },
+		{ "เพิ่มพลังโจมตีของอาวุธ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_VOLCANIC_ASH] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Volcanic Ash", COLOR_TITLE_DEBUFF},
+		{ "%s", COLOR_TIME },
+		{ "ลดค่า HIT" },
+		{ "มีโอกาสล้มเหลวเมื่อร่ายทักษะ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATKER_ASPD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Super Medicine", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม MaxHP" },
+		{ "เพิ่มการฟื้นฟู HP ตามธรรมชาติ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATKER_MOVESPEED] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Revive Medicine", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม MaxSP" },
+		{ "เพิ่มการฟื้นฟู SP ตามธรรมชาติ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_OVERLAPEXPUP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Malangdo Cat Can", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เมื่อกำจัดมอนสเตอร์" },
+		{ "เพิ่มอัตรา Base EXP และ Job EXP ที่ได้รับ" },
+		{ "เพิ่มอัตราการดรอปไอเทม" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PLUSATTACKPOWER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม ATK" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PLUSMAGICPOWER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม MATK" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MACRO_PERMIT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Using Macros", COLOR_SYSTEM },
+		{ "%s", COLOR_TIME },
+		{ "เปิดใช้งานมาโคร (Macro)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MACRO_POSTDELAY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "After Macro Delay", COLOR_SYSTEM },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถใช้มาโครได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MONSTER_TRANSFORM] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Monster Transformation", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "แปลงร่างเป็นมอนสเตอร์" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SIT] = {
+	descript = {
+		{ "Sitting", COLOR_TITLE_TOGGLE}
+	}
+}
+StateIconList[EFST_IDs.EFST_ALL_RIDING] = {
+	descript = {
+		{ "Riding", COLOR_TITLE_TOGGLE }
+	}
+}
+StateIconList[EFST_IDs.EFST_SKF_MATK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม MATK" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SKF_ATK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม ATK" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SKF_ASPD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม ASPD" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SKF_CAST] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "ลดระยะเวลาร่ายผันแปร (Variable Cast Time)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_REWARD_PLUSONLYJOBEXP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "ได้รับ Job EXP เพิ่มเติม" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ENERVATION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Masquerade Enervation", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลด ATK" },
+		{ "Spirit Sphere ทั้งหมดถูกทำลาย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GROOMY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Masquerade Gloomy", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลด ASPD, HIT" },
+		{ "นำสัตว์ขี่ (Mount), สัตว์เลี้ยง (Pet), Homunculus และ Falcon ออก" },
+		{ "ไม่สามารถขี่สัตว์ได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_IGNORANCE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Masquerade Ignorance", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "สูญเสีย SP จำนวนหนึ่ง" },
+		{ "ไม่สามารถใช้ทักษะและเวทมนตร์ได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_LAZINESS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Masquerade Laziness", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลด Flee, ความเร็วในการเคลื่อนที่" },
+		{ "เพิ่มระยะเวลาการร่ายเวท" },
+		{ "ใช้ SP มากขึ้นเมื่อใช้ทักษะ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_UNLUCKY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Masquerade Unlucky", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดอัตรา Critical, การหลบหลีกสมบูรณ์ (Perfect Dodge)" },
+		{ "เสียเงิน Zeny เมื่อใช้ทักษะ" },
+		{ "ได้รับผลจากสถานะผิดปกติบางอย่าง" }
+	}
+}
+StateIconList[EFST_IDs.EFST_WEAKNESS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Masquerade Weakness", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลด MaxHP" },
+		{ "ถอดอาวุธและโล่" },
+		{ "ไม่สามารถสวมใส่อาวุธและโล่ใหม่ได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_STEELBODY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Steel Body", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ปรับค่า DEF และ MDEF ให้อยู่ในระดับสูง" },
+		{ "ลด ASPD, ความเร็วในการเคลื่อนที่" },
+		{ "ไม่สามารถใช้ทักษะได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_LG_REFLECTDAMAGE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Reflect Damage", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "สะท้อนความเสียหายทางกายภาพ/เวทมนตร์บางส่วนกลับไปยังศัตรู" },
+		{ "ใช้ SP จำนวนหนึ่งในทุกๆ วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MVPCARD_TAOGUNKA] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Tao Gunka Scroll", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่ม MaxHP" },
+		{ "ลด DEF, MDEF" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MVPCARD_MISTRESS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Mistress Scroll", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "สามารถใช้เวทมนตร์ได้โดยไม่ต้องใช้ Gemstone" },
+		{ "เพิ่มการใช้ SP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MVPCARD_ORCHERO] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Orc Hero Scroll", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ป้องกันสถานะมึนงง (Stun)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MVPCARD_ORCLORD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Orc Lord Scroll", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "สะท้อนการโจมตีทางกายภาพระยะประชิดบางส่วน" }
+	}
+}
+StateIconList[EFST_IDs.EFST_HANDICAPSTATE_NORECOVER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "No Recover State", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ระงับการฟื้นฟู HP และ SP ตามธรรมชาติ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SET_NUM_DEF] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "ค่า DEF ถูกกำหนดไว้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SET_NUM_MDEF] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "ค่า MDEF ถูกกำหนดไว้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SET_PER_DEF] = {
+	descript = {
+		{ "ค่า DEF ถูกกำหนดไว้ที่อัตราเปอร์เซ็นต์ที่แน่นอน" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SET_PER_MDEF] = {
+	descript = {
+		{ "ค่า MDEF จะถูกคงที่ไว้ตามเปอร์เซ็นต์ที่กำหนด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_EXTREMITYFIST] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Asura Strike", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ปิดการฟื้นฟู SP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATTHASTE_CASH] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "ASPD Reinforce Potion", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเร็วในการโจมตี (ASPD)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_2011RWC] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Firecracker", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่าสถานะทุกอย่างขึ้น 3" },
+		{ "เพิ่มค่า ATK และ MATK" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PHI_DEMON] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Ancient Spirit of Daebujeok", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเสียหายทางกายภาพและเวทมนตร์" },
+		{ "ต่อมอนสเตอร์เผ่า Demon" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GM_BATTLE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Combat drug", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า ATK และ MATK" },
+		{ "ลดค่า MaxHP และ MaxSP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GM_BATTLE2] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Advanced Combat Drug", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า ATK และ MATK" },
+		{ "ลดค่า MaxHP และ MaxSP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_2011RWC_SCROLL] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Red Booster", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า ATK, MATK, ASPD" },
+		{ "ลดระยะเวลาการร่ายแบบแปรผัน (Variable Casting)" },
+		{ "เมื่อได้รับความเสียหายทางกายภาพหรือเวทมนตร์" },
+		{ "จะมีโอกาสร่ายทักษะ Improve Concentration" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MEIKYOUSISUI] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Sealed Mirror", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ฟื้นฟู HP และ SP จำนวนหนึ่ง" },
+		{ "ไม่สามารถเคลื่อนที่ได้ (Immobilize)" },
+		{ "มีโอกาสที่จะไม่ได้รับความเสียหาย" },
+		{ "เมื่อใช้ทักษะ จะได้รับสถานะผิดปกติแบบสุ่ม" },
+		{ "เมื่อได้รับความเสียหาย ผลของสถานะนี้จะถูกยกเลิก" }
+	}
+}
+StateIconList[EFST_IDs.EFST_IZAYOI] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "The 16th Night", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ยกเลิกการร่ายแบบคงที่ (Fixed Casting)" },
+		{ "ลดการร่ายแบบแปรผัน (Variable Casting)" },
+		{ "เพิ่มค่า MATK ของไอเทม" },
+		{ "ใช้ SP จำนวนหนึ่งทุกๆ วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_KG_KAGEHUMI] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Shadow Trampling", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถเคลื่อนที่ได้ (Immobilize)" },
+		{ "ยกเลิกทักษะพิเศษ" },
+		{ "ไม่สามารถใช้ทักษะหรือไอเทมประเภทพรางตัวหรือวาร์ปได้" },
+		{ "ไม่สามารถใช้ทักษะ Emergency Call ได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_KYOMU] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Empty Shadow", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ยกเลิกผลการสะท้อนความเสียหายทางกายภาพหรือเวทมนตร์" },
+		{ "มีโอกาสล้มเหลวเมื่อใช้ทักษะ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_KAGEMUSYA] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Shadow Warrior", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "มอบผลของ Double Attack" },
+		{ "ใช้ SP จำนวนหนึ่งทุกๆ วินาที" },
+		{ "หลังจากถูกโจมตีครบจำนวนครั้งที่กำหนด สถานะจะหายไป" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ZANGETSU] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Distorted Crescent", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "มอบผลพิเศษตามเลเวลพื้นฐาน (Base Level)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GENSOU] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Moonlight Fantasy", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ค่า HP และ SP จะเพิ่มขึ้นและลดลงแบบสุ่ม" },
+		{ "เมื่อได้รับความเสียหายจากการโจมตีด้วยเวทมนตร์" },
+		{ "ครึ่งหนึ่งของความเสียหายจะถูกส่งไปยังเป้าหมายอื่น" }
+	}
+}
+StateIconList[EFST_IDs.EFST_AKAITSUKI] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Omnius Moonlight", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ผลต่อทักษะฟื้นฟู HP เฉพาะเจาะจง" },
+		{ "จะได้รับความเสียหายแทนการฟื้นฟู" },
+		{ "ได้รับความเสียหายเป็น 1/2 ของปริมาณการฟื้นฟู" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MYSTICPOWDER] = {
+	haveTimeLimit = 1, posTimeLimitStr = 2, descript = {
+		{ "Mystic Powder", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า FLEE และ LUK" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ACARAJE] = {
+	haveTimeLimit = 1, posTimeLimitStr = 2, descript = {
+		{ "Akaraje", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า HIT และ ASPD" }
+	}
+}
+StateIconList[EFST_IDs.EFST_M_LIFEPOTION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Mysterious water of life", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ฟื้นฟู HP ทุกๆ 3 วินาที" },
+		{ "ไม่มีผลในสถานะ Berserk" }
+	}
+}
+StateIconList[EFST_IDs.EFST_FLOWER_LEAF] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Rich Flower Leaf", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า Flee" }
+	}
+}
+StateIconList[EFST_IDs.EFST_RAY_OF_PROTECTION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Ray of Protection", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ปลดปล่อยจากสถานะผิดปกติบางอย่าง" },
+		{ "ป้องกันสถานะผิดปกติบางอย่าง" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GLASTHEIM_ATK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "คุณรู้สึกถึงพลังอันมหาศาลภายในร่างกาย" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GLASTHEIM_DEF] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "ได้รับการปกป้องโดยโล่เวทมนตร์" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GLASTHEIM_HEAL] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มประสิทธิภาพของพลังการรักษา (Heal)" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GLASTHEIM_HIDDEN] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "เกราะป้องกันเวทมนตร์" },
+		{ "กำลังซ้อนทับกันอยู่หลายชั้น" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GLASTHEIM_STATE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มค่าสถานะ (Stats) ทั้งหมด" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GLASTHEIM_ITEMDEF] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มค่า DEF" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GLASTHEIM_HPSP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มค่า MaxHP และ MaxSP" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_ALMIGHTY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Almighty", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า ATK และ MATK" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GVG_GIANT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "The blood of Frozen Giant", COLOR_TITLE_BUFF },
+		{ "เพิ่มความเสียหายต่อผู้เล่น" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GVG_GOLEM] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Core of Golem", COLOR_TITLE_BUFF },
+		{ "ลดความเสียหายที่ได้รับจากผู้เล่น" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GVG_STUN] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Elven tears(Stun)", COLOR_TITLE_BUFF },
+		{ "ป้องกันสถานะ Stun" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GVG_STONE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Elven tears(Stone Curse)", COLOR_TITLE_BUFF },
+		{ "ป้องกันสถานะ Stone Curse" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GVG_FREEZ] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Elven tears(Frozen)", COLOR_TITLE_BUFF },
+		{ "ป้องกันสถานะ Frozen" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GVG_SLEEP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Elven tears(Sleep)", COLOR_TITLE_BUFF },
+		{ "ป้องกันสถานะ Sleep" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GVG_CURSE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Elven tears(Curse)", COLOR_TITLE_BUFF },
+		{ "ป้องกันสถานะ Curse" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GVG_SILENCE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Elven tears(Silence)", COLOR_TITLE_BUFF },
+		{ "ป้องกันสถานะ Silence" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GVG_BLIND] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Elven tears(Blind)", COLOR_TITLE_BUFF },
+		{ "ป้องกันสถานะ Blind" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_JP_EVENT01] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มความเสียหายทางกายภาพต่อมอนสเตอร์เผ่า Fish" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_JP_EVENT02] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มความเสียหายทางเวทมนตร์ต่อมอนสเตอร์เผ่า Fish" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_JP_EVENT03] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "ลดความเสียหายที่ได้รับจากมอนสเตอร์เผ่า Fish" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_JP_EVENT04] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "เพิ่มค่าประสบการณ์ (EXP) ที่ได้รับ" },
+		{ "จากการกำจัดมอนสเตอร์เผ่า Fish" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GEFFEN_MAGIC1] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มความเสียหายทางกายภาพต่อมอนสเตอร์เผ่า Demihuman" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GEFFEN_MAGIC2] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มความเสียหายทางเวทมนตร์ต่อมอนสเตอร์เผ่า Demihuman" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GEFFEN_MAGIC3] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "ลดความเสียหายที่ได้รับจากมอนสเตอร์เผ่า Demihuman" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_QUEST_BUFF1] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Energy storage", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า ATK และ MATK" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_QUEST_BUFF2] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Energy Storage", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า ATK และ MATK" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_QUEST_BUFF3] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Energy Storage", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า ATK และ MATK" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_FENRIR_CARD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 4,
+	descript = {
+		{ "Power of Fenrir", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า MATK" },
+		{ "ลดระยะเวลาการร่ายแบบคงที่ (Fixed Cast Time)" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_HANDICAPSTATE_ICEEXPLO] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 5,
+	descript = {
+		{ "Ice explotion", COLOR_TITLE_DEBUFF},
+		{ "ลดความเร็วในการเคลื่อนที่" },
+		{ "จะระเบิดหลังจากผ่านไปช่วงเวลาหนึ่ง" },
+		{ "และสร้างความเสียหายแบบวงกว้าง" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_ITEM_ATKMAX] = {
+	descript = {
+		{ "MAX ATK", COLOR_TITLE_TOGGLE},
+		{ "พลังโจมตีทางกายภาพสูงสุด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ITEM_ATKMIN] = {
+	descript = {
+		{ "MIN ATK", COLOR_TITLE_TOGGLE},
+		{ "พลังโจมตีทางกายภาพต่ำสุด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ITEM_MATKMAX] = {
+	descript = {
+		{ "MAX MATK", COLOR_TITLE_TOGGLE},
+		{ "พลังโจมตีทางเวทมนตร์สูงสุด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ITEM_MATKMIN] = {
+	descript = {
+		{ "MIN MATK", COLOR_TITLE_TOGGLE},
+		{ "พลังโจมตีทางเวทมนตร์ต่ำสุด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_2013_VALENTINE1] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มค่า LUK" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_2013_VALENTINE2] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มค่า ATK และ MATK" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_2013_VALENTINE3] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "ปรับปรุงการฟื้นฟู HP และ SP" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_CHILL] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Chill", COLOR_TITLE_DEBUFF},
+		{ "ป้องกันสถานะ Burn" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_BURNT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 6,
+	descript = {
+		{ "Burn", COLOR_TITLE_DEBUFF},
+		{ "เพิ่มความเสียหายต่อมอนสเตอร์ธาตุไฟ" },
+		{ "ลดความต้านทานต่อธาตุไฟ" },
+		{ "ได้รับความเสียหายจากไฟเป็นระยะ" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_FRIGG_SONG] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 4,
+	descript = {
+		{ "Frigg's Song", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า MaxHP" },
+		{ "ฟื้นฟู HP ทุกๆ วินาที" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_OFFERTORIUM] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 4,
+	descript = {
+		{ "Offertorium", COLOR_TITLE_BUFF },
+		{ "เพิ่มประสิทธิภาพของทักษะการรักษา (Heal)" },
+		{ "เพิ่มการใช้ SP" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_TELEKINESIS_INTENSE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 5,
+	descript = {
+		{ "Intense Telekinesis", COLOR_TITLE_BUFF },
+		{ "เพิ่มความเสียหายเวทมนตร์ธาตุ Ghost" },
+		{ "ลดการใช้ SP ของเวทมนตร์ธาตุ Ghost" },
+		{ "ลดระยะเวลาการร่ายของทักษะทั้งหมด" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_FULL_THROTTLE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 4,
+	descript = {
+		{ "Full Throttle", COLOR_TITLE_BUFF },
+		{ "เพิ่มความเร็วในการเคลื่อนที่" },
+		{ "เพิ่มค่าสถานะ (Stats) ทั้งหมด" },
+		{ "%s", COLOR_TIME } }
+}
+StateIconList[EFST_IDs.EFST_REBOUND] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 4,
+	descript = {
+		{ "Rebound", COLOR_TITLE_DEBUFF},
+		{ "ลดความเร็วในการเคลื่อนที่" },
+		{ "ปิดการฟื้นฟู HP และ SP ตามธรรมชาติ" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_UNLIMIT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 4,
+	descript = {
+		{ "No Limit", COLOR_TITLE_BUFF },
+		{ "เพิ่มความเสียหายของการโจมตีระยะไกล" },
+		{ "ลดค่า DEF และ MDEF ลงอย่างมาก" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_KINGS_GRACE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 5,
+	descript = {
+		{ "King's Grace", COLOR_TITLE_BUFF },
+		{ "สถานะอมตะ" },
+		{ "ไม่สามารถใช้ไอเทมได้" },
+		{ "ไม่สามารถเคลื่อนที่และโจมตีได้" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_DARKCROW] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Dark Claw", COLOR_TITLE_DEBUFF},
+		{ "เพิ่มความเสียหายระยะประชิด" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_JITTER_BUFF1] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "ความโกรธของนิวฟาม", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า ATK" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_JITTER_BUFF2] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "เจตจำนงของอีเกิล", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า MATK" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_JITTER_BUFF3] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "ความสงบของลอเรมิท", COLOR_TITLE_BUFF },
+		{ "ลดดีเลย์หลังการโจมตี (After-attack delay)" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_JITTER_BUFF4] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "สมาธิของกิวก้า", COLOR_TITLE_BUFF },
+		{ "ลดการใช้ SP" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_JITTER_BUFF5] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "ความไร้เดียงสาของอาร่า", COLOR_TITLE_BUFF },
+		{ "ลดดีเลย์หลังการร่าย (After-cast delay)" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_JITTER_BUFF6] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "ความละเอียดอ่อนของบีบี", COLOR_TITLE_BUFF },
+		{ "เพิ่มความแม่นยำ (Accuracy)" },
+		{ "%s", COLOR_TIME } }
+}
+StateIconList[EFST_IDs.EFST_JITTER_BUFF7] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Ro.L's Seriousness", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า DEF" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_JITTER_BUFF8] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "ความร่าเริงของลูน่า", COLOR_TITLE_BUFF },
+		{ "เพิ่มประสิทธิภาพการรักษา (Heal)" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_JITTER_BUFF9] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "ความไว้วางใจของรังกิ", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า MDEF" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_JITTER_BUFF10] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "ความระแวดระวังของมาดีโอเล่", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า Flee" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_CUP_OF_BOZA] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 4,
+	descript = {
+		{ "Let's Cup", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า VIT" },
+		{ "เพิ่มความต้านทานต่อธาตุไฟ" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_SWORDCLAN] = {
+	descript = {
+		{ "Sword Clan", COLOR_TITLE_BUFF },
+		{ "STR +1, VIT +1" },
+		{ "MaxHP +30, MaxSP +10" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ARCWANDCLAN] = {
+	descript = {
+		{ "Arc Wand Clan", COLOR_TITLE_BUFF },
+		{ "INT +1, DEX +1" },
+		{ "MaxHP +30, MaxSP +10" }
+	}
+}
+StateIconList[EFST_IDs.EFST_GOLDENMACECLAN] = {
+	descript = {
+		{ "Golden Mace Clan", COLOR_TITLE_BUFF },
+		{ "LUK +1, INT +1" },
+		{ "MaxHP +30, MaxSP +10" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CROSSBOWCLAN] = {
+	descript = {
+		{ "Crossbow Clan", COLOR_TITLE_BUFF },
+		{ "DEX +1, AGI +1" },
+		{ "MaxHP +30, MaxSP +10" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PACKING_ENVELOPE1] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "30 วินาทีทรงพลัง", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า ATK" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_PACKING_ENVELOPE2] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "30 วินาทีปราดเปรื่อง", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า MATK" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_PACKING_ENVELOPE3] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "30 วินาทีอึดทน", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า MaxHP" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_PACKING_ENVELOPE4] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "30 วินาทีขุมพลัง", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า MaxSP" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_PACKING_ENVELOPE5] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "30 วินาทีพริ้วไหว", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า FLEE" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_PACKING_ENVELOPE6] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "30 วินาทีรวดเร็ว", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า ASPD" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_PACKING_ENVELOPE7] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "30 วินาทีแข็งแกร่ง", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า DEF" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_PACKING_ENVELOPE8] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "30 วินาทีปลอดภัย", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า MDEF" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_PACKING_ENVELOPE9] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "30 วินาทีโชคดี", COLOR_TITLE_BUFF },
+		{ "เพิ่มอัตราคริติคอล (Critical rate)" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_PACKING_ENVELOPE10] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "30 วินาทีแม่นยำ", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่า HIT" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_GLASTHEIM_TRANS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "พรมแดนระหว่างคนเป็นและคนตาย!", COLOR_TITLE_DEBUFF },
+		{ "ลดความเสียหายธาตุ Ghost ลง 50%" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_ZONGZI_POUCH_TRANS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "เทศกาลตวนอู่", COLOR_TITLE_BUFF },
+		{ "เพิ่มค่าสถานะทุกอย่าง" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_B_TRAP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Bound Trap", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดความเร็วในการเคลื่อนที่" }
+	}
+}
+StateIconList[EFST_IDs.EFST_E_CHAIN] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Eternal Chain", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มโอกาสในการเกิด Chain Action" }
+	}
+}
+StateIconList[EFST_IDs.EFST_C_MARKER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Crimson Marker", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดค่า FLEE" }
+	}
+}
+StateIconList[EFST_IDs.EFST_P_ALTER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Platinum Alter", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า ATK" },
+		{ "ลดความเสียหายที่ได้รับจากการโจมตีธาตุ Undead" }
+	}
+}
+StateIconList[EFST_IDs.EFST_HEAT_BARREL] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Heat Barrel", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า ATK" },
+		{ "ลดดีเลย์หลังการโจมตี (After-attack delay)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ANTI_M_BLAST] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Anti-Material Blast", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดความต้านทานต่อการโจมตีไร้ธาตุ (Neutral)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_HEAT_BARREL_AFTER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "ผลกระทบตามมา (Aftermath)", COLOR_TITLE_DEBUFF},
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถใช้ไอเทมได้" },
+		{ "ไม่สามารถใช้ทักษะได้" },
+		{ "ไม่สามารถโจมตีได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_OVERSEAEXPUP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่าประสบการณ์ที่ได้รับ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BEEF_RIB_STEW] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "สตูว์ซี่โครงเนื้อ", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดระยะเวลาการร่าย" },
+		{ "ลดการใช้ SP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PORK_RIB_STEW] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "สตูว์ซี่โครงหมู", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า ASPD" },
+		{ "ลดการใช้ SP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CHUSEOK_MONDAY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "คุณสมบัติเสริมแกร่ง", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเสียหายต่อมอนสเตอร์ธาตุ Shadow" },
+		{ "เพิ่มความต้านทานต่อธาตุ Holy" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CHUSEOK_TUESDAY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "คุณสมบัติเสริมแกร่ง", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเสียหายต่อมอนสเตอร์ธาตุ Earth" },
+		{ "เพิ่มความต้านทานต่อธาตุ Fire" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CHUSEOK_WEDNESDAY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "คุณสมบัติเสริมแกร่ง", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเสียหายต่อมอนสเตอร์ธาตุ Fire" },
+		{ "เพิ่มความต้านทานต่อธาตุ Water" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CHUSEOK_THURSDAY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "คุณสมบัติเสริมแกร่ง", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเสียหายต่อมอนสเตอร์ธาตุ Wind" },
+		{ "เพิ่มความต้านทานต่อธาตุ Earth" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CHUSEOK_FRIDAY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "คุณสมบัติเสริมแกร่ง", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเสียหายต่อมอนสเตอร์ธาตุ Water" },
+		{ "เพิ่มความต้านทานต่อธาตุ Wind" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CHUSEOK_WEEKEND] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "คุณสมบัติเสริมแกร่ง", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเสียหายต่อมอนสเตอร์ไร้ธาตุ (Neutral)" },
+		{ "เพิ่มความต้านทานต่อไร้ธาตุ (Neutral)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ACUO_MINT_GUM] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "หมากฝรั่งมินต์ ACUO", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า ATK และ MATK" }
+	}
+}
+StateIconList[EFST_IDs.EFST_S_HEALPOTION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "ยาเพิ่มพลังรักษาแบบพิเศษ", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ฟื้นฟู HP และ SP ปริมาณหนึ่งทุกๆ 10 วินาที" },
+		{ "ไม่มีผลในขณะอยู่ในสถานะ Berserk" }
+	}
+}
+StateIconList[EFST_IDs.EFST_JUMPINGCLAN] = {
+	descript = {
+		{ "Jumping Clan", COLOR_TITLE_BUFF },
+		{ "ค่าสถานะทั้งหมด +1" }
+	}
+}
+StateIconList[EFST_IDs.EFST_JP_OTP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 4,
+	descript = {
+		{ "สิทธิพิเศษสมาชิก OTP", COLOR_TITLE_BUFF },
+		{ "ขณะล่ามอนสเตอร์" },
+		{ "เพิ่มค่าประสบการณ์ Base และ Job EXP" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_HANDICAPTOLERANCE_LEVELGAP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "ลดบทลงโทษจากผลต่างเลเวลที่มีต่อความต้านทานสถานะ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ESSENCE_OF_TIME] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Essence of Time", COLOR_SYSTEM },
+		{ "%s", COLOR_TIME },
+		{ "ได้รับ Integer of Time แล้ว" }
+	}
+}
+StateIconList[EFST_IDs.EFST_LIMIT_POWER_BOOSTER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Limited Power Booster", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า ATK, MATK, HIT, FLEE, ASPD" },
+		{ "ลดการใช้ SP" },
+		{ "ลดระยะเวลาการร่ายแบบคงที่ (Fixed cast time)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_DRACULA_CARD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Sealed Beelzebub", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดระยะเวลาการร่าย" }
+	}
+}
+StateIconList[EFST_IDs.EFST_EP16_DEF] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 3,
+	descript = {
+		{ "Shining Holy Water", COLOR_TITLE_BUFF },
+		{ "ลดความเสียหายที่ได้รับลง 10% ใน Ritual Room และ Prontera Invasion Dungeon" },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_EXTRACT_SALAMINE_JUICE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Enrich Celermine Juice", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเร็วในการโจมตี (ASPD)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PROMOTE_HEALTH_RESERCH] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "HP Increase Potion", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า MaxHP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ENERGY_DRINK_RESERCH] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "SP Increase Potion", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า MaxSP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_EXTRACT_WHITE_POTION_Z] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Enriched White PotionZ", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มอัตราการฟื้นฟู HP ตามธรรมชาติ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_VITATA_500] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Vitata500", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มอัตราการฟื้นฟู SP ตามธรรมชาติ" },
+		{ "เพิ่มค่า MaxSP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_EXPIATIO] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Expiatio", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "มองข้ามพลังป้องกันของเป้าหมายบางส่วน" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CRUSHSTRIKE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Crush Strike", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มพลังโจมตีระยะประชิด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_EXEEDBREAK] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Exceed Break", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเสียหายในการโจมตีครั้งแรก" }
+	}
+}
+StateIconList[EFST_IDs.EFST_STASIS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Stasis", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถใช้เวทมนตร์, เพลง หรือการร้องประสานเสียงได้ในระยะ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MAGNETICFIELD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Magnetic Field", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "หยุดการเคลื่อนที่ของเป้าหมายทั้งหมดในระยะ" },
+		{ "ลดค่า SP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_VACUUM_EXTREME] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Vacuum Extreme", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ดึงดูดเป้าหมายทั้งหมดในระยะเข้ามา" },
+		{ "ไม่สามารถเคลื่อนที่ได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BODYSTATE_STONECURSE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Stone Curse", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถกระทำการใดๆ และหลบหลีกไม่ได้" },
+		{ "ลดค่า MaxHP" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BODYSTATE_FREEZING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Freezing", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถกระทำการใดๆ และหลบหลีกไม่ได้" },
+		{ "ลดค่า DEF และ MDEF" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BODYSTATE_STUN] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Stun", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถกระทำการใดๆ และหลบหลีกไม่ได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BODYSTATE_SLEEP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Sleep", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถกระทำการใดๆ และหลบหลีกไม่ได้" },
+		{ "เพิ่มอัตราคริติคอลให้กับผู้โจมตี" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BODYSTATE_STONECURSE_ING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "สถานะเป็นหินกำลังเริ่มทำงาน", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_BODYSTATE_BURNNING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Burning", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ได้รับความเสียหายทุกๆ 3 วินาที" },
+		{ "ลดค่า MDEF" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BODYSTATE_IMPRISON] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Imprison", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถโจมตี, ใช้ทักษะ, เคลื่อนที่ และใช้ไอเทมได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_HEALTHSTATE_POISON] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Poison", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดทัศนวิสัย" },
+		{ "ลดค่า DEF" },
+		{ "ลดค่า HP ทุกๆ 3 วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_HEALTHSTATE_CURSE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Curse", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดค่า DEF และความเร็วในการเคลื่อนที่" },
+		{ "ค่า LUK กลายเป็น 0" }
+	}
+}
+StateIconList[EFST_IDs.EFST_HEALTHSTATE_SILENCE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Silence", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถใช้ทักษะได้" }
+	}
+}
+StateIconList[EFST_IDs.EFST_HEALTHSTATE_CONFUSION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Chaos", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "เคลื่อนที่แบบสุ่มเมื่อมีการขยับตัว" }
+	}
+}
+StateIconList[EFST_IDs.EFST_HEALTHSTATE_HEAVYPOISON] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Deadly Poison", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดค่า HP ทุกๆ วินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_HEALTHSTATE_FEAR] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Fear", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถเคลื่อนที่ได้เป็นเวลา 2 วินาที" },
+		{ "ลดค่า HIT และ Flee" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CURSEDCIRCLE_TARGET] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Cursed Circle", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถกระทำการและเคลื่อนที่ได้ภายในระยะ" },
+		{ "ทำให้เป้าหมายติดสถานะ Silence (ใบ้)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_MANDRAGORA] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Howling of Mandragora", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดค่า INT และ SP" },
+		{ "เพิ่มระยะเวลาการร่ายแบบคงที่ (Fixed Cast Time)" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATTACK_PROPERTY_NOTHING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เคลือบอาวุธด้วยธาตุ Neutral (ไร้ธาตุ)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATTACK_PROPERTY_WATER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เคลือบอาวุธด้วยธาตุ Water (น้ำ)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATTACK_PROPERTY_GROUND] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เคลือบอาวุธด้วยธาตุ Earth (ดิน)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATTACK_PROPERTY_FIRE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เคลือบอาวุธด้วยธาตุ Fire (ไฟ)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATTACK_PROPERTY_WIND] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เคลือบอาวุธด้วยธาตุ Wind (ลม)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATTACK_PROPERTY_POISON] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เคลือบอาวุธด้วยธาตุ Poison (พิษ)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATTACK_PROPERTY_SAINT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เคลือบอาวุธด้วยธาตุ Holy (ศักดิ์สิทธิ์)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATTACK_PROPERTY_DARKNESS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เคลือบอาวุธด้วยธาตุ Shadow (มืด)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATTACK_PROPERTY_TELEKINESIS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เคลือบอาวุธด้วยธาตุ Ghost (วิญญาณ)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_ATTACK_PROPERTY_UNDEAD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เคลือบอาวุธด้วยธาตุ Undead (ผีดิบ)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_RESIST_PROPERTY_NOTHING] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มความต้านทานธาตุ Neutral (ไร้ธาตุ)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_RESIST_PROPERTY_WATER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มความต้านทานธาตุ Water (น้ำ)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_RESIST_PROPERTY_GROUND] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มความต้านทานธาตุ Earth (ดิน)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_RESIST_PROPERTY_FIRE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มความต้านทานธาตุ Fire (ไฟ)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_RESIST_PROPERTY_WIND] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มความต้านทานธาตุ Wind (ลม)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_RESIST_PROPERTY_POISON] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มความต้านทานธาตุ Poison (พิษ)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_RESIST_PROPERTY_SAINT] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มความต้านทานธาตุ Holy (ศักดิ์สิทธิ์)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_RESIST_PROPERTY_DARKNESS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มความต้านทานธาตุ Shadow (มืด)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_RESIST_PROPERTY_TELEKINESIS] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มความต้านทานธาตุ Ghost (วิญญาณ)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_RESIST_PROPERTY_UNDEAD] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "เพิ่มความต้านทานธาตุ Undead (ผีดิบ)", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_CHERRY_BLOSSOM_CAKE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Cherry Blossom Cake", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดความเสียหายที่ได้รับจากมอนสเตอร์ทุกขนาด" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PERIOD_RECEIVEITEM] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มอัตราการดรอปไอเทมขึ้น 2 เท่า" },
+		{ "เมื่อกำจัดมอนสเตอร์" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PERIOD_PLUSJOBEXP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "ได้รับ Job Exp มากขึ้นเมื่อกำจัดมอนสเตอร์" }
+	}
+}
+StateIconList[EFST_IDs.EFST_PERIOD_PLUSEXP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 1,
+	descript = {
+		{ "%s", COLOR_TIME },
+		{ "ได้รับ Base Exp มากขึ้นเมื่อกำจัดมอนสเตอร์" }
+	}
+}
+StateIconList[EFST_IDs.EFST_DORAM_BUF_01] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Kalona Milk", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ฟื้นฟู 10 HP ทุกๆ 10 วินาที เป็นเวลา 3 นาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_DORAM_BUF_02] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Basil", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ฟื้นฟู 5 SP ทุกๆ 10 วินาที เป็นเวลา 3 นาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SPRITEMABLE] = {
+	haveTimeLimit = 0,
+	posTimeLimitStr = 0,
+	descript = {
+		{ "Red Ball", COLOR_SYSTEMF }
+	}
+}
+StateIconList[EFST_IDs.EFST_SUHIDE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Suhide", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME }
+	}
+}
+StateIconList[EFST_IDs.EFST_FRESHSHRIMP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Fresh Shrimp", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ฟื้นฟูค่า HP จำนวนหนึ่ง" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SHRIMP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Shrimp", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ATK, MATK + 10%" }
+	}
+}
+StateIconList[EFST_IDs.EFST_TUNAPARTY] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Tuna Party", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ป้องกันความเสียหายได้ในจำนวนหนึ่ง" }
+	}
+}
+StateIconList[EFST_IDs.EFST_ARCLOUSEDASH] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Arclouse Dash", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเร็วในการเคลื่อนที่" },
+		{ "เพิ่มค่า AGI" }
+	}
+}
+StateIconList[EFST_IDs.EFST_BITESCAR] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Bite", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ติดสถานะ Stun เป็นเวลา 2 วินาที" },
+		{ "สูญเสียค่า HP จำนวนหนึ่งต่อวินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SV_ROOTTWIST] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Root Twist", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ไม่สามารถเคลื่อนที่ได้ (Immobilize)" },
+		{ "ได้รับความเสียหายจากพิษ 100 ต่อวินาที" }
+	}
+}
+StateIconList[EFST_IDs.EFST_CATNIPPOWDER] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Catnip Powder", COLOR_TITLE_DEBUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดค่า ATK, MATK" },
+		{ "ลดความเร็วในการเคลื่อนที่" },
+		{ "เพิ่มอัตราการฟื้นฟู HP และ SP ตามธรรมชาติ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_SU_STOOP] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Stoop", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "ลดความเสียหายที่ได้รับลงโดยการหมอบลงกับพื้น" }
+	}
+}
+StateIconList[EFST_IDs.EFST_AURABLADE] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Aura Blade", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มความเสียหายทางกายภาพ" }
+	}
+}
+StateIconList[EFST_IDs.EFST_LKCONCENTRATION] = {
+	haveTimeLimit = 1,
+	posTimeLimitStr = 2,
+	descript = {
+		{ "Concentration", COLOR_TITLE_BUFF },
+		{ "%s", COLOR_TIME },
+		{ "เพิ่มค่า HIT และ ATK" },
+		{ "ลดค่า DEF" }
+	}
+}
